@@ -23,7 +23,7 @@ const config = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: 'docs', // Default path for Paranet docs
+          path: 'paranet', // Default path for Paranet docs
           routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/your-org/your-project/edit/main/',
