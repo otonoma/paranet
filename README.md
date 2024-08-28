@@ -12,6 +12,10 @@ Make sure you have the following tools installed on your machine:
 - [npm](https://www.npmjs.com/) (usually comes with Node.js)
 - [Git](https://git-scm.com/)
 
+### Starting the App
+
+`npm run start`
+
 ## Styling and Theming
 
 ### Custom Styling
@@ -38,8 +42,7 @@ Docusaurus supports both Markdown and MDX (Markdown with JSX). You can create co
 
 Docusaurus automatically checks for broken links during the build process. To manually check for broken links, run:
 
-```bash
-npm run build
+`npm run build`
 
 If there are any broken links, they will be listed in the terminal output. You can configure the onBrokenLinks setting in docusaurus.config.js to change how broken links are handled (e.g., ignore, warn, or throw an error).
 
