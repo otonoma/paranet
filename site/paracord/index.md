@@ -2,6 +2,6 @@
 sidebar_position: 3
 ---
 
-# Paracord Intro
+# Paracord
 
 Let's discover **Paracord**.

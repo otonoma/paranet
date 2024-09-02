@@ -24,9 +24,21 @@ const config = {
       {
         docs: {
           path: 'paranet', // Default path for Paranet docs
-          routeBasePath: '/', // Serve the docs at the site's root
+          routeBasePath: 'paranet', // Serve the docs at the site's root
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/your-org/your-project/edit/main/',
+          lastVersion: 'current',
+          onlyIncludeVersions: ['current', '0.0.1'],
+          versions: {
+            current: {
+              label: 'v0.0.2',
+              path: '0.0.2',
+            },
+            '0.0.1': {
+              label: 'v0.0.1',
+              path: '0.0.1',
+            }
+          },
         },
         blog: false, // Disable the blog plugin
       },
@@ -64,17 +76,26 @@ const config = {
       },
       items: [
         {
-          to: 'intro',
           label: 'Paranet',
           position: 'left',
+          items: [
+            {
+              label: 'v0.0.2',
+              to: 'paranet/0.0.2',
+            },
+            {
+              label: 'v0.0.1',
+              to: 'paranet/0.0.1',
+            },
+          ],
         },
         {
-          to: 'paraflow/intro',
+          to: 'paraflow',
           label: 'Paraflow',
           position: 'left',
         },
         {
-          to: 'paracord/intro',
+          to: 'paracord',
           label: 'Paracord',
           position: 'left',
         },

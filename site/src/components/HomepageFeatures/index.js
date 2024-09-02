@@ -7,7 +7,7 @@ const FeatureList = [
   {
     title: 'Paranet',
     Svg: require('@site/static/img/paranet_logo.svg').default,
-    link: '/intro', // Link to the Paranet documentation
+    link: '/paranet', // Link to the Paranet documentation
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -18,7 +18,7 @@ const FeatureList = [
   {
     title: 'Paraflow',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    link: '/paraflow/intro', // Link to the Paraflow documentation
+    link: '/paraflow', // Link to the Paraflow documentation
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -29,7 +29,7 @@ const FeatureList = [
   {
     title: 'Paracord',
     Svg: require('@site/static/img/paracord_logo.svg').default,
-    link: '/paracord/intro', // Placeholder link to the Paracord documentation
+    link: '/paracord', // Placeholder link to the Paracord documentation
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
