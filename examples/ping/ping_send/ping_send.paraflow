@@ -1,0 +1,11 @@
+%skill(subject = ping, action = loop)
+event loop($conversation string, $i int) {
+  log info("ping " + $i);
+  !send($conversation, $i);
+}
+
+task !send($conversation, $i) is
+  pncp let { $response } = ping/send ($i) in {
+  log info("Got response:" + $response);
+#  pncp response($response) to $cid;
+}

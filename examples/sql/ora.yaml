@@ -1,0 +1,8 @@
+name: Sql example
+agents:
+  - name: sql_test
+    paraflow: use_sql.paraflow
+    path: ./
+    sql:
+      - init.sql
+skillsets: []

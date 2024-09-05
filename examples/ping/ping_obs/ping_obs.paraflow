@@ -1,0 +1,4 @@
+%observer(subject = ping, action = send, message_types = skill, continuity = test_id)
+event ping_obs($conversation string, $i int) {
+  log info("observe ping " + $i);
+}

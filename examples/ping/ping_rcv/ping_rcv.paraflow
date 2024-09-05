@@ -1,0 +1,5 @@
+%skill(subject = ping, action = send)
+event ping($conversation string, $i int) {
+  log info("ping " + $i);
+#  return "pong " + $i;
+}

@@ -1,0 +1,410 @@
+%skill(subject=random_number,action=get)
+%display_out({"type":"AdaptiveCard","$schema":"http://adaptivecards.io/schemas/adaptive-card.json","version":"1.6","body":[{"type":"TextBlock","text":"Current value: ${value} "}]})
+event randomNumber($conversation string) {
+  return { value: Uuid()};
+}
+
+%skill(subject=random_numberA,action=getA)
+%display_out({"type":"AdaptiveCard","$schema":"http://adaptivecards.io/schemas/adaptive-card.json","version":"1.6","body":[{"type":"TextBlock","size":"medium","weight":"bolder","text":"${title}","style":"heading","wrap":true},{"type":"ColumnSet","columns":[{"type":"Column","items":[{"type":"Image","style":"person","url":"${profileImage}","altText":"${companyName}","size":"small"}],"width":"auto"},{"type":"Column","items":[{"type":"TextBlock","weight":"bolder","text":"${companyName}","wrap":true},{"type":"TextBlock","spacing":"none","text":"Created {{DATE(${string(createdUtc)}, SHORT)}}","isSubtle":true,"wrap":true}],"width":"stretch"}]},{"type":"TextBlock","text":"Random Value: ${value} "}]})
+event randomNumberA($conversation string) {
+  return { value: Uuid(), title: "Title here", profileImage: "https://media.licdn.com/dms/image/D560BAQHuynegxP44Vw/company-logo_200_200/0/1716399649505/grokitdata_logo?e=1729123200&v=beta&t=NApIy-W7us7jQGOx5sDQho2xVpTRR7-yHKEHTZSpZRw", companyName: "Grokit", createdUtc: "2017-02-14T06:08:39Z"};
+}
+
+
+%skill(subject=activity_card,action=actitivy)
+%display_out({"type":"AdaptiveCard","$schema":"http://adaptivecards.io/schemas/adaptive-card.json","version":"1.6","body":[{"type":"TextBlock","size":"medium","weight":"bolder","text":"${title}","style":"heading","wrap":true},{"type":"ColumnSet","columns":[{"type":"Column","items":[{"type":"Image","style":"person","url":"${profileImage}","altText":"${companyName}","size":"small"}],"width":"auto"},{"type":"Column","items":[{"type":"TextBlock","weight":"bolder","text":"${companyName}","wrap":true},{"type":"TextBlock","spacing":"none","text":"Created {{DATE(${string(createdUtc)}, SHORT)}}","isSubtle":true,"wrap":true}],"width":"stretch"}]},{"type":"TextBlock","text":"Random Value: ${value} "},{"type":"FactSet","facts":[{"$data":"${properties}","title":"${key}:","value":"${value}"}]}],"actions":[{"type":"Action.OpenUrl","title":"View","url":"${viewUrl}","role":"button"}]})
+event activityCard($conversation string) {
+  let $s = JsonString({ 
+    value: Uuid(), 
+    title: "Title here", 
+    profileImage: "https://media.licdn.com/dms/image/D560BAQHuynegxP44Vw/company-logo_200_200/0/1716399649505/grokitdata_logo?e=1729123200&v=beta&t=NApIy-W7us7jQGOx5sDQho2xVpTRR7-yHKEHTZSpZRw", 
+    companyName: "Grokit", 
+    createdUtc: "2024-07-19T06:08:39Z",
+    properties: [
+      { key: "Board", value: "Adaptive Cards" },
+      { key: "List", value: "Backlog" },
+      { key: "Assigned to", value: "John Due" },
+      { key: "Due date", value: "Not set" }
+    ],
+    viewUrl: "https://adaptivecards.io"
+  });
+  return JsonParse($s);
+}
+
+%skill(subject=gallert_card,action=gallery)
+%display_out({"$schema":"http://adaptivecards.io/schemas/adaptive-card.json","type":"AdaptiveCard","version":"1.5","body":[{"type":"TextBlock","text":"Here are some cool photos","size":"large","wrap":true,"style":"heading"},{"type":"TextBlock","text":"Sorry some of them are repeats","size":"medium","weight":"lighter","wrap":true},{"type":"ImageSet","imageSize":"medium","images":[{"type":"Image","url":"${value[0].contentUrl}","altText":"${value[0].name}"},{"type":"Image","url":"${value[1].contentUrl}","altText":"${value[1].name}"},{"type":"Image","url":"${queryExpansions[0].thumbnail.thumbnailUrl}","altText":"${queryExpansions[0].thumbnail.name}"},{"type":"Image","url":"${queryExpansions[1].thumbnail.thumbnailUrl}","altText":"${queryExpansions[1].thumbnail.name}"},{"type":"Image","url":"${pivotSuggestions[0].suggestions[0].thumbnail.thumbnailUrl}","altText":"${pivotSuggestions[0].suggestions[0].thumbnail.name}"},{"type":"Image","url":"${pivotSuggestions[0].suggestions[1].thumbnail.thumbnailUrl}","altText":"${pivotSuggestions[0].suggestions[1].thumbnail.name}"},{"type":"Image","url":"${value[2].thumbnailUrl}","altText":"${value[2].name}"}]}]})
+event galleryCard($conversation string) {
+  let $s = JsonString({
+  value: [
+    {
+      name: "Proxecto Gato: cats wallpapers by bighdwallpapers",
+      contentUrl: "https://4.bp.blogspot.com/-XkviAtJ1s6Q/T3YFb2RUhDI/AAAAAAAAAVQ/EHomLZlFMKo/s1600/small+cat.jpg"
+    },
+    {
+      name: "Kitten - Cats Wallpaper (18565791) - Fanpop",
+      contentUrl: "https://images4.fanpop.com/image/photos/18500000/Kitten-cats-18565791-1024-768.jpg"
+    },
+    {
+      name: "Kitten - Cats Wallpaper (18565791) - Fanpop",
+      thumbnailUrl: "https://tse3.mm.bing.net/th?id=OIP.M7dfb8973bca22c4939102df3ae3de66do0&pid=Api"
+    }
+  ],
+  queryExpansions: [
+    {
+      thumbnail: {
+        name: "Little Cat",
+        thumbnailUrl: "https://tse3.mm.bing.net/th?q=Grumpy+Cat&pid=Api&mkt=en-US&adlt=moderate&t=1"
+      }
+    },
+    {
+      thumbnail: {
+        name: "Big Cat",
+        thumbnailUrl: "https://tse2.mm.bing.net/th?q=Funny+Cats&pid=Api&mkt=en-US&adlt=moderate&t=1"
+      }
+    }
+  ]
+  });
+  return JsonParse($s);
+}
+
+
+%skill(subject=input_card,action=input)
+%display_out({"$schema":"http://adaptivecards.io/schemas/adaptive-card.json","type":"AdaptiveCard","version":"1.5","body":[{"type":"ColumnSet","columns":[{"type":"Column","width":2,"items":[{"type":"Container","$data":"${properties}","items":[{"type":"Input.Text","label":"${label}","id":"${id}","regex":"${validation}","errorMessage":"${error}","isRequired":true}]}]},{"type":"Column","width":1,"items":[{"type":"Image","url":"${thumbnailUrl}","altText":"${thumbnailAlt}","size":"auto"}]}]}],"actions":[{"type":"Action.Submit","title":"Submit"}]})
+event inputCard($conversation string) {
+  let $s = JsonString({
+    properties: [
+      {
+        id: "myName",
+        label: "Your name (Last, First)",
+        validation: "^[A-Z][a-z]+, [A-Z][a-z]+$",
+        error: "Please enter your name in the specified format"
+      },
+      {
+        id: "myEmail",
+        label: "Your email",
+        validation: "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+[.][A-Za-z0-9-]{2,4}$",
+        error: "Please enter a valid email address"
+      },
+      {
+        id: "myTel",
+        label: "Phone Number (xxx-xxx-xxxx)",
+        validation: "^[0-9]{3}-[0-9]{3}-[0-9]{4}$",
+        error: "Invalid phone number. Use the specified format: 3 numbers, hyphen, 3 numbers, hyphen and 4 numbers"
+      }
+    ]
+  });
+  return JsonParse($s);
+}
+
+
+%skill(subject=weather_compact_card,action=weather_compact)
+%display_out({"$schema":"http://adaptivecards.io/schemas/adaptive-card.json","type":"AdaptiveCard","version":"1.5","speak":"The forecast for Seattle ${formatEpoch(dt, 'MMMM d')} is mostly clear with a High of ${formatNumber((main.temp_max - 273) * 9 / 5 + 32, 0)} degrees and Low of ${formatNumber((main.temp_min - 273) * 9 / 5 + 32, 0)} degrees","body":[{"type":"TextBlock","text":"${name}, WA","size":"large","isSubtle":true,"wrap":true,"style":"heading"},{"type":"TextBlock","text":"{{DATE(${formatEpoch(dt, 'yyyy-MM-ddTHH:mm:ssZ')}, SHORT)}} {{TIME(${formatEpoch(dt, 'yyyy-MM-ddTHH:mm:ssZ')})}}","spacing":"none","wrap":true},{"type":"ColumnSet","columns":[{"type":"Column","width":"auto","items":[{"type":"Image","url":"https://adaptivecards.io/content/Mostly%20Cloudy-Square.png","size":"small","altText":"Mostly cloudy weather"}]},{"type":"Column","width":"auto","items":[{"type":"TextBlock","text":"${formatNumber((main.temp - 273) * 9 / 5 + 32, 0)}","size":"extraLarge","spacing":"none","wrap":true}]},{"type":"Column","width":"stretch","items":[{"type":"TextBlock","text":"°F","weight":"bolder","spacing":"small","wrap":true}]},{"type":"Column","width":"stretch","items":[{"type":"TextBlock","text":"Hi ${formatNumber((main.temp_max - 273) * 9 / 5 + 32, 0)}","horizontalAlignment":"left","wrap":true},{"type":"TextBlock","text":"Lo ${formatNumber((main.temp_min - 273) * 9 / 5 + 32, 0)}","horizontalAlignment":"left","spacing":"none","wrap":true}]}]}]})
+event weatherCompactCard($conversation string) {
+  let $s = JsonString({
+    coord: {
+      lon: -122.12,
+      lat: 47.67
+    },
+    weather: [
+      {
+        id: 802,
+        main: "Clouds",
+        description: "scattered clouds",
+        icon: "03n"
+      }
+    ],
+    base: "stations",
+    main: {
+      temp: 281.05,
+      pressure: 1022,
+      humidity: 81,
+      temp_min: 278.15,
+      temp_max: 283.15
+    },
+    visibility: 16093,
+    wind: {
+      speed: 4.1,
+      deg: 360
+    },
+    clouds: {
+      all: 40
+    },
+    dt: 1572920478,
+    sys: {
+      type: 1,
+      id: 5798,
+      country: "US",
+      sunrise: 1572879421,
+      sunset: 1572914822
+    },
+    timezone: -28800,
+    id: 5808079,
+    name: "Redmond",
+    cod: 200
+  });
+  return JsonParse($s);
+}
+
+
+%skill(subject=weather_large_card,action=weather_large)
+%display_out({"$schema":"http://adaptivecards.io/schemas/adaptive-card.json","type":"AdaptiveCard","version":"1.5","speak":"Weather forecast for ${formatEpoch(data[0].sunrise_ts, 'dddd')} is high of ${formatNumber(data[0].app_max_temp / 5 * 9 + 32, 0)} and low of ${formatNumber(data[0].app_min_temp / 5 * 9 + 32, 0)} degrees with a ${formatNumber(data[0].precip * 100, 0)}% chance of rainWinds will be ${formatNumber(data[0].wind_gust_spd, 0)} mph from the ${data[0].wind_cdir}","backgroundImage":"https://adaptivecards.io/content/Mostly%20Cloudy-Background.jpg","body":[{"type":"ColumnSet","columns":[{"type":"Column","width":35,"items":[{"type":"Image","url":"https://adaptivecards.io/content/Mostly%20Cloudy-Square.png","size":"stretch","altText":"Mostly cloudy weather"}]},{"type":"Column","width":65,"items":[{"type":"TextBlock","text":"{{DATE(${formatEpoch(data[0].sunrise_ts, 'yyyy-MM-ddTHH:mm:ssZ')}, SHORT)}}","weight":"bolder","size":"large","wrap":true,"color":"dark","style":"heading"},{"type":"TextBlock","text":"${formatNumber(data[0].app_min_temp / 5 * 9 + 32, 0)} / ${formatNumber(data[0].app_max_temp / 5 * 9 + 32, 0)}","size":"medium","spacing":"none","wrap":true,"color":"dark"},{"type":"TextBlock","text":"${formatNumber(data[0].precip * 100, 0)}% chance of rain","spacing":"none","wrap":true,"color":"dark"},{"type":"TextBlock","text":"Winds ${data[0].wind_gust_spd} mph ${data[0].wind_cdir}","spacing":"none","wrap":true,"color":"dark"}]}]},{"type":"ColumnSet","columns":[{"$data":"${data}","$when":"${$index != 0}","type":"Column","width":20,"items":[{"type":"TextBlock","horizontalAlignment":"center","text":"${formatEpoch(sunrise_ts, 'dddd')}","wrap":true,"color":"dark"},{"type":"Image","size":"auto","url":"${weather.icon}","altText":"${weather.description}"},{"type":"TextBlock","text":"**High**\t${formatNumber(app_max_temp / 5 * 9  + 32, 0)}","wrap":true,"color":"dark","horizontalAlignment":"center"},{"type":"TextBlock","text":"**Low**\t${formatNumber(app_min_temp / 5 * 9  + 32, 0)}","wrap":true,"color":"dark","spacing":"none","horizontalAlignment":"center"}],"selectAction":{"type":"Action.OpenUrl","title":"View ${formatEpoch(sunrise_ts, 'dddd')}, ${weather.description}. Highest temperature ${formatNumber(app_max_temp / 5 * 9  + 32, 0)} degrees. Lowest temperature ${formatNumber(app_min_temp / 5 * 9  + 32, 0)} degrees.","url":"https://www.microsoft.com"}}]}]})
+event weatherLargeCard($conversation string) {
+  let $s = JsonString({
+    data: [
+      {
+        moonrise_ts: 1572993161,
+        wind_cdir: "SSE",
+        rh: 90,
+        pres: 1012.95,
+        high_temp: 8.6,
+        sunset_ts: 1573001147,
+        ozone: 252.181,
+        moon_phase: 0.768526,
+        wind_gust_spd: 4.4,
+        snow_depth: 0,
+        clouds: 70,
+        ts: 1572940860,
+        sunrise_ts: 1572966051,
+        app_min_temp: 3.7,
+        wind_spd: 1.33298,
+        pop: 25,
+        wind_cdir_full: "south-southeast",
+        slp: 1021.94,
+        valid_date: "2019-11-05",
+        app_max_temp: 10.2,
+        vis: 22.5692,
+        dewpt: 6.8,
+        snow: 0,
+        uv: 1.74992,
+        weather: {
+          icon: "https://adaptivecards.io/content/Mostly%20Cloudy-Square.png",
+          code: 803,
+          description: "Broken clouds"
+        },
+        wind_dir: 162,
+        max_dhi: null,
+        clouds_hi: 0,
+        precip: 0.3125,
+        low_temp: 7.7,
+        max_temp: 10.4,
+        moonset_ts: 1572946958,
+        datetime: "2019-11-05",
+        temp: 8.5,
+        min_temp: 5.7,
+        clouds_mid: 0,
+        clouds_low: 70
+      },
+      {
+        moonrise_ts: 1573081007,
+        wind_cdir: "NNE",
+        rh: 88,
+        pres: 1015.48,
+        high_temp: 12.3,
+        sunset_ts: 1573087463,
+        ozone: 263.048,
+        moon_phase: 0.845631,
+        wind_gust_spd: 5,
+        snow_depth: 0,
+        clouds: 60,
+        ts: 1573027260,
+        sunrise_ts: 1573052542,
+        app_min_temp: 3.3,
+        wind_spd: 1.50821,
+        pop: 35,
+        wind_cdir_full: "north-northeast",
+        slp: 1024.5,
+        valid_date: "2019-11-06",
+        app_max_temp: 12.3,
+        vis: 23.125,
+        dewpt: 6.6,
+        snow: 0,
+        uv: 2.93193,
+        weather: {
+          icon: "https://adaptivecards.io/content/Drizzle-Square.png",
+          code: 803,
+          description: "Broken clouds"
+        },
+        wind_dir: 18,
+        max_dhi: null,
+        clouds_hi: 17,
+        precip: 0.5,
+        low_temp: 5,
+        max_temp: 12.3,
+        moonset_ts: 1573037127,
+        datetime: "2019-11-06",
+        temp: 8.5,
+        min_temp: 6.6,
+        clouds_mid: 9,
+        clouds_low: 46
+      },
+      {
+        moonrise_ts: 1573168702,
+        wind_cdir: "SE",
+        rh: 71,
+        pres: 1006.39,
+        high_temp: 13.1,
+        sunset_ts: 1573173781,
+        ozone: 257.617,
+        moon_phase: 0.909923,
+        wind_gust_spd: 1.80495,
+        snow_depth: 0,
+        clouds: 94,
+        ts: 1573113660,
+        sunrise_ts: 1573139032,
+        app_min_temp: 0.5,
+        wind_spd: 0.77653,
+        pop: 0,
+        wind_cdir_full: "southeast",
+        slp: 1022.86,
+        valid_date: "2019-11-07",
+        app_max_temp: 13.1,
+        vis: 24.135,
+        dewpt: 2.6,
+        snow: 0,
+        uv: 1.10983,
+        weather: {
+          icon: "https://adaptivecards.io/content/Mostly%20Cloudy-Square.png",
+          code: 804,
+          description: "Overcast clouds"
+        },
+        wind_dir: 136,
+        max_dhi: null,
+        clouds_hi: 94,
+        precip: 0,
+        low_temp: 4.4,
+        max_temp: 13.4,
+        moonset_ts: 1573127315,
+        datetime: "2019-11-07",
+        temp: 7.7,
+        min_temp: 4.2,
+        clouds_mid: 0,
+        clouds_low: 0
+      },
+      {
+        moonrise_ts: 1573256318,
+        wind_cdir: "SSE",
+        rh: 71,
+        pres: 1006.02,
+        high_temp: 15.8,
+        sunset_ts: 1573260100,
+        ozone: 258.722,
+        moon_phase: 0.958606,
+        wind_gust_spd: 2.11071,
+        snow_depth: 0,
+        clouds: 93,
+        ts: 1573200060,
+        sunrise_ts: 1573225523,
+        app_min_temp: 2.7,
+        wind_spd: 0.802894,
+        pop: 0,
+        wind_cdir_full: "south-southeast",
+        slp: 1022.2,
+        valid_date: "2019-11-08",
+        app_max_temp: 15.8,
+        vis: 24.1349,
+        dewpt: 4.5,
+        snow: 0,
+        uv: 0.989995,
+        weather: {
+          icon: "https://adaptivecards.io/content/Mostly%20Cloudy-Square.png",
+          code: 804,
+          description: "Overcast clouds"
+        },
+        wind_dir: 167,
+        max_dhi: null,
+        clouds_hi: 93,
+        precip: 0,
+        low_temp: 6.1,
+        max_temp: 15.9,
+        moonset_ts: 1573217557,
+        datetime: "2019-11-08",
+        temp: 9.6,
+        min_temp: 6,
+        clouds_mid: 6,
+        clouds_low: 0
+      },
+      {
+        moonrise_ts: 1573343920,
+        wind_cdir: "SW",
+        rh: 78,
+        pres: 1008.56,
+        high_temp: 14,
+        sunset_ts: 1573346422,
+        ozone: 257.936,
+        moon_phase: 0.988998,
+        wind_gust_spd: 3.61965,
+        snow_depth: 0,
+        clouds: 88,
+        ts: 1573286460,
+        sunrise_ts: 1573312013,
+        app_min_temp: 2.5,
+        wind_spd: 1.00688,
+        pop: 0,
+        wind_cdir_full: "southwest",
+        slp: 1024.28,
+        valid_date: "2019-11-09",
+        app_max_temp: 14,
+        vis: 24.135,
+        dewpt: 5.2,
+        snow: 0,
+        uv: 1.06772,
+        weather: {
+          icon: "https://adaptivecards.io/content/Mostly%20Cloudy-Square.png",
+          code: 804,
+          description: "Overcast clouds"
+        },
+        wind_dir: 228,
+        max_dhi: null,
+        clouds_hi: 88,
+        precip: 0,
+        low_temp: 5,
+        max_temp: 14.1,
+        moonset_ts: 1573307883,
+        datetime: "2019-11-09",
+        temp: 9,
+        min_temp: 5.9,
+        clouds_mid: 13,
+        clouds_low: 0
+      }
+    ],
+    city_name: "King",
+    lon: "-122.1232",
+    timezone: "America/Los_Angeles",
+    lat: "47.6718",
+    country_code: "US",
+    state_code: "WA"
+  });
+  return JsonParse($s);
+}
+
+
+%skill(subject=video_card,action=video)
+%display_out({"$schema":"http://adaptivecards.io/schemas/adaptive-card.json","type":"AdaptiveCard","version":"1.6","fallbackText":"This card requires Media to be viewed. Ask your platform to update to Adaptive Cards v1.6 for this and more!","body":[{"type":"TextBlock","text":"Adaptive Cards Product Video","wrap":true,"style":"heading"},{"type":"Media","poster":"${ThumbnailUrl}","sources":[{"mimeType":"video/mp4","url":"${VideoUrl}"}],"captionSources":[{"mimeType":"vtt","label":"English (vtt)","url":"${CaptionsUrlVtt}"},{"mimeType":"srt","label":"English (srt)","url":"${CaptionsUrlSrt}"}]}],"actions":[{"type":"Action.OpenUrl","title":"Learn more","url":"https://adaptivecards.io"}]})
+event videoCard($conversation string) {
+  let $s = JsonString({
+    odata: {
+      metadata: "https://a830edad9050849nda1.sharepoint.com/portals/hub/_api/$metadata#SP.ApiData.VideoItems/@Element",
+      type: "SP.Publishing.VideoItem",
+      id: "https://a830edad9050849nda1.sharepoint.com/portals/hub/_api/VideoService/Channels(guid'1833f204-bb2a-4e93-b8dd-b236daeccae8')/Videos(guid'6b518eae-b0d9-4951-b6da-1e5f58a43daa')",
+      editLink: "VideoService/Channels(guid'1833f204-bb2a-4e93-b8dd-b236daeccae8')/Videos(guid'6b518eae-b0d9-4951-b6da-1e5f58a43daa')"
+    },
+    ChannelID: "1833f204-bb2a-4e93-b8dd-b236daeccae8",
+    CreatedDate: "2015-07-08T05:05:06Z",
+    Description: "",
+    DisplayFormUrl: "https://a830edad9050849nda1.sharepoint.com/portals/Red-Channel/pVid/Forms/DispForm.aspx?ID=5",
+    FileName: "Divers - Future of Productivity.mp4",
+    OwnerName: "TEST_TEST_SPOProvHeartbeat_E3_15_4911090814_22,#i:0#.f|membership|admin@a830edad9050849nda1.onmicrosoft.com,#admin@a830edad9050849NDA1.onmicrosoft.com,#admin@a830edad9050849NDA1.onmicrosoft.com,#TEST_TEST_SPOProvHeartbeat_E3_15_4911090814_22,#https://a830edad9050849nda1-my.sharepoint.com:443/User%20Photos/Profile%20Pictures/admin_a830edad9050849nda1_onmicrosoft_com_MThumb.jpg,#,#",
+    ServerRelativeUrl: "/portals/Red-Channel/pVid/Divers - Future of Productivity.mp4",
+    ThumbnailUrl: "https://adaptivecards.io/content/poster-video.png",
+    Title: "Divers - Future of Productivity",
+    ID: "6b518eae-b0d9-4951-b6da-1e5f58a43daa",
+    VideoUrl: "https://adaptivecardsblob.blob.core.windows.net/assets/AdaptiveCardsOverviewVideo.mp4",
+    VideoDurationInSeconds: 388,
+    VideoProcessingStatus: 2,
+    ViewCount: -1,
+    YammerObjectUrl: "https://a830edad9050849nda1.sharepoint.com/portals/hub/_layouts/15/videoplayer.aspx?v=https%3A%2F%2Fa830edad9050849nda1%2Esharepoint%2Ecom%2Fportals%2FRed%2DChannel%2FpVid%2FDivers%20%2D%20Future%20of%20Productivity%2Emp4",
+    CaptionsUrlVtt: "https://raw.githubusercontent.com/microsoft/AdaptiveCards/5ac07e8adb8d7dcd7480973321e57d279d1f7d2c/assets/ProductVideoSubtitles.vtt",
+    CaptionsUrlSrt: "https://raw.githubusercontent.com/microsoft/AdaptiveCards/da2eb4ad4de60d14b37decc062d3952da9dbb790/assets/ProductVideoSubtitles.srt"
+  });
+  return JsonParse($s);
+}

@@ -1,0 +1,6 @@
+name: Hello world
+agents:
+  - name: hello_world
+    paraflow: hello_world.paraflow
+    path: ./hello_world
+skillsets: []

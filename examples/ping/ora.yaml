@@ -1,0 +1,22 @@
+name: Ping example
+agents:
+  - name: ping_rcv
+    paraflow: ping_rcv.paraflow
+    path: ./ping_rcv
+  - name: ping_send
+    paraflow: ping_send.paraflow
+    path: ./ping_send
+  - name: ping_obs
+    paraflow: ping_obs.paraflow
+    path: ./ping_obs
+  - name: ping_sidecar
+    paraflow: ping_sidecar.paraflow
+    path: ./ping_sidecar
+    npm: start:watch
+    service_port: 4000
+  - name: ping_ts
+    path: ./ping_ts
+    type: ts-paranet-agent
+    npm: start:watch
+    service_port: 4001
+skillsets: []

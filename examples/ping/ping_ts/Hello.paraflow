@@ -1,0 +1,10 @@
+%skill(subject=typescript,action=greet)
+event requestTypescriptGreet($conversation string) {
+  !HelloGreet(_cid -> $conversation);
+}
+
+task !HelloGreet($_cid) on Env("ACTOR_ENDPOINT") {
+  let $result = @greet();
+  pncp response($result);
+}
+

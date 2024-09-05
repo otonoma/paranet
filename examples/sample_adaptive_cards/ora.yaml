@@ -1,0 +1,6 @@
+name: new-actor
+agents:
+  - name: random
+    paraflow: random.paraflow
+    path: ./
+skillsets: []
