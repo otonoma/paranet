@@ -1,0 +1,25 @@
+{
+  "id": "developer_tools/deployment/cloud",
+  "title": "cloud",
+  "description": "Let's discover Cloud.",
+  "source": "@site/paranet/developer_tools/deployment/cloud_deployment.md",
+  "sourceDirName": "developer_tools/deployment",
+  "slug": "/developer_tools/deployment/cloud",
+  "permalink": "/developer_tools/deployment/cloud",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/developer_tools/deployment/cloud_deployment.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "cloud",
+    "title": "cloud",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Local",
+    "permalink": "/developer_tools/deployment/local"
+  }
+}

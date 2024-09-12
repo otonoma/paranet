@@ -1,0 +1,29 @@
+{
+  "id": "developer_tools/paraflow/language-basics",
+  "title": "Language Basics",
+  "description": "Program Execution",
+  "source": "@site/paranet/developer_tools/paraflow/language_basics.md",
+  "sourceDirName": "developer_tools/paraflow",
+  "slug": "/developer_tools/paraflow/language-basics",
+  "permalink": "/paranet/developer_tools/paraflow/language-basics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/developer_tools/paraflow/language_basics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "language-basics",
+    "title": "Language Basics",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hello World",
+    "permalink": "/paranet/developer_tools/paraflow/hello-world"
+  },
+  "next": {
+    "title": "Top Level",
+    "permalink": "/paranet/developer_tools/paraflow/top-level"
+  }
+}

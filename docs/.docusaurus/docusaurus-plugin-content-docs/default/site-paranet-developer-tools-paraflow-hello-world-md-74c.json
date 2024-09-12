@@ -1,0 +1,29 @@
+{
+  "id": "developer_tools/paraflow/hello-world",
+  "title": "Hello World",
+  "description": "Let's create a simple actor on the Paranet and test it.",
+  "source": "@site/paranet/developer_tools/paraflow/hello_world.md",
+  "sourceDirName": "developer_tools/paraflow",
+  "slug": "/developer_tools/paraflow/hello-world",
+  "permalink": "/paranet/developer_tools/paraflow/hello-world",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/developer_tools/paraflow/hello_world.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "hello-world",
+    "title": "Hello World",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paraflow",
+    "permalink": "/paranet/developer_tools/paraflow/"
+  },
+  "next": {
+    "title": "Language Basics",
+    "permalink": "/paranet/developer_tools/paraflow/language-basics"
+  }
+}

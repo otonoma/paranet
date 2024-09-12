@@ -1,0 +1,29 @@
+{
+  "id": "developer_tools/paracord/panels",
+  "title": "Panels",
+  "description": "Let's discover Panels.",
+  "source": "@site/paranet/developer_tools/paracord/panels.md",
+  "sourceDirName": "developer_tools/paracord",
+  "slug": "/developer_tools/paracord/panels",
+  "permalink": "/developer_tools/paracord/panels",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/developer_tools/paracord/panels.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "panels",
+    "title": "Panels",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "views",
+    "permalink": "/developer_tools/paracord/views"
+  },
+  "next": {
+    "title": "ORA",
+    "permalink": "/developer_tools/paracord/ora"
+  }
+}

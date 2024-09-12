@@ -1,0 +1,29 @@
+{
+  "id": "developer_tools/paraflow/bindings",
+  "title": "Bindings",
+  "description": "Call Bindings",
+  "source": "@site/paranet/developer_tools/paraflow/bindings.md",
+  "sourceDirName": "developer_tools/paraflow",
+  "slug": "/developer_tools/paraflow/bindings",
+  "permalink": "/paranet/developer_tools/paraflow/bindings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/developer_tools/paraflow/bindings.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "bindings",
+    "title": "Bindings",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tables",
+    "permalink": "/paranet/developer_tools/paraflow/tables"
+  },
+  "next": {
+    "title": "Runtime Internals",
+    "permalink": "/paranet/developer_tools/paraflow/runtime_internals"
+  }
+}

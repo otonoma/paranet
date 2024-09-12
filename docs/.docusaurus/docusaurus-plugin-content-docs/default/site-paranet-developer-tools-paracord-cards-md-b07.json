@@ -1,0 +1,29 @@
+{
+  "id": "developer_tools/paracord/cards",
+  "title": "Adaptive Cards",
+  "description": "Let's discover Adaptive Cards.",
+  "source": "@site/paranet/developer_tools/paracord/cards.md",
+  "sourceDirName": "developer_tools/paracord",
+  "slug": "/developer_tools/paracord/cards",
+  "permalink": "/developer_tools/paracord/cards",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/developer_tools/paracord/cards.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "cards",
+    "title": "Adaptive Cards",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paracord",
+    "permalink": "/developer_tools/paracord/"
+  },
+  "next": {
+    "title": "views",
+    "permalink": "/developer_tools/paracord/views"
+  }
+}

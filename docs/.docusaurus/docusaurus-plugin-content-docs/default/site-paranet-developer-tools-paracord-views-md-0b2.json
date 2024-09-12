@@ -1,0 +1,29 @@
+{
+  "id": "developer_tools/paracord/views",
+  "title": "views",
+  "description": "Let's discover Views.",
+  "source": "@site/paranet/developer_tools/paracord/views.md",
+  "sourceDirName": "developer_tools/paracord",
+  "slug": "/developer_tools/paracord/views",
+  "permalink": "/developer_tools/paracord/views",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/developer_tools/paracord/views.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "views",
+    "title": "views",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Adaptive Cards",
+    "permalink": "/developer_tools/paracord/cards"
+  },
+  "next": {
+    "title": "Panels",
+    "permalink": "/developer_tools/paracord/panels"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "developer_tools/paraflow/variables",
+  "title": "Variables",
+  "description": "Local variables are created with the let statement. Variable types are determined at runtime and include numbers, strings, and tables. In its simplest form, the let statement specifies the name of the variable and an expression for its value as in:",
+  "source": "@site/paranet/developer_tools/paraflow/variables.md",
+  "sourceDirName": "developer_tools/paraflow",
+  "slug": "/developer_tools/paraflow/variables",
+  "permalink": "/paranet/developer_tools/paraflow/variables",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/developer_tools/paraflow/variables.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "variables",
+    "title": "Variables",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Top Level",
+    "permalink": "/paranet/developer_tools/paraflow/top-level"
+  },
+  "next": {
+    "title": "Control Flow",
+    "permalink": "/paranet/developer_tools/paraflow/control_flow"
+  }
+}

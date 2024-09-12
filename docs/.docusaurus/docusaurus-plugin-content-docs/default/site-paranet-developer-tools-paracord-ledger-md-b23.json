@@ -1,0 +1,29 @@
+{
+  "id": "developer_tools/paracord/ledger",
+  "title": "Ledger",
+  "description": "Let's discover Ledger.",
+  "source": "@site/paranet/developer_tools/paracord/ledger.md",
+  "sourceDirName": "developer_tools/paracord",
+  "slug": "/developer_tools/paracord/ledger",
+  "permalink": "/developer_tools/paracord/ledger",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/developer_tools/paracord/ledger.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "ledger",
+    "title": "Ledger",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ORA",
+    "permalink": "/developer_tools/paracord/ora"
+  },
+  "next": {
+    "title": "Advanced_tab",
+    "permalink": "/developer_tools/paracord/advanced_tab"
+  }
+}

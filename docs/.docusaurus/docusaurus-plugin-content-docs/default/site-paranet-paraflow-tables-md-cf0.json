@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/tables",
+  "title": "Tables",
+  "description": "Paraflow programs can define and manipulate application tables that are stored in a database, as well as small in-memory tables represented by a local variable. The language provides statements for creating, deleting, updating, and querying tables.",
+  "source": "@site/paranet/paraflow/tables.md",
+  "sourceDirName": "paraflow",
+  "slug": "/paraflow/tables",
+  "permalink": "/paraflow/tables",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/paraflow/tables.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "tables",
+    "title": "Tables",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Control Flow",
+    "permalink": "/paraflow/control_flow"
+  },
+  "next": {
+    "title": "Bindings",
+    "permalink": "/paraflow/bindings"
+  }
+}

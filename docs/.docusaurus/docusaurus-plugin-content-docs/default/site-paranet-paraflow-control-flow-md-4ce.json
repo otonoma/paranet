@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/control_flow",
+  "title": "Control Flow",
+  "description": "If Statement",
+  "source": "@site/paranet/paraflow/control_flow.md",
+  "sourceDirName": "paraflow",
+  "slug": "/paraflow/control_flow",
+  "permalink": "/paraflow/control_flow",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/paraflow/control_flow.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "control_flow",
+    "title": "Control Flow",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Variables",
+    "permalink": "/paraflow/variables"
+  },
+  "next": {
+    "title": "Tables",
+    "permalink": "/paraflow/tables"
+  }
+}

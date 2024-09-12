@@ -1,8 +1,7 @@
 ---
+id: introduction
+title: Introduction
 sidebar_position: 1
 ---
 
-# Paranet
-
-## Getting Started
-
+# Welcome to the Paranet

@@ -1,0 +1,29 @@
+{
+  "id": "developer_tools/deployment/local",
+  "title": "Local",
+  "description": "Let's discover Local.",
+  "source": "@site/paranet/developer_tools/deployment/local_deployment.md",
+  "sourceDirName": "developer_tools/deployment",
+  "slug": "/developer_tools/deployment/local",
+  "permalink": "/developer_tools/deployment/local",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/developer_tools/deployment/local_deployment.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "local",
+    "title": "Local",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Deployment",
+    "permalink": "/developer_tools/deployment/"
+  },
+  "next": {
+    "title": "cloud",
+    "permalink": "/developer_tools/deployment/cloud"
+  }
+}
