@@ -24,35 +24,37 @@ const config = {
       {
         docs: {
           path: 'paranet', // Default path for Paranet docs
-          routeBasePath: 'paranet', // Serve the docs at the site's root
+          routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/your-org/your-project/edit/main/',
+          // homePageId: 'index', // Ensure that index.md is used as the homepage
         },
         blog: false, // Disable the blog plugin
+        pages: false, // Disable the default pages plugin
       },
     ],
   ],
 
-  plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'paraflow',
-        path: 'paraflow',
-        routeBasePath: 'paraflow',
-        sidebarPath: require.resolve('./sidebarsParaflow.js'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'paracord',
-        path: 'paracord',
-        routeBasePath: 'paracord',
-        sidebarPath: require.resolve('./sidebarsParacord.js'),
-      },
-    ],
-  ],
+  // plugins: [
+  //   [
+  //     '@docusaurus/plugin-content-docs',
+  //     {
+  //       id: 'paraflow',
+  //       path: 'paraflow',
+  //       routeBasePath: 'paraflow',
+  //       sidebarPath: require.resolve('./sidebarsParaflow.js'),
+  //     },
+  //   ],
+  //   [
+  //     '@docusaurus/plugin-content-docs',
+  //     {
+  //       id: 'paracord',
+  //       path: 'paracord',
+  //       routeBasePath: 'paracord',
+  //       sidebarPath: require.resolve('./sidebarsParacord.js'),
+  //     },
+  //   ],
+  // ],
 
   themeConfig: /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
     image: 'img/paranet_logo.svg',
@@ -63,29 +65,34 @@ const config = {
         src: 'img/paranet_logo.svg',
       },
       items: [
+        // {
+        //   to: 'paranet',
+        //   label: 'Paranet',
+        //   position: 'left',
+        //   // items: [
+        //   //   {
+        //   //     label: 'v0.0.2',
+        //   //     to: 'paranet/0.0.2',
+        //   //   },
+        //   //   {
+        //   //     label: 'v0.0.1',
+        //   //     to: 'paranet/0.0.1',
+        //   //   },
+        //   // ],
+        // },
         {
-          to: 'paranet',
-          label: 'Paranet',
+          to: '/getting_started/',
+          label: 'Getting Started',
           position: 'left',
-          // items: [
-          //   {
-          //     label: 'v0.0.2',
-          //     to: 'paranet/0.0.2',
-          //   },
-          //   {
-          //     label: 'v0.0.1',
-          //     to: 'paranet/0.0.1',
-          //   },
-          // ],
         },
         {
-          to: 'paraflow',
+          to: '/paraflow',
           label: 'Paraflow',
           position: 'left',
         },
         {
-          to: 'paracord',
-          label: 'Paracord',
+          to: '/developer_tools',
+          label: 'Developer Tools',
           position: 'left',
         },
       ],

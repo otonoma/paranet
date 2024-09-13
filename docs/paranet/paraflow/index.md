@@ -1,7 +1,7 @@
 ---
-id: introduction
-title: Introduction
-sidebar_position: 1
+id: paraflow
+title: Paraflow
+sidebar_position: 2
 ---
 
 # ParaFlow Documentation
