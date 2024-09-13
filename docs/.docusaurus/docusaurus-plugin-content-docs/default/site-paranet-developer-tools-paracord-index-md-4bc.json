@@ -23,7 +23,7 @@
     "permalink": "/developer_tools/paradocs/"
   },
   "next": {
-    "title": "Adaptive Cards",
-    "permalink": "/developer_tools/paracord/cards"
+    "title": "Authentication",
+    "permalink": "/developer_tools/paracord/auth"
   }
 }

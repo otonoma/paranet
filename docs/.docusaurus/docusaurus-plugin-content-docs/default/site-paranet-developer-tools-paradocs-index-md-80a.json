@@ -1,7 +1,7 @@
 {
   "id": "developer_tools/paradocs/paradocs",
   "title": "Paradocs",
-  "description": "Prerequisites",
+  "description": "What is Paradocs?",
   "source": "@site/paranet/developer_tools/paradocs/index.md",
   "sourceDirName": "developer_tools/paradocs",
   "slug": "/developer_tools/paradocs/",

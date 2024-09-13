@@ -11,19 +11,19 @@
   "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/developer_tools/paracord/cards.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 2,
+  "sidebarPosition": 3,
   "frontMatter": {
     "id": "cards",
     "title": "Adaptive Cards",
-    "sidebar_position": 2
+    "sidebar_position": 3
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Paracord",
-    "permalink": "/developer_tools/paracord/"
+    "title": "Views",
+    "permalink": "/developer_tools/paracord/views"
   },
   "next": {
-    "title": "views",
-    "permalink": "/developer_tools/paracord/views"
+    "title": "Panels",
+    "permalink": "/developer_tools/paracord/panels"
   }
 }

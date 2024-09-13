@@ -23,7 +23,7 @@
     "permalink": "/paraflow/bindings"
   },
   "next": {
-    "title": "Developer Tools",
-    "permalink": "/developer_tools/"
+    "title": "Debugger",
+    "permalink": "/paraflow/debugging"
   }
 }

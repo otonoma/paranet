@@ -11,21 +11,6 @@
           "mainDocId": "introduction",
           "docs": [
             {
-              "id": "developer_tools/deployment/cloud",
-              "path": "/developer_tools/deployment/cloud",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "developer_tools/deployment/deployment",
-              "path": "/developer_tools/deployment/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "developer_tools/deployment/local",
-              "path": "/developer_tools/deployment/local",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "developer_tools/developer_tools",
               "path": "/developer_tools/",
               "sidebar": "tutorialSidebar"
@@ -33,6 +18,11 @@
             {
               "id": "developer_tools/paracord/advanced_tab",
               "path": "/developer_tools/paracord/advanced_tab",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "developer_tools/paracord/auth",
+              "path": "/developer_tools/paracord/auth",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -71,13 +61,28 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "getting_started/deployment/cloud",
+              "path": "/getting_started/deployment/cloud",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting_started/deployment/deployment",
+              "path": "/getting_started/deployment/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting_started/deployment/local",
+              "path": "/getting_started/deployment/local",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "getting_started/getting_started",
               "path": "/getting_started/",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "getting_started/prerequisites",
-              "path": "/getting_started/prerequisites",
+              "id": "getting_started/Installation",
+              "path": "/getting_started/Installation",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -93,6 +98,11 @@
             {
               "id": "paraflow/control_flow",
               "path": "/paraflow/control_flow",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/debugging",
+              "path": "/paraflow/debugging",
               "sidebar": "tutorialSidebar"
             },
             {

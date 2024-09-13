@@ -19,8 +19,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Runtime Internals",
-    "permalink": "/paraflow/runtime_internals"
+    "title": "Debugger",
+    "permalink": "/paraflow/debugging"
   },
   "next": {
     "title": "Paradocs",

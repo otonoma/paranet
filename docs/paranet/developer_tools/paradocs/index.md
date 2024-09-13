@@ -4,6 +4,12 @@ title: Paradocs
 sidebar_position: 1
 ---
 
+
+## What is Paradocs?
+
+## How to use Paradocs
+
+
 ## Prerequisites
 
 ### External Tools

@@ -1,7 +1,7 @@
 ---
 id: cards
 title: Adaptive Cards
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Adaptive Cards

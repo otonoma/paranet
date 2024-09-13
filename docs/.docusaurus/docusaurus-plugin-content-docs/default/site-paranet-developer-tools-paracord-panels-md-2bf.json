@@ -19,8 +19,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "views",
-    "permalink": "/developer_tools/paracord/views"
+    "title": "Adaptive Cards",
+    "permalink": "/developer_tools/paracord/cards"
   },
   "next": {
     "title": "ORA",

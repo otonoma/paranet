@@ -19,8 +19,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Prerequisites",
-    "permalink": "/getting_started/prerequisites"
+    "title": "Cloud",
+    "permalink": "/getting_started/deployment/cloud"
   },
   "next": {
     "title": "Hello World",

@@ -39,37 +39,19 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'e73'),
+    component: ComponentCreator('/', 'cc9'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '85d'),
+        component: ComponentCreator('/', '8d4'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '011'),
+            component: ComponentCreator('/', '0ee'),
             routes: [
               {
                 path: '/developer_tools/',
                 component: ComponentCreator('/developer_tools/', '106'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/developer_tools/deployment/',
-                component: ComponentCreator('/developer_tools/deployment/', 'f5a'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/developer_tools/deployment/cloud',
-                component: ComponentCreator('/developer_tools/deployment/cloud', 'd4b'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/developer_tools/deployment/local',
-                component: ComponentCreator('/developer_tools/deployment/local', '02f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -82,6 +64,12 @@ export default [
               {
                 path: '/developer_tools/paracord/advanced_tab',
                 component: ComponentCreator('/developer_tools/paracord/advanced_tab', '389'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/developer_tools/paracord/auth',
+                component: ComponentCreator('/developer_tools/paracord/auth', 'd92'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -128,8 +116,26 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/getting_started/prerequisites',
-                component: ComponentCreator('/getting_started/prerequisites', 'b6c'),
+                path: '/getting_started/deployment/',
+                component: ComponentCreator('/getting_started/deployment/', '016'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/getting_started/deployment/cloud',
+                component: ComponentCreator('/getting_started/deployment/cloud', '7f4'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/getting_started/deployment/local',
+                component: ComponentCreator('/getting_started/deployment/local', '9ee'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/getting_started/Installation',
+                component: ComponentCreator('/getting_started/Installation', '717'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -148,6 +154,12 @@ export default [
               {
                 path: '/paraflow/control_flow',
                 component: ComponentCreator('/paraflow/control_flow', '012'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/paraflow/debugging',
+                component: ComponentCreator('/paraflow/debugging', 'f62'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

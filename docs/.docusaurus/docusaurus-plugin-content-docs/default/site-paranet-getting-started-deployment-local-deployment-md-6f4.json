@@ -1,0 +1,29 @@
+{
+  "id": "getting_started/deployment/local",
+  "title": "Local",
+  "description": "This is how you deploy a paranet Locally.",
+  "source": "@site/paranet/getting_started/deployment/local_deployment.md",
+  "sourceDirName": "getting_started/deployment",
+  "slug": "/getting_started/deployment/local",
+  "permalink": "/getting_started/deployment/local",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/your-project/edit/main/paranet/getting_started/deployment/local_deployment.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "local",
+    "title": "Local",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Deployment",
+    "permalink": "/getting_started/deployment/"
+  },
+  "next": {
+    "title": "Cloud",
+    "permalink": "/getting_started/deployment/cloud"
+  }
+}

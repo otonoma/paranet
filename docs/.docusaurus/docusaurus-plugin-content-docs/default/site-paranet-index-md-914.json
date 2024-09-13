@@ -1,7 +1,7 @@
 {
   "id": "introduction",
   "title": "Introduction",
-  "description": "",
+  "description": "Welcome to the Paranet documentation!",
   "source": "@site/paranet/index.md",
   "sourceDirName": ".",
   "slug": "/",

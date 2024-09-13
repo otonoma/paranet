@@ -1,6 +1,6 @@
 {
   "id": "developer_tools/paracord/advanced_tab",
-  "title": "Advanced_tab",
+  "title": "Advanced Tab",
   "description": "Let's discover Advanced Tab.",
   "source": "@site/paranet/developer_tools/paracord/advanced_tab.md",
   "sourceDirName": "developer_tools/paracord",
@@ -14,16 +14,12 @@
   "sidebarPosition": 8,
   "frontMatter": {
     "id": "advanced_tab",
-    "title": "Advanced_tab",
+    "title": "Advanced Tab",
     "sidebar_position": 8
   },
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Ledger",
     "permalink": "/developer_tools/paracord/ledger"
-  },
-  "next": {
-    "title": "Deployment",
-    "permalink": "/developer_tools/deployment/"
   }
 }

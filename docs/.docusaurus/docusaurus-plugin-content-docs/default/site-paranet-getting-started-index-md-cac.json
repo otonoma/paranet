@@ -1,7 +1,7 @@
 {
   "id": "getting_started/getting_started",
   "title": "Getting Started",
-  "description": "",
+  "description": "Why you need The Paranet and what it can do",
   "source": "@site/paranet/getting_started/index.md",
   "sourceDirName": "getting_started",
   "slug": "/getting_started/",
@@ -23,7 +23,7 @@
     "permalink": "/"
   },
   "next": {
-    "title": "Prerequisites",
-    "permalink": "/getting_started/prerequisites"
+    "title": "Installation",
+    "permalink": "/getting_started/Installation"
   }
 }
