@@ -1,9 +1,0 @@
-%skill(subject = sidecar, action = get)
-event getValue($conversation string) {
-    !getValue($conversation);
-}
-
-task !getValue($conversation) on Env("ACTOR_ENDPOINT") {
-    let $value = @getValue();
-    log info("RETURN VALUE: " + value);
-}
