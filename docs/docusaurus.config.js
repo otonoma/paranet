@@ -7,11 +7,18 @@ const config = {
   tagline: 'Get Started',
   favicon: 'img/paranet_favicon.ico',
 
-  url: 'https://docs.paranet.ai',
+  url: 'https://docs.paranet.ai/',
   baseUrl: '/',
+  trailingSlash: false,
+
+  baseUrlIssueBanner: true,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
+  organizationName: 'grokit-data',
+  projectName: 'paranet',
+  deploymentBranch: 'gh-pages',
 
   i18n: {
     defaultLocale: 'en',
@@ -112,9 +119,6 @@ const config = {
       headingIds: true,
     },
   },
-
-  baseUrlIssueBanner: true,
-  trailingSlash: undefined,
 };
 
 export default config;
