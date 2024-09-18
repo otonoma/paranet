@@ -1,7 +1,7 @@
 ---
 id: deployment
 title: Deployment
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Deployment

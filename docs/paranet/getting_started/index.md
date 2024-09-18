@@ -4,17 +4,40 @@ title: Getting Started
 sidebar_position: 2
 ---
 
-# Overview
+# Getting Started
 
-## Why you need The Paranet and what it can do
+Welcome to the **Getting Started** section of the Paranet documentation! This section will help you understand the basics of the Paranet ecosystem and how to begin using it.
 
-## What The Paranet is not
+## Overview
 
-## Paranet Components
+In this section, you'll find:
 
+- [Why You Need the Paranet and What It Can Do](./getting_started/paranet_overview)
+- [Installation](./getting_started/installation)
+- [How to Deploy Paranets](./getting_started/deployment)
 
+<!-- ## Topics
 
-<!-- Overview of the Paranet ecosystem  -->
-<!-- What problems does it solve?  -->
-<!-- How should you use it?  -->
-<!-- Community and other resources? -->
+### [Why You Need the Paranet and What It Can Do](./why_paranet)
+
+Discover the problems the Paranet solves and how it can benefit you or your organization.
+
+### [What the Paranet Is Not](./what_paranet_is_not)
+
+Learn about common misconceptions and understand the boundaries of what the Paranet offers.
+
+### [Paranet Components](./paranet_components)
+
+Explore the core components that make up the Paranet ecosystem.
+
+### [How to Use the Paranet](./how_to_use_paranet)
+
+Get started with practical steps on how to implement and utilize the Paranet.
+
+### [Community and Resources](./community_resources)
+
+Find additional resources and learn how to engage with the Paranet community.
+
+---
+
+Feel free to navigate through these topics to get acquainted with the Paranet and make the most out of its capabilities. -->
