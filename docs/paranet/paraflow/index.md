@@ -1,25 +1,17 @@
 ---
 id: paraflow
 title: Paraflow
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# ParaFlow Documentation
+# Paraflow
 
-## Introduction
+Welcome to the **Paraflow** section of the Paranet documentation! This section will help you understand the basics of the Paranet ecosystem and how to begin using it.
 
-## Paraflow
+## Overview
 
-**Paraflow** is a simple language designed to build autonomous agents. Paraflow agents are goal-seeking: based on a set of goals, they plan and execute tasks that make progress towards achieving those goals. The behavior of Paraflow agents is deterministic, transparent, and inspectable. 
+In this section, you'll find:
 
-### Paraflow agents can:
-- Respond to events
-- Make decisions
-- Plan & perform actions
-- Manage state
-
-Paraflow is **not** a general-purpose language. Its primary purpose is to monitor, plan, and orchestrate activities. You may often do some simple data manipulation in Paraflow, but for more complex code, consider creating a separate service in a general-purpose language.
-
-## Paranet
-
-Paraflow actors operate within a Paranet. They can implement skills (i.e., receive and fulfill requests) and they can delegate work (i.e., make requests that help achieve their goals) to other actors on the network.
+- [Introduction to Paraflow](./paraflow/paraflow_overview)
+- [Hello World](./paraflow/hello_world)
+- [Paraflow Basics](./paraflow/language_basics)
