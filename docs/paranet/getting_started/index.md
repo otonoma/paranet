@@ -12,7 +12,7 @@ Welcome to the **Getting Started** section of the Paranet documentation! This se
 
 In this section, you'll find:
 
-- [Why You Need the Paranet and What It Can Do](./getting_started/paranet_overview)
+- [Why You Need the Paranet and What It Can Do](./getting_started/introduction)
 - [Installation](./getting_started/installation)
 - [How to Deploy Paranets](./getting_started/deployment)
 
