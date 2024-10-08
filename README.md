@@ -34,7 +34,6 @@ Ensure you have the following tools installed:
 - [Git](https://git-scm.com/downloads)
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-- [AWS CLI](https://aws.amazon.com/cli/)
 - [AWS SSO Configuration](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)
 - [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
 
