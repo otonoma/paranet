@@ -50,6 +50,8 @@ Install the following VSCode extensions:
 
 - **Paradocs**: Our custom VSCode extension (Version 0.0.19)
 
+### TODO - Add link or instructions to the latest release of our VSCode extension here ^---
+
 ## Getting Started
 
 ### Step 1: Initial Setup
