@@ -35,7 +35,7 @@ Ensure you have the following tools installed:
 
 Install the following extensions in VScode:
 
-- **Paranet Extension** (Unpublished): [Releases](https://github.com/grokit-data/paranet/releases)
+- **Paranet Extension**: [Releases](https://github.com/grokit-data/paranet/releases)
    - > **Note**: This extension is not available on the VSCode Marketplace. You'll need to install it manually from a .vsix file. You'll find this in the releases section of this repo.
 - **Docker Extension:** [Install](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - **WebAssembly Execution Engine:** [Install](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wasm-wasi-core)
@@ -59,10 +59,11 @@ Install the following extensions in VScode:
 - Select "Install from VSIX...".
 - Browse to the downloaded ParanetExtension.vsix file and select it.
 
-_**Reminder:**_ Also install Docker and Web Assemblly extensions before moving to the next step.
+_**Reminder:**_ Also install Docker and Web Assembly extensions before moving to the next step.
 
-**Step 2: Clone the create-paranet Repository**
-To quickly get started:
+**Step 2: Clone the create-paranet repository**
+
+To quickly get started, clone our create-paranet project to your machine:
 
 - **HTTPS**
 ```git clone https://github.com/grokit-data/create-paranet.git```
@@ -72,7 +73,7 @@ To quickly get started:
 
 - Alternatively, download the repository as a ZIP file and extract it.
 
-**Step 3: Open the Project in VSCode**
+**Step 3: Open the create-paranet project in VSCode**
 - Open VSCode.
 - Go to File > Open Folder.
 - Select the cloned create-paranet project folder.
