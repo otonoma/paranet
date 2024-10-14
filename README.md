@@ -79,8 +79,10 @@ To quickly get started, clone our create-paranet project to your machine:
 - Select the cloned create-paranet project folder.
 
 **Step 4: The Paranet Extension**
+
 Our extension simplifies viewing, editing, and deploying resources on the Paranet.
-- #TODO - Add Image
+
+- #TODO - Add Updated Image
 
 **1. Environment Check**
 - Verify Docker Installation
