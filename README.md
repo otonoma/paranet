@@ -31,7 +31,7 @@ Ensure you have the following tools installed:
 - **Docker Compose:** [Download](https://docs.docker.com/compose/install/)
 - **VSCode:** [Download](https://code.visualstudio.com/)
 
-#### Required VSCode Extensions
+### Required VSCode Extensions
 
 Install the following extensions in VScode:
 
@@ -41,7 +41,7 @@ Install the following extensions in VScode:
 - **WebAssembly Execution Engine:** [Install](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wasm-wasi-core)
    - > **Note**: This extension may need to be manually installed if it's in preview.
 
-### Installation
+## Installation
 
 **Step 1: Install the Paranet VSCode Extension**
 
