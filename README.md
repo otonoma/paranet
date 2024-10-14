@@ -1,111 +1,134 @@
 # Welcome to the Paranet
 
-The Paranet is a secure skills network for intelligent machine collaboration. It utilizes the existing IP infrastructure and, for all intents and purposes, it's another internet. The Paranet is fundamentally designed for work productivity, and we consider it to be the Internet of Work (IoW). It optimizes human-to-machine and machine-to-machine collaboration.
+**The Internet of Work**
 
-# How to use this repository
+**The Paranet** is a secure, distributed network designed for intelligent machine and human collaboration. Leveraging existing IP infrastructure, The Paranet creates a new layer of the internet optimized for productivity and efficient interaction between humans and machines.
 
-This repository is designed to help you get started developing with our technology and tools. We've included:
-- Documentation: Access it at /docs/paranet or at docs.paranet.ai
-- A tutorial on how to get started
-- Feel free to open an issue
-- Public roadmap (...coming soon)
+The Paranet is built around core components:
 
-## Quick Links
+- **The Paranet Network:** An overlay network that supports a new protocol to enable collaboration between actors, digital and human. 
+- **Paranet Engine:** The underlying technology that powers actor execution and communication to the network for each individual paranet.
+- **Paraflow:** A distributed general workflow actor language. It is a DSL (Domain Specific Language) for workflow on a network.
+- **Paracord:** A React-based client application providing a visual interface to interact with deployed nodes on Paranet.
 
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-- [Operational Resource Agents (ORAs)](#operational-resource-agents-oras)
-- [Learning Resources](#learning-resources)
-- [Troubleshooting](#troubleshooting)
-- [Glossary](#glossary)
+## How to use this repository
 
-## Prerequisites
+This repository is your starting point to begin developing with Paranet. It includes everything you need to get up and running quickly.
+- **Documentation:** Detailed guides and references are available a [docs.paranet.ai](https://docs.paranet.ai)
+- **Getting Started Tutorial:** Find it below
+- **Issues:** Open an issue here within the repo
+- **Project Examples:** Find different paranet examples within the examples folder
+- **Public roadmap:** (...coming soon)
 
-### External Tools
+## Getting Started
+
+### Tool Prerequisites
 
 Ensure you have the following tools installed:
 
-- [Git](https://git-scm.com/downloads)
-- [Docker](https://www.docker.com/products/docker-desktop)
-- [Docker Compose](https://docs.docker.com/compose/install/)
-- [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
+- **Git:** [Download](https://git-scm.com/downloads)
+- **Docker:** [Download](https://www.docker.com/products/docker-desktop)
+- **Docker Compose:** [Download](https://docs.docker.com/compose/install/)
+- **VSCode:** [Download](https://code.visualstudio.com/)
 
-### VSCode Extensions
+#### Required VSCode Extensions
 
-Install the following VSCode extensions:
+Install the following extensions in VScode:
 
-- Paranet
-   - > **Note**: Download the latest VSIX file within this repo's releases section.
-     > # TODO - Add latest extension to this release
-- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-- [Experimental - WebAssembly Execution Engine](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wasm-wasi-core)
-   - > **Note**: You must manually install the `ms-vscode.wasm-wasi-core` extension because our extension cannot be recognized as a pre-release by VSCode.
+- **Paranet Extension** (Unpublished): [Releases](https://github.com/grokit-data/paranet/releases)
+   - > **Note**: This extension is not available on the VSCode Marketplace. You'll need to install it manually from a .vsix file. You'll find this in the releases section of this repo.
+- **Docker Extension:** [Install](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+- **WebAssembly Execution Engine:** [Install](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wasm-wasi-core)
+   - > **Note**: This extension may need to be manually installed if it's in preview.
 
+### Installation
 
-## Getting Started: Setting up your local developer environment
+**Step 1: Install the Paranet VSCode Extension**
 
-### Step 1: Initial Setup
+**1. Download the Latest Paranet Extension**
+- Go to the [Releases](https://github.com/grokit-data/paranet/releases) section of this repository.
+- Download the latest ParanetExtension.vsix file.
 
-1. **Open VSCode**.
-2. **Download the Paradocs extension** provided by Grokit.
-3. **Install the Paradocs extension**:
-   - Go to the **Extensions** menu in VSCode.
-   - Click the menu icon (three dots) in the top-right corner of the Extensions panel.
-   - Select **"Install from VSIX..."**.
-   - Choose the downloaded `Paradocs` VSIX file.
+**2. Install the Extension in VSCode**
 
-### Step 2: Environment Setup
+<img width="640" alt="Screenshot 2024-10-14 at 2 37 54 PM" src="https://github.com/user-attachments/assets/0f4c757c-79ed-4a07-9294-3381f4df9d80">
 
-The Paradocs extension simplifies viewing, editing, and deploying resources on the Paranet.
+- Open VSCode.
+- Navigate to the Extensions view (click on the square icon on the sidebar).
+- Click on the ... (More Actions) button in the top-right corner of the Extensions pane.
+- Select "Install from VSIX...".
+- Browse to the downloaded ParanetExtension.vsix file and select it.
 
-#### Docker Authentication
+_**Reminder:**_ Also install Docker and Web Assemblly extensions before moving to the next step.
 
-To deploy our Docker images, you need to authenticate with Docker:
+**Step 2: Clone the create-paranet Repository**
+To quickly get started:
 
-1. **Make sure you have Docker installed**:
-   - Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop).
-2. **Verify Installations**:
-   - Once installed, checkmarks and version numbers should appear next to their names in the Paradocs extension interface.
-   - # TODO - Add image
-3. Log into Github's docker registry within the Docker extension
-   - CLI command? 
-5. **Login to Docker**:
-   - # TODO - Remove login Button from extension, Remove this section
+- **HTTPS**
+```git clone https://github.com/grokit-data/create-paranet.git```
 
-#### Docker Applications
+- **SSH**
+```git clone git@github.com:grokit-data/create-paranet.git```
 
-Deploy local test applications to simulate actors:
+- Alternatively, download the repository as a ZIP file and extract it.
 
-1. **Deploy Testdrive Paranet**:
-   - Deploy the `testdrive` to simulate a local Paranet instance.
-2. **Deploy Paracord Website**:
-   - Deploy the local Paracord website to serve as the frontend.
-3. **Monitor Application Status**:
-   - The status of these applications is displayed next to each app in the interface.
-   - If the apps are running, no further action is needed.
-4. **Redeploy Applications**:
-   - Click the **Redeploy** button to start a new deployment.
-5. **Open Paracord**:
-   - Click the **Open Paracord** button to access it via your browser.
+**Step 3: Open the Project in VSCode**
+- Open VSCode.
+- Go to File > Open Folder.
+- Select the cloned create-paranet project folder.
 
-## Operational Resource Agents (ORAs)
+**Step 4: The Paranet Extension**
+Our extension simplifies viewing, editing, and deploying resources on the Paranet.
+- #TODO - Add Image
+
+**1. Environment Check**
+- Verify Docker Installation
+- Authorize with Github
+   - Log into Github's docker registry with this command, replacing username and token with your Github username + Oauth token
+
+**2. Running Your Paranet**
+- # TODO - deploy docker container or create paranet button or command line?
+
+**3. Running Your Actors**
+- # TODO - deploy actors or single button?
+
+**4. Verify your paranet is running**
+- Green dots
+- Docker extension
+- Paracord deployed list
+
+**Step 5: Using Paracord**
+
+Paracord is the client application for interacting with your Paranet nodes.
+- # TODO: Launch Paracord locally or hosted?
+- # TODO: Connect to a Paranet
+- # TODO: ORA
+- # TODO: Interacting with your Actors
+- # TODO: View or documentation for more extensive information
+
+## Learning Resources
+- **Documentation:** Detailed guides and references are available a [docs.paranet.ai](https://docs.paranet.ai)
+- **Project Examples:** Examples folder within this repository
+
+# TODO -  Clean this up, more descriptive with context
+### Operational Resource Agents (ORAs)
 
 To interact with an ORA, open a folder containing an `ora.yaml` file at its root.
-# TODO -  Clean this up, more descriptive with context 
 
-### Opening an ORA
+#### Opening an ORA
 
 1. **Open an ORA Folder**:
    - In VSCode, open a folder with an `ora.yaml` file at its root.
    - Example folders include `hello_world` or `ping` within this repository.
-2. **View ORA in Paradocs**:
-   - A new tree named after the ORA will appear in the Paradocs extension.
+2. **View ORA in the Paranet Extension**:
+   - A new tree named after the ORA will appear in the Paranet extension.
    - Click the ORA name to open the corresponding `ora.yaml` file.
 3. **Interact with Paraflow Actors**:
    - Expand the ORA tree to list each Paraflow actor defined in the `ora.yaml`.
    - Click an actor to open its respective Paraflow file.
 
-### Commands
+# TODO -  Clean this up, more descriptive with context
+#### Commands
 
 - **Redeploy Paraflow Runner**:
   - View the runner's state by expanding the actor node.
@@ -113,20 +136,10 @@ To interact with an ORA, open a folder containing an `ora.yaml` file at its root
 - **Interact via Paracord**:
   - Use Paracord to interact with the actor and observe code changes.
 
-Congratulations! You're now ready to start developing locally on the Paranet.
-
 
 ## Troubleshooting
 
+### Docker isn't being recognized
 
-### Docker Recognition Issues
+Ensure Docker is installed in the default location, typically `/usr/local/bin/docker`.
 
-If Paradocs doesn't recognize Docker:
-
-- Ensure Docker is installed in the default location, typically `/usr/local/bin/docker`.
-
-## Glossary
-
-- **The Paranet**: A secure, smart network where humans and machines collaborate to perform work.
-- **Paraflow**: A custom-built workflow language, foundational to the Paranet.
-- **Paracord**: A client enterprise tool for interacting with local and cloud-based Paranodes.
