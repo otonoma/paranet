@@ -13,5 +13,5 @@ Welcome to the **Paraflow** section of the Paranet documentation! This section w
 In this section, you'll find:
 
 - [Introduction to Paraflow](./paraflow/introduction)
-- [Hello World](./paraflow/hello_world)
-- [Paraflow Basics](./paraflow/language_basics)
+- [Hello World](./paraflow/hello-world)
+- [Paraflow Basics](./paraflow/language-basics)
