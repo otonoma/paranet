@@ -82,7 +82,8 @@ To quickly get started, clone our create-paranet project to your machine:
 
 Our extension simplifies viewing, editing, and deploying resources on the Paranet.
 
-- #TODO - Add Updated Image
+- # TODO
+- Add Updated Image
 
 **1. Environment Check**
 - Verify Docker Installation
@@ -90,10 +91,12 @@ Our extension simplifies viewing, editing, and deploying resources on the Parane
    - Log into Github's docker registry with this command, replacing username and token with your Github username + Oauth token
 
 **2. Running Your Paranet**
-- # TODO - deploy docker container or create paranet button or command line?
+- # TODO
+- deploy docker container or create paranet button or command line?
 
 **3. Running Your Actors**
-- # TODO - deploy actors or single button?
+- # TODO
+- deploy actors or single button?
 
 **4. Verify your paranet is running**
 - Green dots
@@ -103,42 +106,17 @@ Our extension simplifies viewing, editing, and deploying resources on the Parane
 **Step 5: Using Paracord**
 
 Paracord is the client application for interacting with your Paranet nodes.
-- # TODO: Launch Paracord locally or hosted?
-- # TODO: Connect to a Paranet
-- # TODO: ORA
-- # TODO: Interacting with your Actors
-- # TODO: View or documentation for more extensive information
+- # TODO:
+- Launch Paracord locally or hosted?
+- Connect to a Paranet
+- ORA
+- Interacting with your Actors
+- View or documentation for more extensive information
 
 ## Learning Resources
+
 - **Documentation:** Detailed guides and references are available a [docs.paranet.ai](https://docs.paranet.ai)
 - **Project Examples:** Examples folder within this repository
-
-# TODO -  Clean this up, more descriptive with context
-### Operational Resource Agents (ORAs)
-
-To interact with an ORA, open a folder containing an `ora.yaml` file at its root.
-
-#### Opening an ORA
-
-1. **Open an ORA Folder**:
-   - In VSCode, open a folder with an `ora.yaml` file at its root.
-   - Example folders include `hello_world` or `ping` within this repository.
-2. **View ORA in the Paranet Extension**:
-   - A new tree named after the ORA will appear in the Paranet extension.
-   - Click the ORA name to open the corresponding `ora.yaml` file.
-3. **Interact with Paraflow Actors**:
-   - Expand the ORA tree to list each Paraflow actor defined in the `ora.yaml`.
-   - Click an actor to open its respective Paraflow file.
-
-# TODO -  Clean this up, more descriptive with context
-#### Commands
-
-- **Redeploy Paraflow Runner**:
-  - View the runner's state by expanding the actor node.
-  - If the runner is active, use the **Reload Paraflow** button to load the current Paraflow file.
-- **Interact via Paracord**:
-  - Use Paracord to interact with the actor and observe code changes.
-
 
 ## Troubleshooting
 
