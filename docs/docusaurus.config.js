@@ -42,26 +42,35 @@ const config = {
     ],
   ],
 
-  // plugins: [
-  //   [
-  //     '@docusaurus/plugin-content-docs',
-  //     {
-  //       id: 'paraflow',
-  //       path: 'paraflow',
-  //       routeBasePath: 'paraflow',
-  //       sidebarPath: require.resolve('./sidebarsParaflow.js'),
-  //     },
-  //   ],
-  //   [
-  //     '@docusaurus/plugin-content-docs',
-  //     {
-  //       id: 'paracord',
-  //       path: 'paracord',
-  //       routeBasePath: 'paracord',
-  //       sidebarPath: require.resolve('./sidebarsParacord.js'),
-  //     },
-  //   ],
-  // ],
+  plugins: [
+    // Add this custom plugin to load Root.js globally
+    // function customRootPlugin() {
+    //   return {
+    //     name: 'custom-root-plugin',
+    //     getClientModules() {
+    //       return [require.resolve('./src/root.js')];
+    //     },
+    //   };
+    // },
+    // [
+    //   '@docusaurus/plugin-content-docs',
+    //   {
+    //     id: 'paraflow',
+    //     path: 'paraflow',
+    //     routeBasePath: 'paraflow',
+    //     sidebarPath: require.resolve('./sidebarsParaflow.js'),
+    //   },
+    // ],
+    // [
+    //   '@docusaurus/plugin-content-docs',
+    //   {
+    //     id: 'paracord',
+    //     path: 'paracord',
+    //     routeBasePath: 'paracord',
+    //     sidebarPath: require.resolve('./sidebarsParacord.js'),
+    //   },
+    // ],
+  ],
 
   themeConfig: /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
     image: 'img/paranet_logo.svg',
