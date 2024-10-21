@@ -10,16 +10,16 @@ We leverage our index files for easier navigation to the topic category that is 
 
 ## Branching
 
-Main - production ready documentation aligned with releases
-Staging - ready for review, awaiting release
+- Main - production ready documentation aligned with releases
+- Staging - ready for review, awaiting release
 
 ## Markdown front matter
 
 Markdown documents can use the following Markdown front matter metadata fields, enclosed by a line --- on either side.
 
-**id:** a unique document ID
-**title:** Text title of your document, used in multiple places
-**sidebar_position:** Controls the positions of your doc inside the generated sidebar items.
+- **id:** a unique document ID
+- **title:** Text title of your document, used in multiple places
+- **sidebar_position:** Controls the positions of your doc inside the generated sidebar items.
 
 
 For more Markdown fields: https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter
