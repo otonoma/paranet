@@ -10,5 +10,5 @@ Welcome to the **Developer Tools** section of the Paranet documentation! This se
 
 In this section, you'll find:
 
-- [Paradocs](./developer_tools/paradocs)
+- [Paranet VSCode Extension](./developer_tools/vscode)
 - [Paracord](./developer_tools/paracord)

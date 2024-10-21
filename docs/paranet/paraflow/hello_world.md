@@ -71,7 +71,7 @@ Rules for Subgoals: Goals can also be implemented by rules that describe how a g
 To try out the code, follow these steps:
 
 1. **Create a `.paraflow` File**:
-   - Use Visual Studio Code with the Paradocs extension to create a `.paraflow` file.
+   - Use Visual Studio Code with the Paranet VSCode eextension to create a `.paraflow` file.
    - Paste the complete code from the previous steps into the file:
 
 
