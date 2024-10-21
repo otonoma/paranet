@@ -6,7 +6,7 @@ sidebar_position: 10
 
 # Paraflow Debugger
 
-The Paradocs extension for Visual Studio Code provides an integrated Paraflow debugger providing a familiar debugging experience for Paraflow actors.
+The VSCode extension for Visual Studio Code provides an integrated Paraflow debugger providing a familiar debugging experience for Paraflow actors.
 The debugger supports multiple-actor debugging which allows you to step through complex workflows across skill requests from one actor into another.
 
 The following screenshot shows the debugger stopped at a breakpoint while debugging an example two-actor system.
