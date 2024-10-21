@@ -77,17 +77,17 @@ task !DoCorporateTraining($employee_id) {
 ```
 This is an example where the task is simply delegated to another actor via the Paranet.
 
-Comments
-Single-line comments begin with the % symbol and may appear anywhere where whitespace is acceptable. For example:
+#### Comments
+Single-line comments begin with the `#` symbol and may appear anywhere where whitespace is acceptable. For example:
 
 ```
-% This is my main task
+# This is my main task
 !go($uid) {
   with item_detail(id == $uid) { % always exactly one row
   }
 }
 ```
-Variables
+#### Variables
 Local variables may be used in any statement block, including the body of events, rules, and tasks. Variable declarations begin with the keyword let followed by the variable name, which must begin with the $ symbol, an initial value, and a terminating semicolon. For example:
 
 
