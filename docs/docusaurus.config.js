@@ -33,7 +33,7 @@ const config = {
           path: 'paranet', // Default path for Paranet docs
           routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/grokit-data/paranet/edit/main/',
+          editUrl: 'https://github.com/grokit-data/paranet/edit/main/docs',
           // homePageId: 'index', // Ensure that index.md is used as the homepage
         },
         blog: false, // Disable the blog plugin
