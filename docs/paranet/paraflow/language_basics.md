@@ -30,13 +30,15 @@ Goal names are always preceded by the ! symbol.
 
 Each goal instance has a state which typically progresses from Planned, to Active, to Complete. Once a goal instance has reached the Complete state, that goal is considered to be achieved; any subsequent requests to perform the same goal will not result in any further action because it has already been achieved.
 
-Goals to be achieved are created in two ways:
+**Goals to be achieved are created in two ways:**
+- Event handlers may create new goals
+- Rules describe how to decompose an existing goal into subgoals
 
-Event handlers may create new goals.
-Rules describe how to decompose an existing goal into subgoals.
-Both of these are described next.
 
-Handling Events - Events
+Both of these are described next:
+
+**Handling Events - Events**
+
 The event construct defines what to do when some external event occurs, including a skill request from the Paranet. When the event is preceded by the skill annotation, it is automatically registered as a skill on the Paranet.
 
 Events have a name, a list of inputs, and a statement body. Here is an example of a typical event definition:
@@ -49,7 +51,8 @@ event newEmployeeOnboard($employee_id string) {
 ```
 This defines an event named newEmployeeOnboard that is triggered by Paranet requests for the employee/onboard skill. The body of this event creates a new root goal named !OnboardEmployee. Once new goals are created, the Paraflow runtime begins the process of trying to fulfill the goal using rules and tasks described next.
 
-Goal Planning - Rules
+**Goal Planning - Rules**
+
 The task and rule constructs of Paraflow are used to provide "recipes" for how to achieve goals that match a particular pattern. In the case of rules, they define how to decompose a high-level goal into sub-goals and any sequencing dependencies.
 
 Rules have a goal pattern and statement body. The following example is what a rule might look like for the !OnboardEmployee goal described in the previous section.
@@ -65,7 +68,8 @@ This rule matches !OnboardEmployee goals. The $employee_id variable in the goal 
 
 Goals that match rules are expanded recursively until no more rules match. The leaf goals of the expanded goal tree are the resulting actions to be performed, which are defined by tasks, described next.
 
-Achieving Goals - Tasks
+**Achieving Goals - Tasks**
+
 The task construct defines how to perform a goal. This may be to take some action internally, or it could be to delegate the work to another actor via the Paranet. Just like rules, a task has a goal pattern and statement body. Here is an example of a task defined following our running example of employee onboarding:
 
 
@@ -94,11 +98,12 @@ Local variables may be used in any statement block, including the body of events
 ```
 let $y = 5 * $x;
 ```
-Literals
+**Literals**
+
 The following types of fixed values may be used:
 
-Strings: These must be enclosed in double quotes: "Hello"
-Whole numbers: A sequence of digits: 594
-Decimal numbers: A sequence of digits, decimal point, and second sequence of digits: 2.39
-Time duration: A sequence of digits followed by a unit (ms, sec, min, hr, hour, hours, day, days): 1 min
+- **Strings:** These must be enclosed in double quotes: "Hello"
+- **Whole numbers:** A sequence of digits: 594
+- **Decimal numbers:** A sequence of digits, decimal point, and second sequence of digits: 2.39
+- **Time duration:** A sequence of digits followed by a unit (ms, sec, min, hr, hour, hours, day, days): 1 min
 
