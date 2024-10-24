@@ -1,7 +1,7 @@
 ---
 id: language-basics
 title: Language Basics
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Language Basics
