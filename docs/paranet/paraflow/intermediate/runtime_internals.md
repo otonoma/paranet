@@ -1,7 +1,7 @@
 ---
 id: runtime_internals
 title: Runtime Internals
-sidebar_position: 9
+sidebar_position: 7
 ---
 
 # Runtime Internals

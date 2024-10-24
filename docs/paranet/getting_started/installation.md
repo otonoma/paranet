@@ -14,7 +14,7 @@ sidebar_position: 3
 
 **2. Install the Extension in VSCode**
 
-<img width="640" alt="Screenshot 2024-10-14 at 2 37 54 PM" src="https://github.com/user-attachments/assets/0f4c757c-79ed-4a07-9294-3381f4df9d80">
+<img width="640" alt="Screenshot 2024-10-14 at 2 37 54 PM" src="https://github.com/user-attachments/assets/0f4c757c-79ed-4a07-9294-3381f4df9d80"/>
 
 - Open VSCode.
 - Navigate to the Extensions view (click on the square icon on the sidebar).

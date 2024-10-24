@@ -16,4 +16,4 @@ Paraflow actors operate within a Paranet.  They can implement skills (i.e. recei
 
 - [Introduction to Paraflow](./paraflow/introduction)
 - [Hello World](./paraflow/hello-world)
-- [Paraflow Basics](./paraflow/language-basics)
+- [Paraflow Basics](./paraflow/basics)

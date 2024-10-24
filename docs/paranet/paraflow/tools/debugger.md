@@ -1,7 +1,7 @@
 ---
 id: debugging
 title: Debugger
-sidebar_position: 10
+sidebar_position: 1
 ---
 
 # Paraflow Debugger

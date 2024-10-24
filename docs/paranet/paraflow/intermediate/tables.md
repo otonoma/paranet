@@ -1,12 +1,22 @@
 ---
 id: tables
 title: Tables
-sidebar_position: 7
+sidebar_position: 4
 ---
 
 # Tables
 
 Paraflow programs can define and manipulate application tables that are stored in a database, as well as small in-memory tables represented by a local variable. The language provides statements for creating, deleting, updating, and querying tables.
+
+### Table Parameters
+
+Event parameters declared as tables will match event data represented as an array of objects.
+```
+<table-type> := "table" "(" <table-column> { "," <table-column> } ")"
+<table-column> := <identifier> [ "optional" ] <simple-type>
+```
+Each element of the event data array must match the table column definitions. It is an error if any element does not include any column or if the value is null unless the column is declared with the `optional` keyword.
+
 
 ## Queries
 

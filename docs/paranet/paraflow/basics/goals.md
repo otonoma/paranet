@@ -1,24 +1,10 @@
 ---
-id: language-basics
-title: Language Basics
-sidebar_position: 2
+id: goals
+title: Goals
+sidebar_position: 1
 ---
 
-# Language Basics
-
-## Program Execution
-
-Decidedly different from most programming languages, Paraflow is a goal-driven language. Its execution consists of an interleaved sequence of the following activities:
-
-- **Executing event handlers**: Instructions to handle external events.
-- **Planning goals**: Creating a plan to achieve desired goals.
-- **Executing planned tasks**: Instructions that accomplish an atomic goal.
-
-This sequence of activities may take place over milliseconds, hours, days, or even years. As such, there may not be a single instance of running code in memory or an OS process that performs all the activities of a single execution.
-
-A Paraflow instance is the execution sequence associated with a single root goal (i.e., a top-level goal that is not a sub-goal of any other goal). Root goals are created within an event handler and thus these event handlers can be considered the entry point.
-
-## Goals
+# Goals
 
 A Paraflow goal represents a desired activity to perform. The activity may be parameterized by data. A goal instance consists of a name and zero or more specific parameter values. Here is an example goal:
 
@@ -37,7 +23,11 @@ Each goal instance has a state which typically progresses from Planned, to Activ
 
 Both of these are described next:
 
-**Handling Events - Events**
+## Events
+
+The event construct defines what to do when some external event occurs. 
+
+More on events here.
 
 The event construct defines what to do when some external event occurs, including a skill request from the Paranet. When the event is preceded by the skill annotation, it is automatically registered as a skill on the Paranet.
 
@@ -81,29 +71,27 @@ task !DoCorporateTraining($employee_id) {
 ```
 This is an example where the task is simply delegated to another actor via the Paranet.
 
-#### Comments
-Single-line comments begin with the `#` symbol and may appear anywhere where whitespace is acceptable. For example:
+### Goal Pattern
 
+The goal pattern describes:
+
+- The goals to which it can be applied,
+- Zero or more constraint conditions, and
+- The data context captured for use in the rule body
+
+Goal patterns have the form:
 ```
-# This is my main task
-!go($uid) {
-  with item_detail(id == $uid) { % always exactly one row
-  }
-}
+<goal-pattern> := <goal-term> { "," <goal-term> | <data-term> }
+<goal-term> :=
+    <goal> "(" <pattern-binding> {"," <pattern-binding>} ")"
+<data-term> :=
+    <table-name> "(" <pattern-binding> {"," <pattern-binding>} ")"
 ```
-#### Variables
-Local variables may be used in any statement block, including the body of events, rules, and tasks. Variable declarations begin with the keyword let followed by the variable name, which must begin with the $ symbol, an initial value, and a terminating semicolon. For example:
-
-
+For example,
 ```
-let $y = 5 * $x;
+!processOrder($id), order(id == $id, agent == "ext", $email)
 ```
-**Literals**
+This head matches `!processOrder` goals if there exists a row in the order table where the `id` column is equal to the goal’s `$id` parameter and the `agent` column is equal to "ext". Further, it captures the value of the `email` column of that row in a local variable `$email` that can be used within the rule body.
 
-The following types of fixed values may be used:
-
-- **Strings:** These must be enclosed in double quotes: "Hello"
-- **Whole numbers:** A sequence of digits: 594
-- **Decimal numbers:** A sequence of digits, decimal point, and second sequence of digits: 2.39
-- **Time duration:** A sequence of digits followed by a unit (ms, sec, min, hr, hour, hours, day, days): 1 min
+The pattern binding syntax is described in detail in the Binding section.
 
