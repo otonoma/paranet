@@ -1,7 +1,7 @@
 ---
 id: hello-world
 title: Hello World
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Hello Actor Walkthrough
