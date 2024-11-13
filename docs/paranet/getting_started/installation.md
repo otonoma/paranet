@@ -22,7 +22,7 @@ sidebar_position: 3
 - Select "Install from VSIX...".
 - Browse to the downloaded ParanetExtension.vsix file and select it.
 
-_**Reminder:**_ Also install Docker and Web Assembly extensions before moving to the next step.
+_**Reminder:**_ Also install Docker and Web Assembly extensions before moving to the next step. The Web Assembly can be found at https://marketplace.visualstudio.com/items?itemName=ms-vscode.wasm-wasi-core 
 
 **Step 2: Clone the create-paranet repository**
 
