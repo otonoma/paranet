@@ -35,32 +35,33 @@ Ensure you have the following tools installed:
 The Paranet Cli allows for easy deployments of actors and paranets to local and cloud environments.
 
 ### Install instructions
-#### MacOs Prerequisites
+#### Prerequisites
 1. OpenSSL is needed for certificates and Cognito auth. Make sure it is on your system or install it via
-- `brew install openssl`
+- (MacOS) `brew install openssl`
+- (Ubuntu) `sudo apt install libssl-dev`
+- (Windows) Download from [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html)
 2. The github cli client `gh` is used to update the cli and authenticate docker.
-- `brew install gh`
-3. Login with package privileges. Follow the instructions to login through the web portal.
-- `gh auth login -s read:packages`
+- (MacOS) `brew install gh`
+- (Ubuntu) `sudo apt install gh`
+- (Windows) Download from [GitHub CLI](https://cli.github.com/)
 #### Installer setup
-We provide an easy install script for downloading and updating the paranet-cli.
-1. First we set some environment variables for the architecture of your system. This only needs to be done once.
-- For Apple arm set: `export ARCH=aarch64-apple-darwin`
-- For Apple intel set: `export ARCH=x86_64-apple-darwin`
-- For Linux set: `export ARCH=x86_64-unknown-linux-gnu`
-- For Windows set: `export ARCH=x86_64-pc-windows-msvc`
-2. Now we can install the script with 
-- `export LOCATION=https://pn-update.s3.us-west-2.amazonaws.com/pn-install && curl -fsSL "$LOCATION" | bash -s`
+
+To install the cli, run
+```bash
+  curl -fsSL "https://pn-update.s3.us-west-2.amazonaws.com/pn-install" | sh
+```
 
 This will do the following to install the cli
 - A folder will be created at `$HOME/.pn` to store cli version
 - The home folder `$HOME/.pn` will be added to the `PATH` by editing either `.bashrc`, `.bash_profile` or `.zshrc`. You may need to refresh your terminal to have affect. This can also be done manually by adding the line to your shell configuration file. 
-  - `export PATH="$HOME/.pn:$PATH"` 
+  - `export PATH="$HOME/.pn:$PATH"`
+- If you are not logged in with `gh` or do not have the read:packages privilege, a web login prompt will be started.
+  - `gh auth login -s read:packages -w --git-protocol https`
 - The `gh` client will be used to athenticate docker using this command. To login manually use
   - `gh auth token | docker login ghcr.io -u grokit-data --password-stdin`.
 - The latest paranet-cli will be downloaded and linked to `pn`. If your path is set correctly you should be able to check the version anywhere on the system with `pn -V`.
 - The install script will also be downloaded to `$HOME/.pn` so you can update using `pn-install` to update. Use can use `pn-install latest` or `pn-install vx.y.z` to download a specific version.
-- The `ARCH` value will be set in the script so it does not need to be exported again. You can check the value with `pn-install arch`.
+
 
 ### Required VSCode Extensions
 
