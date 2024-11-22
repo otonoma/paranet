@@ -31,6 +31,38 @@ Ensure you have the following tools installed:
 - **Docker Compose:** [Download](https://docs.docker.com/compose/install/)
 - **VSCode:** [Download](https://code.visualstudio.com/)
 
+## Paranet Cli
+The Paranet Cli allows for easy deployments of actors and paranets to local and cloud environments.
+
+### Install instructions
+#### Prerequisites
+1. OpenSSL is needed for certificates and Cognito auth. Make sure it is on your system or install it via
+- (MacOS) `brew install openssl`
+- (Ubuntu) `sudo apt install libssl-dev`
+- (Windows) Download from [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html)
+2. The github cli client `gh` is used to update the cli and authenticate docker.
+- (MacOS) `brew install gh`
+- (Ubuntu) `sudo apt install gh`
+- (Windows) Download from [GitHub CLI](https://cli.github.com/)
+#### Installer setup
+
+To install the cli, run
+```bash
+  curl -fsSL "https://pn-update.s3.us-west-2.amazonaws.com/pn-install" | sh
+```
+
+This will do the following to install the cli
+- A folder will be created at `$HOME/.pn` to store cli version
+- The home folder `$HOME/.pn` will be added to the `PATH` by editing either `.bashrc`, `.bash_profile` or `.zshrc`. You may need to refresh your terminal to have affect. This can also be done manually by adding the line to your shell configuration file. 
+  - `export PATH="$HOME/.pn:$PATH"`
+- If you are not logged in with `gh` or do not have the read:packages privilege, a web login prompt will be started.
+  - `gh auth login -s read:packages -w --git-protocol https`
+- The `gh` client will be used to athenticate docker using this command. To login manually use
+  - `gh auth token | docker login ghcr.io -u grokit-data --password-stdin`.
+- The latest paranet-cli will be downloaded and linked to `pn`. If your path is set correctly you should be able to check the version anywhere on the system with `pn -V`.
+- The install script will also be downloaded to `$HOME/.pn` so you can update using `pn-install` to update. Use can use `pn-install latest` or `pn-install vx.y.z` to download a specific version.
+
+
 ### Required VSCode Extensions
 
 Install the following extensions in VScode:
