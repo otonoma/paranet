@@ -16,7 +16,7 @@ jobs:
         id: date_tag
         run: |
           echo "DATE_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
-          echo "DATE_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPU
+          echo "DATE_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
           
   retag-paracord:
     name: Retag Paracord
