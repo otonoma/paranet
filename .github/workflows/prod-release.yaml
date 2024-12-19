@@ -1,0 +1,48 @@
+name: Prod Release
+run-name: Prod Release
+
+on:
+  workflow_dispatch:
+    inputs: {}
+
+jobs:
+  set-date:
+    name: Set Date
+    runs-on: ubuntu-latest
+    outputs:
+      DATE_TAG: ${{ steps.date_tag.outputs.DATE_TAG }}
+    steps:
+      - name: Date tag
+        id: date_tag
+        run: |
+          echo "DATE_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+          echo "DATE_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPU
+          
+  retag-paracord:
+    name: Retag Paracord
+    needs: [set-date]
+    uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
+    with:
+      TARGET_TAG: latest
+      TARGETS: "paracord"
+      TAGS: "prod-${{ needs.set-date.outputs.DATE_TAG }}"
+      
+  retag-paranet:
+    name: Retag
+    needs: [set-date]
+    uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
+    with:
+      TARGET_TAG: latest
+      TARGETS: "paranet-broker paranet-service paranet-broker-sim"
+      TAGS: "prod-${{ needs.set-date.outputs.DATE_TAG }}"
+      REPO: "paranet-broker/"
+
+  retag-paraflow:
+    name: Retag Paraflow
+    needs: [set-date]
+    uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
+    with:
+      TARGET_TAG: pr.${{ needs.create-release.outputs.PR }}
+      TARGETS: "paraflow paraflow-sim debugger"
+      TAGS: "latest"
+      REPO: "paraflow/"
