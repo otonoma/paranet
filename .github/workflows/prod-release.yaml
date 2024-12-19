@@ -5,6 +5,12 @@ on:
   workflow_dispatch:
     inputs: {}
 
+
+permissions:
+  id-token: write
+  contents: read
+  packages: write
+
 jobs:
   set-date:
     name: Set Date
