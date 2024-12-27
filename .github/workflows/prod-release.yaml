@@ -48,7 +48,7 @@ jobs:
     needs: [set-date]
     uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
     with:
-      TARGET_TAG: pr.${{ needs.create-release.outputs.PR }}
+      TARGET_TAG: latest
       TARGETS: "paraflow paraflow-sim debugger"
       TAGS: "latest"
       REPO: "paraflow/"
