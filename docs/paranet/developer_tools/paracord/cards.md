@@ -20,10 +20,6 @@ You can see the Adaptive Cards within Paraflow in the overview tab and in the me
 
 In the overview tab, clicking on the plus button in the upper right corner will open a window where the cards tab will show all the cards available to be added to the dashboard. By clicking and dragging on a card, you will add it to the overview dashboard and you will be able to see the card with the rendering of the Adaptive Card template and the data from the last message of the associated event.
 
-In the conversations in the advanced tab, if the actor has configured an Adaptive Card template, the messages will be rendered within it.
-
-To implement Adaptive Cards for Paranet actors, you must use the display_out tag below the skill definition. Within this tag, you must place the JSON code for the Adaptive Cards template needed to display the event return.
-
 You can find an example of an actor that implements several Adaptive Cards at [https://github.com/grokit-data/getting-started/tree/main/examples/sample_cards_demo](https://github.com/grokit-data/getting-started/tree/main/examples/sample_cards_demo).
 
 ## Adaptive Cards Paranet Actors Implementation
