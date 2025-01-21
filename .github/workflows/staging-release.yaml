@@ -1,5 +1,5 @@
-name: Prod Release
-run-name: Prod Release
+name: Staging Release
+run-name: Staging Release
 
 on:
   workflow_dispatch:
@@ -28,18 +28,18 @@ jobs:
     needs: [set-date]
     uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
     with:
-      TARGET_TAG: staging
+      TARGET_TAG: latest
       TARGETS: "paracord"
-      TAGS: "prod-${{ needs.set-date.outputs.DATE_TAG }}"
+      TAGS: "staging"
       
   retag-paranet:
     name: Retag
     needs: [set-date]
     uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
     with:
-      TARGET_TAG: staging
+      TARGET_TAG: latest
       TARGETS: "paranet-broker paranet-service paranet-broker-sim"
-      TAGS: "prod-${{ needs.set-date.outputs.DATE_TAG }}"
+      TAGS: "staging"
       REPO: "paranet-broker/"
 
   retag-paraflow:
@@ -47,7 +47,7 @@ jobs:
     needs: [set-date]
     uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
     with:
-      TARGET_TAG: staging
+      TARGET_TAG: latest
       TARGETS: "paraflow paraflow-sim debugger"
-      TAGS: "prod-${{ needs.set-date.outputs.DATE_TAG }}"
+      TAGS: "staging"
       REPO: "paraflow/"
