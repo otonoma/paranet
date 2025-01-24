@@ -21,13 +21,11 @@ jobs:
           echo "DATE_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
 
   checkout:          
-    name: Checkout
     uses: actions/checkout@v4
     with:
       fetch-depth: 0
 
   retag-staging:
-    name: Retag to Staging
     uses: .github/workflows/releaseTemplate.yaml@main
     with:
       TARGET_TAG: "latest"
