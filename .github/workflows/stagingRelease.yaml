@@ -25,6 +25,7 @@ jobs:
           echo "DATE_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
 
   retag-staging:
+    needs: ["set-date"]
     uses: ./.github/workflows/releaseTemplate.yaml
     with:
       TARGET_TAG: "latest"
