@@ -15,19 +15,17 @@ jobs:
     outputs:
       DATE_TAG: ${{ steps.date_tag.outputs.DATE_TAG }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Date tag
         id: date_tag
         run: |
           echo "DATE_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
 
-  checkout:          
-    name: Checkout
-    uses: actions/checkout@v4
-    with:
-      fetch-depth: 0
-
   retag-staging:
-    name: Retag to Staging
+    needs: ["set-date"]
     uses: ./.github/workflows/releaseTemplate.yaml
     with:
       TARGET_TAG: "latest"

@@ -6,36 +6,33 @@ on:
       TARGET_TAG:
         description: "Which docker tag to retag from"
         required: true
+        type: string
 
       TAGS:
         description: "Which docker tag(s) to retag to"
         required: true
+        type: string
 
 jobs:
-  retag:
-    name: Retag
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Retag Paracord
-        uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
-        with:
-          TARGET_TAG: ${{ inputs.TARGET_TAG }}
-          TARGETS: "paracord"
-          TAGS: ${{ inputs.TAGS }}
-
-      - name: Retag Paranet
-        uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
-        with:
-          TARGET_TAG: ${{ inputs.TARGET_TAG }}
-          TARGETS: "paranet-broker paranet-service paranet-broker-sim"
-          TAGS: ${{ inputs.TAGS }}
-          REPO: "paranet-broker/"
-
-      - name: Retag Paraflow
-        uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
-        with:
-          TARGET_TAG: ${{ inputs.TARGET_TAG }}
-          TARGETS: "paraflow paraflow-sim debugger"
-          TAGS: ${{ inputs.TAGS }}
-          REPO: "paraflow/"
+  paracord:
+    uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
+    with:
+      TARGET_TAG: ${{ inputs.TARGET_TAG }}
+      TARGETS: "paracord"
+      TAGS: ${{ inputs.TAGS }}
+      
+  paranet:
+    uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
+    with:
+      TARGET_TAG: ${{ inputs.TARGET_TAG }}
+      TARGETS: "paranet-broker paranet-service paranet-broker-sim"
+      TAGS: ${{ inputs.TAGS }}
+      REPO: "paranet-broker/"
+      
+  paraflow:
+    uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
+    with:
+      TARGET_TAG: ${{ inputs.TARGET_TAG }}
+      TARGETS: "paraflow paraflow-sim debugger"
+      TAGS: ${{ inputs.TAGS }}
+      REPO: "paraflow/"
