@@ -15,23 +15,17 @@ jobs:
     outputs:
       DATE_TAG: ${{ steps.date_tag.outputs.DATE_TAG }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Date tag
         id: date_tag
         run: |
           echo "DATE_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
-
+  
   retag-prod:
-    name: Retag to Production
-    runs-on: ubuntu-latest
-    needs: [set-date]
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          
-      - name: Call Reusable Retag
-        uses: ./.github/workflows/releaseTemplate.yaml
-        with:
-          TARGET_TAG: "staging"
-          TAGS: "prod-${{ needs.set-date.outputs.DATE_TAG }} prod"
-        # secrets: inherit
+    uses: ./.github/workflows/releaseTemplate.yaml@main
+    with:
+      TARGET_TAG: "staging"
+      TAGS: "prod-${{ needs.set-date.outputs.DATE_TAG }} prod"
