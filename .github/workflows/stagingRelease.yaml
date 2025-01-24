@@ -28,7 +28,7 @@ jobs:
 
   retag-staging:
     name: Retag to Staging
-    uses: ./.github/workflows/releaseTemplate.yaml
+    uses: .github/workflows/releaseTemplate.yaml@main
     with:
       TARGET_TAG: "latest"
       TAGS: "staging-${{ needs.set-date.outputs.DATE_TAG }} staging"
