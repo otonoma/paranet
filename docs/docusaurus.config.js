@@ -106,11 +106,11 @@ const config = {
           label: 'Paraflow',
           position: 'left',
         },
-        {
-          to: '/developer_tools',
-          label: 'Developer Tools',
-          position: 'left',
-        },
+        // {
+        //   to: '/developer_tools',
+        //   label: 'Developer Tools',
+        //   position: 'left',
+        // },
       ],
     },
     prism: {
