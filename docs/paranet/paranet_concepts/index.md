@@ -2,6 +2,7 @@
 id: paranet_concepts
 title: Paranet Concepts
 sidebar_position: 3
+draft: true
 ---
 
 Welcome to the **Paranet Concepts** section of the Paranet documentation! Our goal with this section is to help you understad important concepts of The Paranet ecosystem on a deeper level.

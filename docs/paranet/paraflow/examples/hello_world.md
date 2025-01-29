@@ -1,6 +1,7 @@
 ---
 id: hello-world
 title: Hello World
+draft: true
 sidebar_position: 1
 ---
 

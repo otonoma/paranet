@@ -1,6 +1,7 @@
 ---
 id: views
 title: Views
+draft: true
 sidebar_position: 2
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: vscode
 title: VSCode Extension
+draft: true
 sidebar_position: 1
 ---
 

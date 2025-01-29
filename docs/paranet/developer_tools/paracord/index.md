@@ -1,6 +1,7 @@
 ---
 id: paracord
 title: Paracord
+draft: true
 sidebar_position: 2
 ---
 

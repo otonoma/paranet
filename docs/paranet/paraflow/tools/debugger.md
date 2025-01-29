@@ -1,6 +1,7 @@
 ---
 id: debugging
 title: Debugger
+draft: true
 sidebar_position: 1
 ---
 

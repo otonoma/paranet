@@ -1,6 +1,7 @@
 ---
 id: installation 
 title: Installation
+draft: true
 sidebar_position: 3
 ---
 

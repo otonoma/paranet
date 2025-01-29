@@ -1,6 +1,7 @@
 ---
 id: advanced_tab
 title: Advanced Tab
+draft: true
 sidebar_position: 8
 ---
 

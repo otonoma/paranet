@@ -1,6 +1,7 @@
 ---
 id: ora
 title: ORA
+draft: true
 sidebar_position: 5
 ---
 

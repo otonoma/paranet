@@ -1,6 +1,7 @@
 ---
 id: cloud
 title: Cloud
+draft: true
 sidebar_position: 2
 ---
 

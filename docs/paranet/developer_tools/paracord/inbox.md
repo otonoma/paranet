@@ -1,6 +1,7 @@
 ---
 id: inbox
 title: Inbox
+draft: true
 sidebar_position: 9
 ---
 
