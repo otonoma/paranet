@@ -1,8 +1,7 @@
 ---
 id: examples
 title: Examples
-draft: true
-sidebar_position: 6
+sidebar_position: 5
 ---
 
-Here's a list of Paraflow examples
+Walk through our examples who a better understanding.
