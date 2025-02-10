@@ -2,7 +2,7 @@
 id: tools
 title: Tools
 draft: true
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Paraflow Tools
