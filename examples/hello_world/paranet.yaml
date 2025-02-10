@@ -1,0 +1,16 @@
+name: Hello world examples
+agents:
+  - name: Hello Paranet
+    paraflow: hello_paranet.paraflow
+    path: ./hello_paranet
+  - name: Hello SQL
+    paraflow: hello.paraflow
+    path: ./hello_sql
+    sql:
+      - hello.sql
+  - name: Hello Adaptive Card
+    paraflow: adaptive_card.paraflow
+    path: ./adaptive_card
+  - name: Hello Python SDK
+    path: hello_python_sdk
+    python_sdk: hello.py
