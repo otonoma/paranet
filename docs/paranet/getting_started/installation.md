@@ -97,7 +97,7 @@ To build a new paranet, navigate to a folder with a `paranet.yaml` file and run 
 **Step 1: Install the Paranet VSCode Extension**
 
 **1. Download the Latest Paranet Extension**
-- Go to the [Releases]([https://github.com/grokit-data/paranet/releases](https://github.com/otonoma/parabolic/releases/latest)).
+- Go to the [Releases](https://github.com/otonoma/parabolic/releases/latest).
 - Download the latest paradocs.vsix file.
 
 **2. Install the Extension in VSCode**
