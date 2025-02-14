@@ -1,7 +1,13 @@
 name: Production Release
 
 on:
+  # 1) Allows to run the workflow manually from the GitHub UI
   workflow_dispatch:
+  
+  # 2) Runs automatically every Thursday at 9am PST
+  # NOTE: GitHub Actions schedule uses UTC, so 9am PST corresponds to 17:00 UTC (PST is UTC-8).
+  schedule:
+    - cron: "0 17 * * 2"
 
 permissions:
   id-token: write
