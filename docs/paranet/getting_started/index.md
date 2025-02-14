@@ -21,73 +21,114 @@ For detailed guides, visit [docs.paranet.ai](https://docs.paranet.ai).
 
 ---
 
-## Prerequisites
+# Paranet Cli and VSCode extension
+The Paranet Cli allows for easy deployments of actors and paranets to local and cloud environments.
 
-Before you begin, ensure you have the following installed:
-- **Git**: [Download](https://git-scm.com/downloads)
-- **Docker**: [Download](https://docs.docker.com/get-docker/)
-- **Docker Compose**: [Download](https://docs.docker.com/compose/)
-- **VS Code**: [Download](https://code.visualstudio.com/)
+## Install instructions
+#### System requirements
+1. OpenSSL is needed for certificates and Cognito auth. Make sure it is on your system or install it via
+- (MacOS) `brew install openssl`
+- (Ubuntu) `sudo apt install libssl-dev`
+- (Windows) Download the light version from [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html)
+2. The github cli client `gh` is used to update the cli and authenticate docker.
+- (MacOS) `brew install gh`
+- (Ubuntu) `sudo apt install gh`
+- (Windows) Download from [GitHub CLI](https://cli.github.com/)
+3. Docker Engine
+- (MacOS) Download from [docker.com](https://docs.docker.com/desktop/setup/install/mac-install/)
+- (Windows) Download from [docker.com](https://docs.docker.com/desktop/setup/install/windows-install/)
+- (Ubuntu) Download from [docker.com](https://docs.docker.com/engine/install/ubuntu/)
 
----
-
-## Step 1: Install the Paranet CLI
-
-The Paranet CLI simplifies development by managing deployments, actors, and workflows.
-
-### Install Instructions
-
-Run the following command to install the CLI:
+#### Installer setup
+To install the cli, run
+```sh
+  curl -LsSf https://get.paranet.ai/parasol | sh
 ```
-curl -fsSL "https://pn-update.s3.us-west-2.amazonaws.com/pn-install" | sh
+
+Note: If using windows, try the git bash shell to run the command.
+
+This will do the following to install the cli
+- A folder will be created at `$HOME/.para` to store cli version
+- The home folder `$HOME/.para` will be added to the `PATH` by editing either `.bashrc`, `.bash_profile` or `.zshrc`. You may need to refresh your terminal to have affect. This can also be done manually by adding the line to your shell configuration file. 
+  - `export PATH="$HOME/.para:$PATH"`
+- If you are not logged in with `gh` or do not have the read:packages privilege, a web login prompt will be started.
+  - `gh auth login -s read:packages -w --git-protocol https`
+- The `gh` client will be used to athenticate docker using this command. To login manually use
+  - `gh auth token | docker login ghcr.io -u otonoma --password-stdin`.
+- The latest paranet-cli will be downloaded and linked to `para`. If your path is set correctly you should be able to check the version anywhere on the system with `para -V`.
+- The install script will also be downloaded to `$HOME/.para` so you can update using `parasol` to update. You can use `parasol latest` or `parasol vx.y.z` to download a specific version.
+
+#### Starting a new project
+
+Finally to start a new project, run `mkdir my-paranet && cd my-paranet && para init`. This will create a new folder with a basic `paranet.yaml` file.
+Next to start running on docker, run `para docker build`. This will create a `build` folder to store the docker compose file and start the system. By default the port `3023` is used but if it is already used another will be picked. This can be set by passing `--port` as well.
+
+## User instructions
+
+### Paranet config file
+A paranet project is configured using a `paranet.yaml` file. The file is used to set the project name, actors, and other configurations. The following values can be set.
+- `name`: The name of the paranet when deployed.
+- `version`: The version shared with all the actors.
+- `actors`: A list of actors to be deployed with the paranet.
+- `models`: A list of models to be deployed with the paranet.
+
+#### Actors
+An actor definition needs a name, path, and paraflow file. The path is relative to the paranet.yaml file. The paraflow file is relative to the actor folder. The following are optional parameters.
+- `sql`: A list of sql files to be loaded into the actor relative to the actor path.
+- `service_port`: The port any sidecar will be listening on.
+- `npm`: The command to start npm sidecars.
+- `yarn`: The command to start yarn sidecars.
+- `docker`: The location of a docker image to use as a sidecar.
+
+#### Models
+This allows you to load models into the paranet such as skillsets and user actors.
+
+#### Example
+The following is an example of a paranet.yaml file.
+```yaml
+name: test-paranet
+version: 0.0.1
+simulation: true
+actors:
+  - name: test
+    paraflow: test.paraflow
+    path: ./test
+    sql:
+      - test.sql
+  - name: test-npm
+    paraflow: test-npm.paraflow
+    path: ./test-npm
+    yarn: start
+    service_port: 4001
+models: []
 ```
-What this does:
 
-- Creates a $HOME/.pn folder for CLI storage.
-- Adds $HOME/.pn to your system’s PATH. You may need to refresh your terminal or manually add:
+### Docker compose build
+To build a new paranet, navigate to a folder with a `paranet.yaml` file and run `para docker build`. This will create a `build` folder to store the docker compose file and start the system. By default the port `3023` is used but if it is already used another will be picked. This can be set by passing `--port` as well.
 
-```export PATH="$HOME/.pn:$PATH"```
+# Manual Installation
 
-- Authenticates with GitHub to access the Docker registry and download CLI dependencies.
-- Verify the installation: ```para --version```
+## VSCode extension
 
-## Step 2: Install Required VS Code Extensions
-To streamline your development workflow, install the following VS Code extensions:
+**Step 1: Install the Paranet VSCode Extension**
 
-1. Paranet Extension:
+**1. Download the Latest Paranet Extension**
+- Go to the [Releases](https://github.com/otonoma/parabolic/releases/latest).
+- Download the latest paradocs.vsix file.
 
-- Download the .vsix file from the Releases section.
-- In VS Code:
-  - Navigate to the Extensions view.
-  - Click ... → Install from VSIX.
-  - Select the downloaded file.
-2. Docker Extension: Install from Marketplace
-3. WebAssembly Extension (if in preview): Install manually if required.
+**2. Install the Extension in VSCode**
 
-## Step 3: Create a Project
+<img width="640" alt="Screenshot 2024-10-14 at 2 37 54 PM" src="https://github.com/user-attachments/assets/0f4c757c-79ed-4a07-9294-3381f4df9d80"/>
 
-We recommending starting with the Hello World Project to understand basic Paranet functionality.
-
-### TODO - Instructions
-1. Create Hello World
-2. Create blank project
-
-## Deploy the Paranet Locally
-1. Navigate to the project folder: ```cd create-paranet```
-
-2. Deploy your Paranet: ```pn start```
-
-3. Verify it’s running by checking:
-- Green indicators in Docker.
-- Paranet nodes in Paracord (see below).
-
-## Step 4: Use Paracord for Debugging
-
-Paracord is a visual client for interacting with your Paranet nodes. It provides tools to:
-- View conversation-based goal trees.
-- Ping actors and test workflows.
-- Add custom UI panels (React or Adaptive Cards).
-
+- Open VSCode.
+- Navigate to the Extensions view (click on the square icon on the sidebar).
+- Click on the ... (More Actions) button in the top-right corner of the Extensions pane.
+- Select "Install from VSIX...".
+- Browse to the downloaded ParanetExtension.vsix file and select it.
+- Connect to a Paranet
+- ORA
+- Interacting with your Actors
+- View or documentation for more extensive information
 
 ## Troubleshooting
 
