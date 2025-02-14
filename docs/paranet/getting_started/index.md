@@ -49,7 +49,7 @@ What this does:
 ```export PATH="$HOME/.pn:$PATH"```
 
 - Authenticates with GitHub to access the Docker registry and download CLI dependencies.
-- Verify the installation: ```pn --version```
+- Verify the installation: ```para --version```
 
 ## Step 2: Install Required VS Code Extensions
 To streamline your development workflow, install the following VS Code extensions:
