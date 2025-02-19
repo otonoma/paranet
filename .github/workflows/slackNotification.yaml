@@ -3,8 +3,7 @@ name: Slack Notification
 on:
   push:
     branches:
-      - main
-      - staging
+      - feature/DEV-313
   workflow_run:
     workflows: ["Staging Release"]
     types:
