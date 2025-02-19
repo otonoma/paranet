@@ -39,6 +39,7 @@ jobs:
                 text:
                   type: "mrkdwn"
                   text: |
+                    :rocket: *New Release Pushed!* :rocket:\n
                     :calendar: *Date:* ${{ github.event.head_commit.timestamp || github.event.workflow_run.created_at }}
                     :package: *Commit:* ${{ github.event.head_commit.id || github.event.workflow_run.head_sha || 'unknown' }}
                     :file_folder: *Published Artifacts:* 
