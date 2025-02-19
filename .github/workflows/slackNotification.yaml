@@ -22,10 +22,17 @@ jobs:
       - name: Set Placeholder Images
         id: set_images
         run: |
-          echo "IMAGES<<EOF" >> $GITHUB_ENV
-          echo "ghcr.io/grokit-data/app1:latest" >> $GITHUB_ENV
-          echo "ghcr.io/grokit-data/app2:latest" >> $GITHUB_ENV
-          echo "ghcr.io/grokit-data/app3:latest" >> $GITHUB_ENV
+          IMAGES="ghcr.io/grokit-data/app1:latest\n\
+          ghcr.io/grokit-data/app2:latest\n\
+          ghcr.io/grokit-data/app3:latest"
+          echo "IMAGES=$IMAGES" >> $GITHUB_ENV
+
+      - name: Format Images for Slack
+        id: format_images
+        run: |
+          FORMATTED_IMAGES=$(echo -e "$IMAGES" | sed 's/^/• /')
+          echo "FORMATTED_IMAGES<<EOF" >> $GITHUB_ENV
+          echo "$FORMATTED_IMAGES" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
       - name: Send Slack Notification
@@ -47,6 +54,6 @@ jobs:
                     :package: *Commit:* ${{ github.event.head_commit.id || github.event.workflow_run.head_sha || 'unknown' }}
                     :file_folder: *Published Artifacts:* 
                     ```
-                    ${{ env.IMAGES }}
+                    ${{ env.FORMATTED_IMAGES }}
                     ```
                     :label: *Environment:* ${{ github.ref == 'refs/heads/main' && 'PROD' || 'STG' }}
