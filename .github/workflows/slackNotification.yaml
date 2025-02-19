@@ -1,9 +1,10 @@
 name: Slack Notification
 
 on:
-  push:  
+  push:
     branches:
-      - feature/DEV-313
+      - main
+      - staging
   workflow_run:
     workflows: ["Staging Release"]
     types:
@@ -22,9 +23,11 @@ jobs:
       - name: Set Placeholder Images
         id: set_images
         run: |
-          echo "IMAGES=ghcr.io/grokit-data/app1:latest\n\
-          ghcr.io/grokit-data/app2:latest\n\
-          ghcr.io/grokit-data/app3:latest" >> $GITHUB_ENV
+          echo "IMAGES<<EOF" >> $GITHUB_ENV
+          echo "ghcr.io/grokit-data/app1:latest" >> $GITHUB_ENV
+          echo "ghcr.io/grokit-data/app2:latest" >> $GITHUB_ENV
+          echo "ghcr.io/grokit-data/app3:latest" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
 
       - name: Send Slack Notification
         uses: slackapi/slack-github-action@v2.0.0
@@ -33,15 +36,18 @@ jobs:
           token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: |
             channel: ${{ secrets.SLACK_CHANNEL_ID }}
-            text: ":rocket: *New Release Pushed!* :rocket:"
             blocks:
+              - type: "section"
+                text:
+                  type: "mrkdwn"
+                  text: ":rocket: *New Release Pushed!* :rocket:\n\n"
               - type: "section"
                 text:
                   type: "mrkdwn"
                   text: |
                     :calendar: *Date:* ${{ github.event.head_commit.timestamp || github.event.workflow_run.created_at }}
                     :package: *Commit:* ${{ github.event.head_commit.id || github.event.workflow_run.head_sha || 'unknown' }}
-                    :file_folder: *Published Artifacts:* 
+                    :file_folder: *Published Artifacts:*
                     ```
                     ${{ env.IMAGES }}
                     ```
