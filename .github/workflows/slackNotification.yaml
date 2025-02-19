@@ -1,0 +1,45 @@
+name: Slack Notification
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Staging Release"]
+    types:
+      - completed
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  slack-notification:
+    name: Notify Slack
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    steps:
+      - name: Set Placeholder Images
+        id: set_images
+        run: |
+          echo "IMAGES=ghcr.io/grokit-data/app1:latest\n\
+          ghcr.io/grokit-data/app2:latest\n\
+          ghcr.io/grokit-data/app3:latest" >> $GITHUB_ENV
+
+      - name: Send Slack Notification
+        uses: slackapi/slack-github-action@v2.0.0
+        with:
+          method: chat.postMessage
+          token: ${{ secrets.SLACK_BOT_TOKEN }}
+          payload: |
+            channel: ${{ secrets.SLACK_CHANNEL_ID }}
+            text: ":rocket: *New Staging Release!* :rocket:"
+            blocks:
+              - type: "section"
+                text:
+                  type: "mrkdwn"
+                  text: |
+                    :calendar: *Date:* ${{ github.event.workflow_run.created_at || github.event.created_at }}
+                    :package: *Version:* staging-${{ github.event.workflow_run.head_sha || 'manual-run' }}
+                    :file_folder: *Published Artifacts:* 
+                    ```
+                    ${{ env.IMAGES }}
+                    ```
