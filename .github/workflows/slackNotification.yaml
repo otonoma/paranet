@@ -24,18 +24,18 @@ jobs:
           if [[ "${{ github.event_name }}" == "push" ]]; then
             echo "RELEASE_TYPE=feature-test" >> $GITHUB_ENV
           elif [[ "${{ github.event.workflow_run.name }}" == "Staging Release" ]]; then
-            echo "RELEASE_TYPE=staging" >> $GITHUB_ENV
+            echo "RELEASE_TYPE=Staging" >> $GITHUB_ENV
           else
-            echo "RELEASE_TYPE=production" >> $GITHUB_ENV
+            echo "RELEASE_TYPE=Production" >> $GITHUB_ENV
           fi
 
       - name: Set Date and Version
         id: set_version
         run: |
           DATE_TAG=$(date +'%Y.%m.%d')
-          if [[ "$RELEASE_TYPE" == "staging" ]]; then
-            VERSION="staging-${DATE_TAG}"
-          elif [[ "$RELEASE_TYPE" == "production" ]]; then
+          if [[ "$RELEASE_TYPE" == "Staging" ]]; then
+            VERSION="Staging-${DATE_TAG}"
+          elif [[ "$RELEASE_TYPE" == "Production" ]]; then
             VERSION="prod-${DATE_TAG}"
           else
             VERSION="test-${DATE_TAG}"
@@ -69,4 +69,4 @@ jobs:
                     • ghcr.io/otonoma/paraflow/paraflow-sim:${{ env.VERSION }}
                     • ghcr.io/otonoma/paraflow/debugger:${{ env.VERSION }}
                     ```
-                    :label: *Environment:* ${{ env.RELEASE_TYPE == 'production' && 'PROD' || env.RELEASE_TYPE == 'staging' && 'STG' || 'FEATURE TEST' }}
+                    :label: *Environment:* ${{ env.RELEASE_TYPE == 'Production' && 'PROD' || env.RELEASE_TYPE == 'Staging' && 'STG' || 'FEATURE TEST' }}
