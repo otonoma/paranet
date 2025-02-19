@@ -3,7 +3,8 @@ name: Slack Notification
 on:
   push:
     branches:
-      - feature/DEV-313
+      - main
+      - staging
   workflow_run:
     workflows: ["Staging Release"]
     types:
@@ -22,11 +23,10 @@ jobs:
       - name: Set Placeholder Images
         id: set_images
         run: |
-          echo "IMAGES<<EOF" >> $GITHUB_ENV
-          echo "ghcr.io/grokit-data/app1:latest" >> $GITHUB_ENV
-          echo "ghcr.io/grokit-data/app2:latest" >> $GITHUB_ENV
-          echo "ghcr.io/grokit-data/app3:latest" >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+          IMAGES=$(echo -e "ghcr.io/grokit-data/app1:latest\n\
+          ghcr.io/grokit-data/app2:latest\n\
+          ghcr.io/grokit-data/app3:latest" | jq -Rs)
+          echo "IMAGES=$IMAGES" >> $GITHUB_ENV
 
       - name: Send Slack Notification
         uses: slackapi/slack-github-action@v2.0.0
@@ -34,16 +34,27 @@ jobs:
           method: chat.postMessage
           token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: |
-            channel: ${{ secrets.SLACK_CHANNEL_ID }}
-            blocks:
-                text:
-                  type: "mrkdwn"
-                  text: |
-                    :rocket: *New Release Pushed!* :rocket:
-                    :calendar: *Date:* ${{ github.event.head_commit.timestamp || github.event.workflow_run.created_at }}
-                    :package: *Commit:* ${{ github.event.head_commit.id || github.event.workflow_run.head_sha || 'unknown' }}
-                    :file_folder: *Published Artifacts:*
-                    ```
-                    ${{ env.IMAGES }}
-                    ```
-                    :label: *Environment:* ${{ github.ref == 'refs/heads/main' && 'PROD' || 'STG' }}
+            {
+              "channel": "${{ secrets.SLACK_CHANNEL_ID }}",
+              "text": ":rocket: *New Release Pushed!* :rocket:\n\n",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": ":rocket: *New Release Pushed!* :rocket:\n\n"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": ":calendar: *Date:* ${{ github.event.head_commit.timestamp || github.event.workflow_run.created_at }}\n\n
+                             :package: *Commit:* ${{ github.event.head_commit.id || github.event.workflow_run.head_sha || 'unknown' }}\n\n
+                             :file_folder: *Published Artifacts:*\n\n
+                             ```\n${{ env.IMAGES }}\n```\n\n
+                             :label: *Environment:* ${{ github.ref == 'refs/heads/main' && 'PROD' || 'STG' }}"
+                  }
+                }
+              ]
+            }
