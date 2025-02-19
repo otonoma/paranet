@@ -22,7 +22,7 @@ jobs:
       - name: Determine Release Type
         run: |
           if [[ "${{ github.event_name }}" == "push" ]]; then
-            echo "RELEASE_TYPE=feature-test" >> $GITHUB_ENV
+            echo "RELEASE_TYPE=Feature-test" >> $GITHUB_ENV
           elif [[ "${{ github.event.workflow_run.name }}" == "Staging Release" ]]; then
             echo "RELEASE_TYPE=Staging" >> $GITHUB_ENV
           else
@@ -50,6 +50,7 @@ jobs:
           token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: |
             channel: ${{ secrets.SLACK_CHANNEL_ID }}
+            text: "New ${{ env.RELEASE_TYPE }} Release"
             blocks:
               - type: "section"
                 text:
