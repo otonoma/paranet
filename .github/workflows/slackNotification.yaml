@@ -1,7 +1,9 @@
 name: Slack Notification
 
 on:
-  workflow_dispatch:
+  push:  
+    branches:
+      - feature/DEV-313
   workflow_run:
     workflows: ["Staging Release"]
     types:
@@ -15,7 +17,7 @@ jobs:
   slack-notification:
     name: Notify Slack
     runs-on: ubuntu-latest
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    if: github.event_name == 'push' || github.event.workflow_run.conclusion == 'success'
     steps:
       - name: Set Placeholder Images
         id: set_images
@@ -31,15 +33,16 @@ jobs:
           token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: |
             channel: ${{ secrets.SLACK_CHANNEL_ID }}
-            text: ":rocket: *New Staging Release!* :rocket:"
+            text: ":rocket: *New Release Pushed!* :rocket:"
             blocks:
               - type: "section"
                 text:
                   type: "mrkdwn"
                   text: |
-                    :calendar: *Date:* ${{ github.event.workflow_run.created_at || github.event.created_at }}
-                    :package: *Version:* staging-${{ github.event.workflow_run.head_sha || 'manual-run' }}
+                    :calendar: *Date:* ${{ github.event.head_commit.timestamp || github.event.workflow_run.created_at }}
+                    :package: *Commit:* ${{ github.event.head_commit.id || github.event.workflow_run.head_sha || 'unknown' }}
                     :file_folder: *Published Artifacts:* 
                     ```
                     ${{ env.IMAGES }}
                     ```
+                    :label: *Environment:* ${{ github.ref == 'refs/heads/main' && 'PROD' || 'STG' }}
