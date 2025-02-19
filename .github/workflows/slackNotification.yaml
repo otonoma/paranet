@@ -43,21 +43,17 @@ jobs:
           echo "DATE_TAG=$DATE_TAG" >> $GITHUB_ENV
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
-      - name: Set Hardcoded Image Artifacts
+      - name: Set Image Artifacts
         id: set_images
         run: |
-          IMAGES=$(cat <<EOF
-          • ghcr.io/otonoma/paracord/paracord:${{ env.VERSION }}
-          • ghcr.io/otonoma/paranet-broker/paranet-broker:${{ env.VERSION }}
-          • ghcr.io/otonoma/paranet-broker/paranet-service:${{ env.VERSION }}
-          • ghcr.io/otonoma/paranet-broker/paranet-broker-sim:${{ env.VERSION }}
-          • ghcr.io/otonoma/paraflow/paraflow:${{ env.VERSION }}
-          • ghcr.io/otonoma/paraflow/paraflow-sim:${{ env.VERSION }}
-          • ghcr.io/otonoma/paraflow/debugger:${{ env.VERSION }}
-          EOF
-          )
           echo "IMAGES<<EOF" >> $GITHUB_ENV
-          echo "$IMAGES" >> $GITHUB_ENV
+          echo "• ghcr.io/otonoma/paracord:${{ env.VERSION }}" >> $GITHUB_ENV
+          echo "• ghcr.io/otonoma/paranet-broker/paranet-broker:${{ env.VERSION }}" >> $GITHUB_ENV
+          echo "• ghcr.io/otonoma/paranet-broker/paranet-service:${{ env.VERSION }}" >> $GITHUB_ENV
+          echo "• ghcr.io/otonoma/paranet-broker/paranet-broker-sim:${{ env.VERSION }}" >> $GITHUB_ENV
+          echo "• ghcr.io/otonoma/paraflow/paraflow:${{ env.VERSION }}" >> $GITHUB_ENV
+          echo "• ghcr.io/otonoma/paraflow/paraflow-sim:${{ env.VERSION }}" >> $GITHUB_ENV
+          echo "• ghcr.io/otonoma/paraflow/debugger:${{ env.VERSION }}" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
       - name: Send Slack Notification
