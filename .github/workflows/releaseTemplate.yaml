@@ -15,14 +15,14 @@ on:
 
 jobs:
   paracord:
-    uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
+    uses: otonoma/common-workflows/.github/workflows/retagDockerTargets.yml@main
     with:
       TARGET_TAG: ${{ inputs.TARGET_TAG }}
       TARGETS: "paracord"
       TAGS: ${{ inputs.TAGS }}
       
   paranet:
-    uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
+    uses: otonoma/common-workflows/.github/workflows/retagDockerTargets.yml@main
     with:
       TARGET_TAG: ${{ inputs.TARGET_TAG }}
       TARGETS: "paranet-broker paranet-service paranet-broker-sim"
@@ -30,7 +30,7 @@ jobs:
       REPO: "paranet-broker/"
       
   paraflow:
-    uses: grokit-data/common-workflows/.github/workflows/retagDockerTargets.yml@main
+    uses: otonoma/common-workflows/.github/workflows/retagDockerTargets.yml@main
     with:
       TARGET_TAG: ${{ inputs.TARGET_TAG }}
       TARGETS: "paraflow paraflow-sim debugger"

@@ -1,0 +1,70 @@
+name: Slack Notification
+
+on:
+  workflow_run:
+    workflows: ["Staging Release", "Production Release"]
+    types:
+      - completed
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  slack-notification:
+    name: Notify Slack
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event.workflow_run.conclusion == 'success'
+    steps:
+      - name: Determine Release Type
+        run: |
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            echo "RELEASE_TYPE=Feature-test" >> $GITHUB_ENV
+          elif [[ "${{ github.event.workflow_run.name }}" == "Staging Release" ]]; then
+            echo "RELEASE_TYPE=Staging" >> $GITHUB_ENV
+          else
+            echo "RELEASE_TYPE=Production" >> $GITHUB_ENV
+          fi
+
+      - name: Set Date and Version
+        id: set_version
+        run: |
+          DATE_TAG=$(date +'%Y.%m.%d')
+          if [[ "$RELEASE_TYPE" == "Staging" ]]; then
+            VERSION="Staging-${DATE_TAG}"
+          elif [[ "$RELEASE_TYPE" == "Production" ]]; then
+            VERSION="prod-${DATE_TAG}"
+          else
+            VERSION="test-${DATE_TAG}"
+          fi
+          echo "DATE_TAG=$DATE_TAG" >> $GITHUB_ENV
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Send Slack Notification
+        uses: slackapi/slack-github-action@v2.0.0
+        with:
+          method: chat.postMessage
+          token: ${{ secrets.SLACK_BOT_TOKEN }}
+          payload: |
+            channel: ${{ secrets.SLACK_CHANNEL_ID }}
+            text: "New ${{ env.RELEASE_TYPE }} Release"
+            blocks:
+              - type: "section"
+                text:
+                  type: "mrkdwn"
+                  text: |
+                    :rocket: *New ${{ env.RELEASE_TYPE }} Release!* :rocket:
+
+                    :calendar: *Date:* ${{ env.DATE_TAG }}
+                    :package: *Version:* ${{ env.VERSION }}
+                    :file_folder: *Published Artifacts:* 
+                    ```
+                    • ghcr.io/otonoma/paracord:${{ env.VERSION }}
+                    • ghcr.io/otonoma/paranet-broker/paranet-broker:${{ env.VERSION }}
+                    • ghcr.io/otonoma/paranet-broker/paranet-service:${{ env.VERSION }}
+                    • ghcr.io/otonoma/paranet-broker/paranet-broker-sim:${{ env.VERSION }}
+                    • ghcr.io/otonoma/paraflow/paraflow:${{ env.VERSION }}
+                    • ghcr.io/otonoma/paraflow/paraflow-sim:${{ env.VERSION }}
+                    • ghcr.io/otonoma/paraflow/debugger:${{ env.VERSION }}
+                    ```
+                    :label: *Environment:* ${{ env.RELEASE_TYPE == 'Production' && 'PROD' || env.RELEASE_TYPE == 'Staging' && 'STG' || 'FEATURE TEST' }}
