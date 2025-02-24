@@ -1,0 +1,26 @@
+{
+  "id": "developer_tools/paracord/inbox",
+  "title": "Inbox",
+  "description": "What's the Inbox?",
+  "source": "@site/docs/developer_tools/paracord/inbox.md",
+  "sourceDirName": "developer_tools/paracord",
+  "slug": "/developer_tools/paracord/inbox",
+  "permalink": "/docs/developer_tools/paracord/inbox",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/developer_tools/paracord/inbox.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "id": "inbox",
+    "title": "Inbox",
+    "draft": true,
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Advanced Tab",
+    "permalink": "/docs/developer_tools/paracord/advanced_tab"
+  }
+}

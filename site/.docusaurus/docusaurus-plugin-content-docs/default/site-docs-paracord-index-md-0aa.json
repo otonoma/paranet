@@ -1,0 +1,29 @@
+{
+  "id": "paracord/paracord",
+  "title": "Paracord Client",
+  "description": "Let's discover Paracord.",
+  "source": "@site/docs/paracord/index.md",
+  "sourceDirName": "paracord",
+  "slug": "/paracord/",
+  "permalink": "/docs/paracord/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paracord/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "paracord",
+    "title": "Paracord Client",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nvidia's Omniverse & Isaac Sim",
+    "permalink": "/docs/developer_tools/integration_guides/omniverse"
+  },
+  "next": {
+    "title": "Views",
+    "permalink": "/docs/paracord/views"
+  }
+}

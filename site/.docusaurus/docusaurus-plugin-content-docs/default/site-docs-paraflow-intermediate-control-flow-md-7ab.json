@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/intermediate/control_flow",
+  "title": "Control Flow",
+  "description": "If Statement",
+  "source": "@site/docs/paraflow/intermediate/control_flow.md",
+  "sourceDirName": "paraflow/intermediate",
+  "slug": "/paraflow/intermediate/control_flow",
+  "permalink": "/docs/paraflow/intermediate/control_flow",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/intermediate/control_flow.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "control_flow",
+    "title": "Control Flow",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tables",
+    "permalink": "/docs/paraflow/intermediate/tables"
+  },
+  "next": {
+    "title": "Bindings",
+    "permalink": "/docs/paraflow/intermediate/bindings"
+  }
+}

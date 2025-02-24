@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/basics/goals",
+  "title": "Goals",
+  "description": "A Paraflow goal represents a desired activity to perform. The activity may be parameterized by data. A goal instance consists of a name and zero or more specific parameter values. Here is an example goal:",
+  "source": "@site/docs/paraflow/basics/goals.md",
+  "sourceDirName": "paraflow/basics",
+  "slug": "/paraflow/basics/goals",
+  "permalink": "/docs/paraflow/basics/goals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/basics/goals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "goals",
+    "title": "Goals",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Basic Concepts",
+    "permalink": "/docs/paraflow/basics/"
+  },
+  "next": {
+    "title": "Events",
+    "permalink": "/docs/paraflow/basics/events"
+  }
+}

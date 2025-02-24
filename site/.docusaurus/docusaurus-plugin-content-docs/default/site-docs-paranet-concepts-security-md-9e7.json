@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/security",
+  "title": "Security",
+  "description": "Security in the Paranet is governed by Negative Trust Security (NTS), which assumes no inherent trust and continuously verifies behavior.",
+  "source": "@site/docs/paranet_concepts/security.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/security",
+  "permalink": "/docs/paranet_concepts/security",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/security.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "id": "security",
+    "title": "Security",
+    "sidebar_position": 11
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Persistence",
+    "permalink": "/docs/paranet_concepts/persistence"
+  },
+  "next": {
+    "title": "Paraflow",
+    "permalink": "/docs/paraflow/"
+  }
+}

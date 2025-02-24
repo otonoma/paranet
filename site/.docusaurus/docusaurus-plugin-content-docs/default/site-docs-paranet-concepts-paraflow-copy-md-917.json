@@ -1,0 +1,30 @@
+{
+  "id": "paranet_concepts/paraflow",
+  "title": "Paraflow - A New Paradigm Language",
+  "description": "",
+  "source": "@site/docs/paranet_concepts/paraflow copy.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/paraflow",
+  "permalink": "/docs/paranet_concepts/paraflow",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/paraflow copy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "paraflow",
+    "title": "Paraflow - A New Paradigm Language",
+    "draft": true,
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Persistence",
+    "permalink": "/docs/paranet_concepts/persistence"
+  },
+  "next": {
+    "title": "Paraflow - A New Paradigm Language",
+    "permalink": "/docs/paranet_concepts/paraflow"
+  }
+}

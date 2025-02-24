@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/pncp",
+  "title": "Paranet Collaboration Protocol",
+  "description": "PnCP is the core protocol for actor communication and collaboration in the Paranet. It supports dynamic, skill-based interactions essential for distributed autonomy.",
+  "source": "@site/docs/paranet_concepts/pncp.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/pncp",
+  "permalink": "/docs/paranet_concepts/pncp",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/pncp.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "pncp",
+    "title": "Paranet Collaboration Protocol",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Skill Definitions and Matching",
+    "permalink": "/docs/paranet_concepts/skills"
+  },
+  "next": {
+    "title": "Paranet Distributed Actor Operating System",
+    "permalink": "/docs/paranet_concepts/pdos"
+  }
+}

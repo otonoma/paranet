@@ -1,0 +1,30 @@
+{
+  "id": "paranet_concepts/pdos",
+  "title": "Paranet Distributed Actor Operating System",
+  "description": "",
+  "source": "@site/paranet/paranet_concepts/pdos.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/pdos",
+  "permalink": "/docs/paranet_concepts/pdos",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/paranet_concepts/pdos.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "pdos",
+    "title": "Paranet Distributed Actor Operating System",
+    "draft": true,
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paranet Collaboration Protocol",
+    "permalink": "/docs/paranet_concepts/pncp"
+  },
+  "next": {
+    "title": "Persistence",
+    "permalink": "/docs/paranet_concepts/persistence"
+  }
+}

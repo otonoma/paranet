@@ -1,0 +1,30 @@
+{
+  "id": "developer_tools/vscode",
+  "title": "VSCode Extension",
+  "description": "The paranet extension makes it easy to view, edit and deploy resources on the paranet.",
+  "source": "@site/docs/developer_tools/vscode.md",
+  "sourceDirName": "developer_tools",
+  "slug": "/developer_tools/vscode",
+  "permalink": "/docs/developer_tools/vscode",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/developer_tools/vscode.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "vscode",
+    "title": "VSCode Extension",
+    "draft": true,
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Para CLI",
+    "permalink": "/docs/developer_tools/para-cli"
+  },
+  "next": {
+    "title": "Integration Guides",
+    "permalink": "/docs/developer_tools/integration_guides/"
+  }
+}

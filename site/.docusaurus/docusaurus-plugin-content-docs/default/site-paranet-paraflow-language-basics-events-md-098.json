@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/language_basics/events",
+  "title": "Events",
+  "description": "The event construct defines what to do when some external event occurs, including a skill request from the Paranet. When the event is preceded by the skill annotation, it is automatically registered as a skill on the Paranet.",
+  "source": "@site/paranet/paraflow/language_basics/events.md",
+  "sourceDirName": "paraflow/language_basics",
+  "slug": "/paraflow/language_basics/events",
+  "permalink": "/paraflow/language_basics/events",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/grokit-data/paranet/edit/main/docs/paranet/paraflow/language_basics/events.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "events",
+    "title": "Events",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Goals",
+    "permalink": "/paraflow/language_basics/goals"
+  },
+  "next": {
+    "title": "Rules",
+    "permalink": "/paraflow/language_basics/rules"
+  }
+}

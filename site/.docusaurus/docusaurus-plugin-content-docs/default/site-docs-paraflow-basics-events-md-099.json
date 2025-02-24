@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/basics/events",
+  "title": "Events",
+  "description": "The event construct defines what to do when some external event occurs, including a skill request from the Paranet. When the event is preceded by the skill annotation, it is automatically registered as a skill on the Paranet.",
+  "source": "@site/docs/paraflow/basics/events.md",
+  "sourceDirName": "paraflow/basics",
+  "slug": "/paraflow/basics/events",
+  "permalink": "/docs/paraflow/basics/events",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/basics/events.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "events",
+    "title": "Events",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Goals",
+    "permalink": "/docs/paraflow/basics/goals"
+  },
+  "next": {
+    "title": "Rules",
+    "permalink": "/docs/paraflow/basics/rules"
+  }
+}

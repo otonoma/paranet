@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/paraflow",
+  "title": "Paraflow",
+  "description": "Welcome to the Paraflow section of the Paranet documentation! This section will help you understand the basics of The Paranet's language, Paraflow.",
+  "source": "@site/docs/paraflow/index.md",
+  "sourceDirName": "paraflow",
+  "slug": "/paraflow/",
+  "permalink": "/docs/paraflow/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "paraflow",
+    "title": "Paraflow",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Security",
+    "permalink": "/docs/paranet_concepts/security"
+  },
+  "next": {
+    "title": "Introduction",
+    "permalink": "/docs/paraflow/introduction"
+  }
+}

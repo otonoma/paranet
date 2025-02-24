@@ -1,0 +1,30 @@
+{
+  "id": "getting_started/deployment/cloud",
+  "title": "Cloud",
+  "description": "Let's walk through hosting your paranet on the Cloud or even on-premise.",
+  "source": "@site/docs/getting_started/deployment/cloud_deployment.md",
+  "sourceDirName": "getting_started/deployment",
+  "slug": "/getting_started/deployment/cloud",
+  "permalink": "/docs/getting_started/deployment/cloud",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/getting_started/deployment/cloud_deployment.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "cloud",
+    "title": "Cloud",
+    "draft": true,
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Local",
+    "permalink": "/docs/getting_started/deployment/local"
+  },
+  "next": {
+    "title": "Paranet Concepts",
+    "permalink": "/docs/paranet_concepts/"
+  }
+}

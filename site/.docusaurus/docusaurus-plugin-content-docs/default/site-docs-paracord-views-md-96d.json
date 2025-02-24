@@ -1,0 +1,30 @@
+{
+  "id": "paracord/views",
+  "title": "Views",
+  "description": "Let's discover Views.",
+  "source": "@site/docs/paracord/views.md",
+  "sourceDirName": "paracord",
+  "slug": "/paracord/views",
+  "permalink": "/docs/paracord/views",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paracord/views.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "views",
+    "title": "Views",
+    "draft": true,
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paracord Client",
+    "permalink": "/docs/paracord/"
+  },
+  "next": {
+    "title": "Adaptive Cards",
+    "permalink": "/docs/paracord/cards"
+  }
+}

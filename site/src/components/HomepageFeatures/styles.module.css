@@ -1,0 +1,219 @@
+.features {
+  padding: 4rem 0;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.step {
+  flex: 1;
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stepNumber {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background: #F26522; /* Orange accent */
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.stepTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e293b; /* Dark gray primary */
+  margin-bottom: 1rem;
+}
+
+.stepDescription {
+  font-size: 1.1rem;
+  color: #6b7280; /* Mid-gray primary */
+  margin-bottom: 1.5rem;
+}
+
+.stepButton {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.stepButton.button--primary {
+  background: #085D6F; /* Teal accent */
+  border: none;
+  color: #ffffff;
+}
+
+.stepButton.button--primary:hover {
+  background: #0a7389; /* Lighter teal */
+  box-shadow: 0 4px 15px rgba(8, 93, 111, 0.4);
+  transform: scale(1.05);
+}
+
+.stepButton.button--outline {
+  border: 2px solid #F26522; /* Orange accent */
+  color: #F26522;
+  background: transparent;
+}
+
+.stepButton.button--outline:hover {
+  background: rgba(242, 101, 34, 0.1);
+  color: #F26522;
+  box-shadow: 0 4px 15px rgba(242, 101, 34, 0.2);
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #085D6F; /* Teal accent */
+  align-self: center;
+  font-weight: bold;
+}
+
+.githubCta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.githubButton {
+  background: #1e293b; /* Dark gray primary */
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.githubButton:hover {
+  background: #F26522; /* Orange accent */
+  box-shadow: 0 4px 15px rgba(242, 101, 34, 0.2);
+}
+
+.githubIcon {
+  font-family: 'Arial', sans-serif; /* Replace with icon library if desired */
+  font-weight: bold;
+}
+
+.connectedText {
+  font-size: 1.1rem;
+  color: #6b7280; /* Mid-gray primary */
+}
+
+.username {
+  color: #085D6F; /* Teal accent */
+  font-weight: 700;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.modalTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e293b; /* Dark gray primary */
+  margin-bottom: 1rem;
+}
+
+.modalDescription {
+  font-size: 1.1rem;
+  color: #6b7280; /* Mid-gray primary */
+  margin-bottom: 2rem;
+}
+
+.githubModalButton {
+  background: #1e293b; /* Dark gray primary */
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.githubModalButton:hover {
+  background: #F26522; /* Orange accent */
+  box-shadow: 0 4px 15px rgba(242, 101, 34, 0.2);
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  color: #6b7280; /* Mid-gray primary */
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.closeButton:hover {
+  color: #085D6F; /* Teal accent */
+}
+
+@media screen and (max-width: 996px) {
+  .contentWrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+    margin: 1rem 0;
+  }
+
+  .stepTitle {
+    font-size: 1.5rem;
+  }
+}

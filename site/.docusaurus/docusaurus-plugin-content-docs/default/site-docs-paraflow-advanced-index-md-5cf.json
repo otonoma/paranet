@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/advanced/advanced",
+  "title": "Advanced Concepts",
+  "description": "Let's dive into the next level of Paraflow topics.",
+  "source": "@site/docs/paraflow/advanced/index.md",
+  "sourceDirName": "paraflow/advanced",
+  "slug": "/paraflow/advanced/",
+  "permalink": "/docs/paraflow/advanced/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/advanced/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "advanced",
+    "title": "Advanced Concepts",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tasks",
+    "permalink": "/docs/paraflow/basics/tasks"
+  },
+  "next": {
+    "title": "Parameters",
+    "permalink": "/docs/paraflow/advanced/parameters"
+  }
+}

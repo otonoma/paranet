@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/node-architecture",
+  "title": "Paranet Node Architecture",
+  "description": "A Paranet node (or Paranode) is the fundamental building block of the Paranet, hosting actors and facilitating their autonomous interactions. Each node consists of several key components that enable distributed intelligence and autonomy.",
+  "source": "@site/docs/paranet_concepts/node_architecture.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/node-architecture",
+  "permalink": "/docs/paranet_concepts/node-architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/node_architecture.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "node-architecture",
+    "title": "Paranet Node Architecture",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Autonomony And Autonomation",
+    "permalink": "/docs/paranet_concepts/autonomation"
+  },
+  "next": {
+    "title": "Actors",
+    "permalink": "/docs/paranet_concepts/actors"
+  }
+}

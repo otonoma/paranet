@@ -1,0 +1,30 @@
+{
+  "id": "paracord/cards",
+  "title": "Adaptive Cards",
+  "description": "What's an Adpative Card?",
+  "source": "@site/docs/paracord/cards.md",
+  "sourceDirName": "paracord",
+  "slug": "/paracord/cards",
+  "permalink": "/docs/paracord/cards",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paracord/cards.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "cards",
+    "title": "Adaptive Cards",
+    "draft": true,
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Views",
+    "permalink": "/docs/paracord/views"
+  },
+  "next": {
+    "title": "Panels",
+    "permalink": "/docs/paracord/panels"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/basics/rules",
+  "title": "Rules",
+  "description": "AKA Goal Planning",
+  "source": "@site/paranet/paraflow/basics/rules.md",
+  "sourceDirName": "paraflow/basics",
+  "slug": "/paraflow/basics/rules",
+  "permalink": "/docs/paraflow/basics/rules",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/paraflow/basics/rules.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "rules",
+    "title": "Rules",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Events",
+    "permalink": "/docs/paraflow/basics/events"
+  },
+  "next": {
+    "title": "Variables",
+    "permalink": "/docs/paraflow/basics/variables"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/persistence",
+  "title": "Persistence",
+  "description": "Persistence in the Paranet ensures continuity and recovery for actors and the network.",
+  "source": "@site/docs/paranet_concepts/persistence.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/persistence",
+  "permalink": "/docs/paranet_concepts/persistence",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/persistence.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "id": "persistence",
+    "title": "Persistence",
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Observational Intelligence",
+    "permalink": "/docs/paranet_concepts/observational-intelligence"
+  },
+  "next": {
+    "title": "Security",
+    "permalink": "/docs/paranet_concepts/security"
+  }
+}

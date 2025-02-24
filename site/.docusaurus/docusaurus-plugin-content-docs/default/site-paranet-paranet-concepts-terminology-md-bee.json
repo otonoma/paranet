@@ -1,0 +1,30 @@
+{
+  "id": "paranet_concepts/terminology",
+  "title": "Terminology",
+  "description": "",
+  "source": "@site/paranet/paranet_concepts/terminology.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/terminology",
+  "permalink": "/docs/paranet_concepts/terminology",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/paranet_concepts/terminology.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "terminology",
+    "title": "Terminology",
+    "draft": true,
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paranet Concepts",
+    "permalink": "/docs/paranet_concepts/"
+  },
+  "next": {
+    "title": "Paranet Collaboration Protocol",
+    "permalink": "/docs/paranet_concepts/pncp"
+  }
+}

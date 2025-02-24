@@ -1,0 +1,30 @@
+{
+  "id": "paranet_concepts/security",
+  "title": "Security",
+  "description": "",
+  "source": "@site/paranet/paranet_concepts/security.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/security",
+  "permalink": "/docs/paranet_concepts/security",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/paranet_concepts/security.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "security",
+    "title": "Security",
+    "draft": true,
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paraflow - A New Paradigm Language",
+    "permalink": "/docs/paranet_concepts/paraflow"
+  },
+  "next": {
+    "title": "Paraflow",
+    "permalink": "/docs/paraflow/"
+  }
+}

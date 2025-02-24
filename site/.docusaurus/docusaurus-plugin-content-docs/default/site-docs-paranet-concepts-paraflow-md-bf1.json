@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/paraflow",
+  "title": "Paraflow - A New Paradigm Language",
+  "description": "Paraflow is a programming language designed specifically for autonomy within the Paranet. It enables actors to plan, reason, and execute tasks autonomously, addressing limitations of conventional languages.",
+  "source": "@site/docs/paranet_concepts/paraflow.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/paraflow",
+  "permalink": "/docs/paranet_concepts/paraflow",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/paraflow.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "paraflow",
+    "title": "Paraflow - A New Paradigm Language",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Actors",
+    "permalink": "/docs/paranet_concepts/actors"
+  },
+  "next": {
+    "title": "Skill Definitions and Matching",
+    "permalink": "/docs/paranet_concepts/skills"
+  }
+}

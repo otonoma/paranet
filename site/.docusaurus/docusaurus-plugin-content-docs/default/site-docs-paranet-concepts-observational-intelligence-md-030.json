@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/observational-intelligence",
+  "title": "Observational Intelligence",
+  "description": "The Paranet supports extensibility and observational intelligence, crucial for autonomous learning and adaptation.",
+  "source": "@site/docs/paranet_concepts/observational_intelligence.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/observational-intelligence",
+  "permalink": "/docs/paranet_concepts/observational-intelligence",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/observational_intelligence.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "id": "observational-intelligence",
+    "title": "Observational Intelligence",
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Distributed Intelligence",
+    "permalink": "/docs/paranet_concepts/distributed-intelligence"
+  },
+  "next": {
+    "title": "Persistence",
+    "permalink": "/docs/paranet_concepts/persistence"
+  }
+}

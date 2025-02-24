@@ -1,0 +1,30 @@
+{
+  "id": "paranet_concepts/persistence",
+  "title": "Persistence",
+  "description": "",
+  "source": "@site/paranet/paranet_concepts/persistence.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/persistence",
+  "permalink": "/docs/paranet_concepts/persistence",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/paranet_concepts/persistence.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "persistence",
+    "title": "Persistence",
+    "draft": true,
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paranet Distributed Actor Operating System",
+    "permalink": "/docs/paranet_concepts/pdos"
+  },
+  "next": {
+    "title": "Paraflow - A New Paradigm Language",
+    "permalink": "/docs/paranet_concepts/paraflow"
+  }
+}

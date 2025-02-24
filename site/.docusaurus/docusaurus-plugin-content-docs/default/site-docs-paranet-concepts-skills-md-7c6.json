@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/skills",
+  "title": "Skill Definitions and Matching",
+  "description": "Skills in the Paranet represent capabilities that actors can offer or request. They are defined by a subject and action pair and are central to autonomous collaboration.",
+  "source": "@site/docs/paranet_concepts/skills.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/skills",
+  "permalink": "/docs/paranet_concepts/skills",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/skills.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "skills",
+    "title": "Skill Definitions and Matching",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paraflow - A New Paradigm Language",
+    "permalink": "/docs/paranet_concepts/paraflow"
+  },
+  "next": {
+    "title": "Paranet Collaboration Protocol",
+    "permalink": "/docs/paranet_concepts/pncp"
+  }
+}

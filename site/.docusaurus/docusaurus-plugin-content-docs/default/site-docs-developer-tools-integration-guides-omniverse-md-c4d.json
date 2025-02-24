@@ -1,0 +1,30 @@
+{
+  "id": "developer_tools/integration_guides/omniverse",
+  "title": "Nvidia's Omniverse & Isaac Sim",
+  "description": "",
+  "source": "@site/docs/developer_tools/integration_guides/omniverse.md",
+  "sourceDirName": "developer_tools/integration_guides",
+  "slug": "/developer_tools/integration_guides/omniverse",
+  "permalink": "/docs/developer_tools/integration_guides/omniverse",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/developer_tools/integration_guides/omniverse.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "omniverse",
+    "title": "Nvidia's Omniverse & Isaac Sim",
+    "draft": true,
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Integration Guides",
+    "permalink": "/docs/developer_tools/integration_guides/"
+  },
+  "next": {
+    "title": "Paracord Client",
+    "permalink": "/docs/paracord/"
+  }
+}

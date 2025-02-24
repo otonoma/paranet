@@ -1,0 +1,283 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "introduction",
+          "docs": [
+            {
+              "id": "deployment/deployment",
+              "path": "/docs/deployment/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "developer_tools/developer_tools",
+              "path": "/docs/developer_tools/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "developer_tools/integration_guides/integration-guides",
+              "path": "/docs/developer_tools/integration_guides/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "developer_tools/integration_guides/omniverse",
+              "path": "/docs/developer_tools/integration_guides/omniverse",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "developer_tools/para-cli",
+              "path": "/docs/developer_tools/para-cli",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "developer_tools/vscode",
+              "path": "/docs/developer_tools/vscode",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/getting-started",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paracord/cards",
+              "path": "/docs/paracord/cards",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paracord/inbox",
+              "path": "/docs/paracord/inbox",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paracord/ledger",
+              "path": "/docs/paracord/ledger",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paracord/ora",
+              "path": "/docs/paracord/ora",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paracord/panels",
+              "path": "/docs/paracord/panels",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paracord/paracord",
+              "path": "/docs/paracord/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paracord/views",
+              "path": "/docs/paracord/views",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/advanced/advanced",
+              "path": "/docs/paraflow/advanced/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/advanced/bindings",
+              "path": "/docs/paraflow/advanced/bindings",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/advanced/control_flow",
+              "path": "/docs/paraflow/advanced/control_flow",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/advanced/functions-procedures",
+              "path": "/docs/paraflow/advanced/functions-procedures",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/advanced/json",
+              "path": "/docs/paraflow/advanced/json",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/advanced/parameters",
+              "path": "/docs/paraflow/advanced/parameters",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/advanced/runtime_internals",
+              "path": "/docs/paraflow/advanced/runtime_internals",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/advanced/skills",
+              "path": "/docs/paraflow/advanced/skills",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/advanced/tables",
+              "path": "/docs/paraflow/advanced/tables",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/basics/basics",
+              "path": "/docs/paraflow/basics/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/basics/events",
+              "path": "/docs/paraflow/basics/events",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/basics/goals",
+              "path": "/docs/paraflow/basics/goals",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/basics/rules",
+              "path": "/docs/paraflow/basics/rules",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/basics/tasks",
+              "path": "/docs/paraflow/basics/tasks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/basics/variables",
+              "path": "/docs/paraflow/basics/variables",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/examples/examples",
+              "path": "/docs/paraflow/examples/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/examples/hello-world",
+              "path": "/docs/paraflow/examples/hello-world",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/introduction",
+              "path": "/docs/paraflow/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/paraflow",
+              "path": "/docs/paraflow/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/services/debugging",
+              "path": "/docs/paraflow/services/debugging",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/services/python-agent",
+              "path": "/docs/paraflow/services/python-agent",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/services/service-apis",
+              "path": "/docs/paraflow/services/service-apis",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/services/services",
+              "path": "/docs/paraflow/services/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paraflow/services/side-cars",
+              "path": "/docs/paraflow/services/side-cars",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/actors",
+              "path": "/docs/paranet_concepts/actors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/autonomation",
+              "path": "/docs/paranet_concepts/autonomation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/distributed-intelligence",
+              "path": "/docs/paranet_concepts/distributed-intelligence",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/node-architecture",
+              "path": "/docs/paranet_concepts/node-architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/observational-intelligence",
+              "path": "/docs/paranet_concepts/observational-intelligence",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/paraflow",
+              "path": "/docs/paranet_concepts/paraflow",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/paranet_concepts",
+              "path": "/docs/paranet_concepts/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/pdos",
+              "path": "/docs/paranet_concepts/pdos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/persistence",
+              "path": "/docs/paranet_concepts/persistence",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/pncp",
+              "path": "/docs/paranet_concepts/pncp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/security",
+              "path": "/docs/paranet_concepts/security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "paranet_concepts/skills",
+              "path": "/docs/paranet_concepts/skills",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/",
+                "label": "introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/autonomation",
+  "title": "Autonomony And Autonomation",
+  "description": "Autonomy refers to the ability of systems to operate independently, making decisions and performing tasks with minimal human intervention. It is characterized by capabilities such as self-management, adaptation, and intelligent interaction with the environment.",
+  "source": "@site/docs/paranet_concepts/autonomation.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/autonomation",
+  "permalink": "/docs/paranet_concepts/autonomation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/autonomation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "autonomation",
+    "title": "Autonomony And Autonomation",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paranet Concepts",
+    "permalink": "/docs/paranet_concepts/"
+  },
+  "next": {
+    "title": "Paranet Node Architecture",
+    "permalink": "/docs/paranet_concepts/node-architecture"
+  }
+}

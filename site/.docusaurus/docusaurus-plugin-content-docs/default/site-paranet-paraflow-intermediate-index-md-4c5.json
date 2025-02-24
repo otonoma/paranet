@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/intermediate/intermediate",
+  "title": "Intermediate",
+  "description": "Let's dive into the next level of Paraflow topics.",
+  "source": "@site/paranet/paraflow/intermediate/index.md",
+  "sourceDirName": "paraflow/intermediate",
+  "slug": "/paraflow/intermediate/",
+  "permalink": "/docs/paraflow/intermediate/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/paraflow/intermediate/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "intermediate",
+    "title": "Intermediate",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tasks",
+    "permalink": "/docs/paraflow/basics/tasks"
+  },
+  "next": {
+    "title": "Parameters",
+    "permalink": "/docs/paraflow/intermediate/parameters"
+  }
+}

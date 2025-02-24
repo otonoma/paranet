@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/pdos",
+  "title": "Paranet Distributed Actor Operating System",
+  "description": "The Paranet functions as a distributed operating system for autonomous actors, providing infrastructure for operation, communication, and collaboration.",
+  "source": "@site/docs/paranet_concepts/pdos.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/pdos",
+  "permalink": "/docs/paranet_concepts/pdos",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/pdos.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "pdos",
+    "title": "Paranet Distributed Actor Operating System",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paranet Collaboration Protocol",
+    "permalink": "/docs/paranet_concepts/pncp"
+  },
+  "next": {
+    "title": "Distributed Intelligence",
+    "permalink": "/docs/paranet_concepts/distributed-intelligence"
+  }
+}

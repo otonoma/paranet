@@ -1,0 +1,30 @@
+{
+  "id": "developer_tools/paracord/paracord",
+  "title": "Paracord",
+  "description": "Let's discover Paracord.",
+  "source": "@site/docs/developer_tools/paracord/index.md",
+  "sourceDirName": "developer_tools/paracord",
+  "slug": "/developer_tools/paracord/",
+  "permalink": "/docs/developer_tools/paracord/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/developer_tools/paracord/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "paracord",
+    "title": "Paracord",
+    "draft": true,
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "VSCode Extension",
+    "permalink": "/docs/developer_tools/vscode/"
+  },
+  "next": {
+    "title": "Authentication",
+    "permalink": "/docs/developer_tools/paracord/auth"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "getting_started/installation",
+  "title": "Installation",
+  "description": "The Paranet Cli allows for easy deployments of actors and paranets to local and cloud environments.",
+  "source": "@site/paranet/getting_started/installation.md",
+  "sourceDirName": "getting_started",
+  "slug": "/getting_started/installation",
+  "permalink": "/docs/getting_started/installation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/getting_started/installation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "installation",
+    "title": "Installation",
+    "draft": true,
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/getting_started/introduction"
+  },
+  "next": {
+    "title": "Deployment",
+    "permalink": "/docs/getting_started/deployment/"
+  }
+}

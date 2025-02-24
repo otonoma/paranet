@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/basics/variables",
+  "title": "Variables",
+  "description": "Local variables are created with the let statement. Variable types are determined at runtime and include numbers, strings, and tables. In its simplest form, the let statement specifies the name of the variable and an expression for its value as in:",
+  "source": "@site/paranet/paraflow/basics/variables.md",
+  "sourceDirName": "paraflow/basics",
+  "slug": "/paraflow/basics/variables",
+  "permalink": "/docs/paraflow/basics/variables",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/paraflow/basics/variables.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "variables",
+    "title": "Variables",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rules",
+    "permalink": "/docs/paraflow/basics/rules"
+  },
+  "next": {
+    "title": "Tasks",
+    "permalink": "/docs/paraflow/basics/tasks"
+  }
+}

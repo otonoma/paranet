@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/examples/hello-world",
+  "title": "Hello World",
+  "description": "Let's create a simple actor on the Paranet and test it.",
+  "source": "@site/docs/paraflow/examples/hello_world.md",
+  "sourceDirName": "paraflow/examples",
+  "slug": "/paraflow/examples/hello-world",
+  "permalink": "/docs/paraflow/examples/hello-world",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/examples/hello_world.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "hello-world",
+    "title": "Hello World",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paraflow Examples",
+    "permalink": "/docs/paraflow/examples/"
+  },
+  "next": {
+    "title": "Developer Guides & Tools",
+    "permalink": "/docs/developer_tools/"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/services/service-apis",
+  "title": "Service API's",
+  "description": "A Paraflow task may be used to make calls to any external service that provides a GraphQL interface. The on clause of the Paraflow task declaration provides the default URL of the endpoint providing the GraphQL service. The endpoint may also be overridden in individual calls to the service via the rpc statements.",
+  "source": "@site/docs/paraflow/services/service_apis.md",
+  "sourceDirName": "paraflow/services",
+  "slug": "/paraflow/services/service-apis",
+  "permalink": "/docs/paraflow/services/service-apis",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/services/service_apis.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "service-apis",
+    "title": "Service API's",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Services",
+    "permalink": "/docs/paraflow/services/"
+  },
+  "next": {
+    "title": "Debugger",
+    "permalink": "/docs/paraflow/services/debugging"
+  }
+}

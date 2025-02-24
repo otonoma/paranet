@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/examples/examples",
+  "title": "Examples",
+  "description": "Walk through our examples who a better understanding.",
+  "source": "@site/paranet/paraflow/examples/index.md",
+  "sourceDirName": "paraflow/examples",
+  "slug": "/paraflow/examples/",
+  "permalink": "/docs/paraflow/examples/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/paraflow/examples/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "examples",
+    "title": "Examples",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Debugger",
+    "permalink": "/docs/paraflow/tools/debugging"
+  },
+  "next": {
+    "title": "Hello World",
+    "permalink": "/docs/paraflow/examples/hello-world"
+  }
+}
