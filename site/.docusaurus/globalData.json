@@ -16,7 +16,7 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "developer_tools/developer_tools",
+              "id": "developer_tools/developer-tools",
               "path": "/docs/developer_tools/",
               "sidebar": "tutorialSidebar"
             },
@@ -96,8 +96,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "paraflow/advanced/control_flow",
-              "path": "/docs/paraflow/advanced/control_flow",
+              "id": "paraflow/advanced/control-flow",
+              "path": "/docs/paraflow/advanced/control-flow",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -116,8 +116,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "paraflow/advanced/runtime_internals",
-              "path": "/docs/paraflow/advanced/runtime_internals",
+              "id": "paraflow/advanced/runtime-internals",
+              "path": "/docs/paraflow/advanced/runtime-internals",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -236,7 +236,7 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "paranet_concepts/paranet_concepts",
+              "id": "paranet_concepts/paranet-concepts",
               "path": "/docs/paranet_concepts/",
               "sidebar": "tutorialSidebar"
             },

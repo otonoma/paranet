@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'e8f'),
+    component: ComponentCreator('/docs', 'cab'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'a76'),
+        component: ComponentCreator('/docs', 'f9d'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'd2c'),
+            component: ComponentCreator('/docs', '249'),
             routes: [
               {
                 path: '/docs',
@@ -163,8 +163,8 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/paraflow/advanced/control_flow',
-                component: ComponentCreator('/docs/paraflow/advanced/control_flow', 'c28'),
+                path: '/docs/paraflow/advanced/control-flow',
+                component: ComponentCreator('/docs/paraflow/advanced/control-flow', '1ea'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -187,8 +187,8 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/paraflow/advanced/runtime_internals',
-                component: ComponentCreator('/docs/paraflow/advanced/runtime_internals', 'f46'),
+                path: '/docs/paraflow/advanced/runtime-internals',
+                component: ComponentCreator('/docs/paraflow/advanced/runtime-internals', '31c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

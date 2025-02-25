@@ -1,5 +1,5 @@
 ---
-id: paranet_concepts
+id: paranet-concepts
 title: Paranet Concepts
 sidebar_position: 3
 ---

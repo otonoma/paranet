@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Control Flow",
-    "permalink": "/docs/paraflow/advanced/control_flow"
+    "permalink": "/docs/paraflow/advanced/control-flow"
   },
   "next": {
     "title": "Runtime Internals",
-    "permalink": "/docs/paraflow/advanced/runtime_internals"
+    "permalink": "/docs/paraflow/advanced/runtime-internals"
   }
 }

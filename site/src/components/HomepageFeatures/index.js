@@ -55,7 +55,7 @@ export default function HomepageFeatures() {
               Hit the ground running with our CLI and Getting Started guide.
             </p>
             <Link
-              to="/docs/getting_started"
+              to="/docs/getting-started"
               className={clsx('button button--primary', styles.stepButton)}
             >
               Start Now

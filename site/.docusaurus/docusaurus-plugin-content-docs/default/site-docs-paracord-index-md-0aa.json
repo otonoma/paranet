@@ -1,7 +1,7 @@
 {
   "id": "paracord/paracord",
   "title": "Paracord Client",
-  "description": "Let's discover Paracord.",
+  "description": "Let's discover Paracord, our client application build to interface with the paranet.",
   "source": "@site/docs/paracord/index.md",
   "sourceDirName": "paracord",
   "slug": "/paracord/",

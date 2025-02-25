@@ -1,11 +1,11 @@
 {
-  "id": "paraflow/advanced/runtime_internals",
+  "id": "paraflow/advanced/runtime-internals",
   "title": "Runtime Internals",
   "description": "Planner",
   "source": "@site/docs/paraflow/advanced/runtime_internals.md",
   "sourceDirName": "paraflow/advanced",
-  "slug": "/paraflow/advanced/runtime_internals",
-  "permalink": "/docs/paraflow/advanced/runtime_internals",
+  "slug": "/paraflow/advanced/runtime-internals",
+  "permalink": "/docs/paraflow/advanced/runtime-internals",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/advanced/runtime_internals.md",
@@ -13,7 +13,7 @@
   "version": "current",
   "sidebarPosition": 7,
   "frontMatter": {
-    "id": "runtime_internals",
+    "id": "runtime-internals",
     "title": "Runtime Internals",
     "sidebar_position": 7
   },

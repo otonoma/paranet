@@ -6,7 +6,7 @@ sidebar_position: 6
 
 # Paracord
 
-Let's discover **Paracord**.
+Let's discover **Paracord**, our client application build to interface with the paranet.
 
 ## What is Paracord?
 

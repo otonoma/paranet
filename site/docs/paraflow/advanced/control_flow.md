@@ -1,5 +1,5 @@
 ---
-id: control_flow
+id: control-flow
 title: Control Flow
 sidebar_position: 5
 ---

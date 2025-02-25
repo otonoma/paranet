@@ -1,11 +1,11 @@
 {
-  "id": "paraflow/advanced/control_flow",
+  "id": "paraflow/advanced/control-flow",
   "title": "Control Flow",
   "description": "If Statement",
   "source": "@site/docs/paraflow/advanced/control_flow.md",
   "sourceDirName": "paraflow/advanced",
-  "slug": "/paraflow/advanced/control_flow",
-  "permalink": "/docs/paraflow/advanced/control_flow",
+  "slug": "/paraflow/advanced/control-flow",
+  "permalink": "/docs/paraflow/advanced/control-flow",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/advanced/control_flow.md",
@@ -13,7 +13,7 @@
   "version": "current",
   "sidebarPosition": 5,
   "frontMatter": {
-    "id": "control_flow",
+    "id": "control-flow",
     "title": "Control Flow",
     "sidebar_position": 5
   },
