@@ -1,0 +1,25 @@
+{
+  "id": "deployment/deployment",
+  "title": "Deployment & Operations",
+  "description": "",
+  "source": "@site/docs/deployment/index.md",
+  "sourceDirName": "deployment",
+  "slug": "/deployment/",
+  "permalink": "/docs/deployment/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/deployment/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "deployment",
+    "title": "Deployment & Operations",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Inbox",
+    "permalink": "/docs/paracord/inbox"
+  }
+}

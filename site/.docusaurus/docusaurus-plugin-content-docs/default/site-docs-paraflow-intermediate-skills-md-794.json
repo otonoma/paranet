@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/intermediate/skills",
+  "title": "Skills",
+  "description": "Skill Decorators",
+  "source": "@site/docs/paraflow/intermediate/skills.md",
+  "sourceDirName": "paraflow/intermediate",
+  "slug": "/paraflow/intermediate/skills",
+  "permalink": "/docs/paraflow/intermediate/skills",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/intermediate/skills.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "skills",
+    "title": "Skills",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Functions and Procedures",
+    "permalink": "/docs/paraflow/intermediate/functions-procedures"
+  },
+  "next": {
+    "title": "Tables",
+    "permalink": "/docs/paraflow/intermediate/tables"
+  }
+}

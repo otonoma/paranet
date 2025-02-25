@@ -1,0 +1,30 @@
+{
+  "id": "getting_started/deployment/deployment",
+  "title": "Deployment",
+  "description": "The following section will cover ways to deploy a paranet both locally and hosted.",
+  "source": "@site/docs/getting_started/deployment/index.md",
+  "sourceDirName": "getting_started/deployment",
+  "slug": "/getting_started/deployment/",
+  "permalink": "/docs/getting_started/deployment/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/getting_started/deployment/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "deployment",
+    "title": "Deployment",
+    "draft": true,
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/getting_started/installation"
+  },
+  "next": {
+    "title": "Local",
+    "permalink": "/docs/getting_started/deployment/local"
+  }
+}

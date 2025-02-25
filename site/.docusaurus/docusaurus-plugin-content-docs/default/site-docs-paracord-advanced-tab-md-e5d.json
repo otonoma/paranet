@@ -1,0 +1,30 @@
+{
+  "id": "paracord/advanced_tab",
+  "title": "Advanced Tab",
+  "description": "Let's discover Advanced Tab.",
+  "source": "@site/docs/paracord/advanced_tab.md",
+  "sourceDirName": "paracord",
+  "slug": "/paracord/advanced_tab",
+  "permalink": "/docs/paracord/advanced_tab",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paracord/advanced_tab.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "advanced_tab",
+    "title": "Advanced Tab",
+    "draft": true,
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ledger",
+    "permalink": "/docs/paracord/ledger"
+  },
+  "next": {
+    "title": "Inbox",
+    "permalink": "/docs/paracord/inbox"
+  }
+}

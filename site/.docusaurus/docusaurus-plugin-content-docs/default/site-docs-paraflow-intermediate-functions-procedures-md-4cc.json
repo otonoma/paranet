@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/intermediate/functions-procedures",
+  "title": "Functions and Procedures",
+  "description": "Procedures and functions may be defined in order to reuse code in multiple events, rules, or tasks. Parameters are defined with types in the same way as event parameters.",
+  "source": "@site/docs/paraflow/intermediate/functions_procedures.md",
+  "sourceDirName": "paraflow/intermediate",
+  "slug": "/paraflow/intermediate/functions-procedures",
+  "permalink": "/docs/paraflow/intermediate/functions-procedures",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/intermediate/functions_procedures.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "functions-procedures",
+    "title": "Functions and Procedures",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Parameters",
+    "permalink": "/docs/paraflow/intermediate/parameters"
+  },
+  "next": {
+    "title": "Skills",
+    "permalink": "/docs/paraflow/intermediate/skills"
+  }
+}

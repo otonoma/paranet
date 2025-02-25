@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/actors",
+  "title": "Actors",
+  "description": "An actor in the Paranet is any entity capable of autonomous action, decision-making, or interaction. Actors are the primary units of computation and intelligence, enabling distributed autonomy across the network.",
+  "source": "@site/docs/paranet_concepts/actors.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/actors",
+  "permalink": "/docs/paranet_concepts/actors",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/actors.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "actors",
+    "title": "Actors",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paranet Node Architecture",
+    "permalink": "/docs/paranet_concepts/node-architecture"
+  },
+  "next": {
+    "title": "Paraflow - A New Paradigm Language",
+    "permalink": "/docs/paranet_concepts/paraflow"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/intermediate/bindings",
+  "title": "Bindings",
+  "description": "Call Bindings",
+  "source": "@site/docs/paraflow/intermediate/bindings.md",
+  "sourceDirName": "paraflow/intermediate",
+  "slug": "/paraflow/intermediate/bindings",
+  "permalink": "/docs/paraflow/intermediate/bindings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/intermediate/bindings.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "bindings",
+    "title": "Bindings",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Control Flow",
+    "permalink": "/docs/paraflow/intermediate/control_flow"
+  },
+  "next": {
+    "title": "Runtime Internals",
+    "permalink": "/docs/paraflow/intermediate/runtime_internals"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/distributed-intelligence",
+  "title": "Distributed Intelligence",
+  "description": "Distributed Intelligence is the collective capability of autonomous actors to reason, learn, and adapt across the Paranet. It enables:",
+  "source": "@site/docs/paranet_concepts/distributed_intelligence.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/distributed-intelligence",
+  "permalink": "/docs/paranet_concepts/distributed-intelligence",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/distributed_intelligence.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "distributed-intelligence",
+    "title": "Distributed Intelligence",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paranet Distributed Actor Operating System",
+    "permalink": "/docs/paranet_concepts/pdos"
+  },
+  "next": {
+    "title": "Observational Intelligence",
+    "permalink": "/docs/paranet_concepts/observational-intelligence"
+  }
+}

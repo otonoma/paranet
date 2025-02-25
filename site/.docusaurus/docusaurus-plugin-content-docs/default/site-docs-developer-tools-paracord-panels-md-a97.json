@@ -1,0 +1,30 @@
+{
+  "id": "developer_tools/paracord/panels",
+  "title": "Panels",
+  "description": "Let's discover Panels.",
+  "source": "@site/docs/developer_tools/paracord/panels.md",
+  "sourceDirName": "developer_tools/paracord",
+  "slug": "/developer_tools/paracord/panels",
+  "permalink": "/docs/developer_tools/paracord/panels",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/developer_tools/paracord/panels.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "panels",
+    "title": "Panels",
+    "draft": true,
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Adaptive Cards",
+    "permalink": "/docs/developer_tools/paracord/cards"
+  },
+  "next": {
+    "title": "ORA",
+    "permalink": "/docs/developer_tools/paracord/ora"
+  }
+}

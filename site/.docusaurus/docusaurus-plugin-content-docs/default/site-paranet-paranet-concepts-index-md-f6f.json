@@ -1,0 +1,30 @@
+{
+  "id": "paranet_concepts/paranet_concepts",
+  "title": "Paranet Concepts",
+  "description": "Welcome to the Paranet Concepts section of the Paranet documentation! Our goal with this section is to help you understad important concepts of The Paranet ecosystem on a deeper level.",
+  "source": "@site/paranet/paranet_concepts/index.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/",
+  "permalink": "/docs/paranet_concepts/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/paranet_concepts/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "paranet_concepts",
+    "title": "Paranet Concepts",
+    "sidebar_position": 3,
+    "draft": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Cloud",
+    "permalink": "/docs/getting_started/deployment/cloud"
+  },
+  "next": {
+    "title": "Terminology",
+    "permalink": "/docs/paranet_concepts/terminology"
+  }
+}

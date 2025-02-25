@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/language_basics/rules",
+  "title": "Rules",
+  "description": "AKA Goal Planning",
+  "source": "@site/paranet/paraflow/language_basics/rules.md",
+  "sourceDirName": "paraflow/language_basics",
+  "slug": "/paraflow/language_basics/rules",
+  "permalink": "/paraflow/language_basics/rules",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/grokit-data/paranet/edit/main/docs/paranet/paraflow/language_basics/rules.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "rules",
+    "title": "Rules",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Events",
+    "permalink": "/paraflow/language_basics/events"
+  },
+  "next": {
+    "title": "Tasks",
+    "permalink": "/paraflow/language_basics/tasks"
+  }
+}

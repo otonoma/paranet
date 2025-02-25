@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/language-basics",
+  "title": "Language Basics",
+  "description": "Program Execution",
+  "source": "@site/paranet/paraflow/language_basics.md",
+  "sourceDirName": "paraflow",
+  "slug": "/paraflow/language-basics",
+  "permalink": "/paraflow/language-basics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/grokit-data/paranet/edit/main/docs/paranet/paraflow/language_basics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "language-basics",
+    "title": "Language Basics",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hello World",
+    "permalink": "/paraflow/hello-world"
+  },
+  "next": {
+    "title": "Top Level",
+    "permalink": "/paraflow/top-level"
+  }
+}

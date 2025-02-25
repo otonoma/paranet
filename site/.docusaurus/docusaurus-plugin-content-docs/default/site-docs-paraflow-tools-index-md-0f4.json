@@ -1,0 +1,30 @@
+{
+  "id": "paraflow/tools/tools",
+  "title": "Tools",
+  "description": "Paraflow has extension services.",
+  "source": "@site/docs/paraflow/tools/index.md",
+  "sourceDirName": "paraflow/tools",
+  "slug": "/paraflow/tools/",
+  "permalink": "/docs/paraflow/tools/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/tools/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "tools",
+    "title": "Tools",
+    "draft": true,
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Side Cars",
+    "permalink": "/docs/paraflow/services/side-cars"
+  },
+  "next": {
+    "title": "Paraflow Examples",
+    "permalink": "/docs/paraflow/examples/"
+  }
+}

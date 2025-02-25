@@ -1,0 +1,30 @@
+{
+  "id": "paranet_concepts/terminology",
+  "title": "Terminology",
+  "description": "",
+  "source": "@site/docs/paranet_concepts/autonomation copy.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/terminology",
+  "permalink": "/docs/paranet_concepts/terminology",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/autonomation copy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "terminology",
+    "title": "Terminology",
+    "draft": true,
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paranet Concepts",
+    "permalink": "/docs/paranet_concepts/"
+  },
+  "next": {
+    "title": "Terminology",
+    "permalink": "/docs/paranet_concepts/terminology"
+  }
+}

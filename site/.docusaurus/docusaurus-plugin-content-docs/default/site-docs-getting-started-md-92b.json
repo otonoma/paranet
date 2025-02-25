@@ -1,0 +1,29 @@
+{
+  "id": "getting-started",
+  "title": "Getting Started",
+  "description": "Welcome to the Getting Started guide for the Paranet! This guide will walk you through the setup process, introduce you to the tools you’ll need, and help you deploy your first Paranet.",
+  "source": "@site/docs/getting_started.md",
+  "sourceDirName": ".",
+  "slug": "/getting-started",
+  "permalink": "/docs/getting-started",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/getting_started.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "getting-started",
+    "title": "Getting Started",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/"
+  },
+  "next": {
+    "title": "Paranet Concepts",
+    "permalink": "/docs/paranet_concepts/"
+  }
+}

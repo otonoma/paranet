@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/terminology",
+  "title": "Terminology",
+  "description": "This glossary provides definitions for key terms used in the context of the Paranet and autonomous computing.",
+  "source": "@site/docs/paranet_concepts/terminology.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/terminology",
+  "permalink": "/docs/paranet_concepts/terminology",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/terminology.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "terminology",
+    "title": "Terminology",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paranet Concepts",
+    "permalink": "/docs/paranet_concepts/"
+  },
+  "next": {
+    "title": "Autonomony And Autonomation",
+    "permalink": "/docs/paranet_concepts/autonomation"
+  }
+}

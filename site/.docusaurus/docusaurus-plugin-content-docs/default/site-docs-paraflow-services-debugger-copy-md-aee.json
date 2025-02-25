@@ -1,0 +1,30 @@
+{
+  "id": "paraflow/services/debugging",
+  "title": "Debugger",
+  "description": "The VSCode extension for Visual Studio Code provides an integrated Paraflow debugger providing a familiar debugging experience for Paraflow actors.",
+  "source": "@site/docs/paraflow/services/debugger copy.md",
+  "sourceDirName": "paraflow/services",
+  "slug": "/paraflow/services/debugging",
+  "permalink": "/docs/paraflow/services/debugging",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/services/debugger copy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "debugging",
+    "title": "Debugger",
+    "draft": true,
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Service API's",
+    "permalink": "/docs/paraflow/services/service-apis"
+  },
+  "next": {
+    "title": "Debugger",
+    "permalink": "/docs/paraflow/services/debugging"
+  }
+}

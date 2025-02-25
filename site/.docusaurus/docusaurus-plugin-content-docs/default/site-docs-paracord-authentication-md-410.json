@@ -1,0 +1,30 @@
+{
+  "id": "paracord/auth",
+  "title": "Authentication",
+  "description": "Let's discover Advanced Tab.",
+  "source": "@site/docs/paracord/authentication.md",
+  "sourceDirName": "paracord",
+  "slug": "/paracord/auth",
+  "permalink": "/docs/paracord/auth",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paracord/authentication.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "auth",
+    "title": "Authentication",
+    "draft": true,
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Paracord",
+    "permalink": "/docs/paracord/"
+  },
+  "next": {
+    "title": "Views",
+    "permalink": "/docs/paracord/views"
+  }
+}

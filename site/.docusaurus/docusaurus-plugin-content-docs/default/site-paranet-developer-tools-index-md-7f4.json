@@ -1,0 +1,30 @@
+{
+  "id": "developer_tools/developer_tools",
+  "title": "Developer Tools",
+  "description": "Welcome to the Developer Tools section of the Paranet documentation! This section will cover the tools we offer Developers (and in some cases non-technical users).",
+  "source": "@site/paranet/developer_tools/index.md",
+  "sourceDirName": "developer_tools",
+  "slug": "/developer_tools/",
+  "permalink": "/docs/developer_tools/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/developer_tools/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "developer_tools",
+    "title": "Developer Tools",
+    "draft": true,
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hello World",
+    "permalink": "/docs/paraflow/examples/hello-world"
+  },
+  "next": {
+    "title": "VSCode Extension",
+    "permalink": "/docs/developer_tools/vscode/"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "paranet_concepts/paranet-concepts",
+  "title": "Paranet Concepts",
+  "description": "The Paranet is an innovative Internet overlay designed to support distributed intelligence and autonomy, developed by Otonoma as outlined in \"Paranet: The Automation Platform for the Autonomous Internet\" by Jim Harding, February 2025. It represents a paradigm shift from traditional computing models, enabling a network of autonomous actors to collaborate, reason, and adapt in dynamic environments. This document introduces the core concepts that define the Paranet, providing a foundation for understanding its architecture, functionality, and potential impact.",
+  "source": "@site/docs/paranet_concepts/index.md",
+  "sourceDirName": "paranet_concepts",
+  "slug": "/paranet_concepts/",
+  "permalink": "/docs/paranet_concepts/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paranet_concepts/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "paranet-concepts",
+    "title": "Paranet Concepts",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/docs/getting-started"
+  },
+  "next": {
+    "title": "Autonomony And Autonomation",
+    "permalink": "/docs/paranet_concepts/autonomation"
+  }
+}

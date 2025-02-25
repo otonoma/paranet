@@ -1,0 +1,30 @@
+{
+  "id": "paraflow/tools/tools",
+  "title": "Tools",
+  "description": "Paraflow has extension services.",
+  "source": "@site/paranet/paraflow/tools/index.md",
+  "sourceDirName": "paraflow/tools",
+  "slug": "/paraflow/tools/",
+  "permalink": "/docs/paraflow/tools/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/paraflow/tools/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "tools",
+    "title": "Tools",
+    "draft": true,
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Service API's",
+    "permalink": "/docs/paraflow/services/service-apis"
+  },
+  "next": {
+    "title": "Debugger",
+    "permalink": "/docs/paraflow/tools/debugging"
+  }
+}

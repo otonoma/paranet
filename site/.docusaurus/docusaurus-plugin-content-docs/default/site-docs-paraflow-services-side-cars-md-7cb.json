@@ -1,0 +1,30 @@
+{
+  "id": "paraflow/services/side-cars",
+  "title": "Side Cars",
+  "description": "",
+  "source": "@site/docs/paraflow/services/side_cars.md",
+  "sourceDirName": "paraflow/services",
+  "slug": "/paraflow/services/side-cars",
+  "permalink": "/docs/paraflow/services/side-cars",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/services/side_cars.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "side-cars",
+    "title": "Side Cars",
+    "draft": true,
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Python Agent",
+    "permalink": "/docs/paraflow/services/python-agent"
+  },
+  "next": {
+    "title": "Paraflow Examples",
+    "permalink": "/docs/paraflow/examples/"
+  }
+}

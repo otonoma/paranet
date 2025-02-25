@@ -1,0 +1,30 @@
+{
+  "id": "paracord/inbox",
+  "title": "Inbox",
+  "description": "What's the Inbox?",
+  "source": "@site/docs/paracord/inbox.md",
+  "sourceDirName": "paracord",
+  "slug": "/paracord/inbox",
+  "permalink": "/docs/paracord/inbox",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paracord/inbox.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "id": "inbox",
+    "title": "Inbox",
+    "draft": true,
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ledger",
+    "permalink": "/docs/paracord/ledger"
+  },
+  "next": {
+    "title": "Deployment & Operations",
+    "permalink": "/docs/deployment/"
+  }
+}

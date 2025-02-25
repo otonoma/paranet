@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/services/services",
+  "title": "Services",
+  "description": "Paraflow has extension services.",
+  "source": "@site/docs/paraflow/services/index.md",
+  "sourceDirName": "paraflow/services",
+  "slug": "/paraflow/services/",
+  "permalink": "/docs/paraflow/services/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/services/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "services",
+    "title": "Services",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "JSON",
+    "permalink": "/docs/paraflow/advanced/json"
+  },
+  "next": {
+    "title": "Service API's",
+    "permalink": "/docs/paraflow/services/service-apis"
+  }
+}

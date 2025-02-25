@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/advanced/parameters",
+  "title": "Parameters",
+  "description": "The parameter list is a comma-separated list of parameter definitions, which include the name and type of the parameter.",
+  "source": "@site/docs/paraflow/advanced/parameters.md",
+  "sourceDirName": "paraflow/advanced",
+  "slug": "/paraflow/advanced/parameters",
+  "permalink": "/docs/paraflow/advanced/parameters",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/advanced/parameters.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "parameters",
+    "title": "Parameters",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Advanced Concepts",
+    "permalink": "/docs/paraflow/advanced/"
+  },
+  "next": {
+    "title": "Functions and Procedures",
+    "permalink": "/docs/paraflow/advanced/functions-procedures"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "paraflow/basics/tasks",
+  "title": "Tasks",
+  "description": "The task construct defines how to perform a goal. This may be to take some action internally, or it could be to delegate the work to another actor via the Paranet.",
+  "source": "@site/docs/paraflow/basics/tasks.md",
+  "sourceDirName": "paraflow/basics",
+  "slug": "/paraflow/basics/tasks",
+  "permalink": "/docs/paraflow/basics/tasks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/basics/tasks.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Variables",
+    "permalink": "/docs/paraflow/basics/variables"
+  },
+  "next": {
+    "title": "Advanced Concepts",
+    "permalink": "/docs/paraflow/advanced/"
+  }
+}

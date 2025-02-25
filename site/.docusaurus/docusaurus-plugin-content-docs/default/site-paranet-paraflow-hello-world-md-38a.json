@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/hello-world",
+  "title": "Hello World",
+  "description": "Let's create a simple actor on the Paranet and test it.",
+  "source": "@site/paranet/paraflow/hello_world.md",
+  "sourceDirName": "paraflow",
+  "slug": "/paraflow/hello-world",
+  "permalink": "/paraflow/hello-world",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/grokit-data/paranet/edit/main/docs/paranet/paraflow/hello_world.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "hello-world",
+    "title": "Hello World",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tasks",
+    "permalink": "/paraflow/language_basics/tasks"
+  },
+  "next": {
+    "title": "Top Level",
+    "permalink": "/paraflow/top-level"
+  }
+}

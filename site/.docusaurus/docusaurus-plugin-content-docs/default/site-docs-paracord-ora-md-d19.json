@@ -1,0 +1,30 @@
+{
+  "id": "paracord/ora",
+  "title": "ORA",
+  "description": "What's an ORA?",
+  "source": "@site/docs/paracord/ora.md",
+  "sourceDirName": "paracord",
+  "slug": "/paracord/ora",
+  "permalink": "/docs/paracord/ora",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paracord/ora.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "ora",
+    "title": "ORA",
+    "draft": true,
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Panels",
+    "permalink": "/docs/paracord/panels"
+  },
+  "next": {
+    "title": "Ledger",
+    "permalink": "/docs/paracord/ledger"
+  }
+}

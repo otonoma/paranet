@@ -1,0 +1,30 @@
+{
+  "id": "paraflow/services/python-agent",
+  "title": "Python Agent",
+  "description": "",
+  "source": "@site/docs/paraflow/services/python-agent.md",
+  "sourceDirName": "paraflow/services",
+  "slug": "/paraflow/services/python-agent",
+  "permalink": "/docs/paraflow/services/python-agent",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/services/python-agent.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "python-agent",
+    "title": "Python Agent",
+    "draft": true,
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Debugger",
+    "permalink": "/docs/paraflow/services/debugging"
+  },
+  "next": {
+    "title": "Tools",
+    "permalink": "/docs/paraflow/tools/"
+  }
+}

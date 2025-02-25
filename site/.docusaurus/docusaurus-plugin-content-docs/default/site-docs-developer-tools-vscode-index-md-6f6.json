@@ -1,0 +1,30 @@
+{
+  "id": "developer_tools/vscode/vscode",
+  "title": "VSCode Extension",
+  "description": "Overview",
+  "source": "@site/docs/developer_tools/vscode/index.md",
+  "sourceDirName": "developer_tools/vscode",
+  "slug": "/developer_tools/vscode/",
+  "permalink": "/docs/developer_tools/vscode/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/developer_tools/vscode/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "vscode",
+    "title": "VSCode Extension",
+    "draft": true,
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Developer Tools",
+    "permalink": "/docs/developer_tools/"
+  },
+  "next": {
+    "title": "Paracord",
+    "permalink": "/docs/developer_tools/paracord/"
+  }
+}

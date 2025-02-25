@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/advanced/json",
+  "title": "JSON",
+  "description": "For mostly historical reasons, Paraflow variables cannot hold objects.  All variables are scalars or tables.  However, you can manipulate JSON data in various ways in Paraflow.",
+  "source": "@site/docs/paraflow/advanced/json.md",
+  "sourceDirName": "paraflow/advanced",
+  "slug": "/paraflow/advanced/json",
+  "permalink": "/docs/paraflow/advanced/json",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paraflow/advanced/json.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "json",
+    "title": "JSON",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Runtime Internals",
+    "permalink": "/docs/paraflow/advanced/runtime-internals"
+  },
+  "next": {
+    "title": "Services",
+    "permalink": "/docs/paraflow/services/"
+  }
+}

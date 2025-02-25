@@ -1,0 +1,24 @@
+{
+  "id": "paraflow/language_basics/tasks",
+  "title": "Tasks",
+  "description": "The task construct defines how to perform a goal. This may be to take some action internally, or it could be to delegate the work to another actor via the Paranet.",
+  "source": "@site/paranet/paraflow/language_basics/tasks.md",
+  "sourceDirName": "paraflow/language_basics",
+  "slug": "/paraflow/language_basics/tasks",
+  "permalink": "/paraflow/language_basics/tasks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/grokit-data/paranet/edit/main/docs/paranet/paraflow/language_basics/tasks.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rules",
+    "permalink": "/paraflow/language_basics/rules"
+  },
+  "next": {
+    "title": "Hello World",
+    "permalink": "/paraflow/hello-world"
+  }
+}

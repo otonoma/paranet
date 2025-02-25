@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/basics/basics",
+  "title": "Basics",
+  "description": "Program Execution",
+  "source": "@site/paranet/paraflow/basics/index.md",
+  "sourceDirName": "paraflow/basics",
+  "slug": "/paraflow/basics/",
+  "permalink": "/docs/paraflow/basics/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/paranet/paraflow/basics/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "basics",
+    "title": "Basics",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/paraflow/introduction"
+  },
+  "next": {
+    "title": "Goals",
+    "permalink": "/docs/paraflow/basics/goals"
+  }
+}

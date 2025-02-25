@@ -1,0 +1,29 @@
+{
+  "id": "paraflow/language_basics/goals",
+  "title": "Goals",
+  "description": "A Paraflow goal represents a desired activity to perform. The activity may be parameterized by data. A goal instance consists of a name and zero or more specific parameter values. Here is an example goal:",
+  "source": "@site/paranet/paraflow/language_basics/goals.md",
+  "sourceDirName": "paraflow/language_basics",
+  "slug": "/paraflow/language_basics/goals",
+  "permalink": "/paraflow/language_basics/goals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/grokit-data/paranet/edit/main/docs/paranet/paraflow/language_basics/goals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "goals",
+    "title": "Goals",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Language Basics",
+    "permalink": "/paraflow/language_basics/"
+  },
+  "next": {
+    "title": "Events",
+    "permalink": "/paraflow/language_basics/events"
+  }
+}

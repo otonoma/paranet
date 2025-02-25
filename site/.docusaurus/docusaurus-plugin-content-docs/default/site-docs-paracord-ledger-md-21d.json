@@ -1,0 +1,29 @@
+{
+  "id": "paracord/ledger",
+  "title": "Ledger",
+  "description": "Ledger is place to explore the Paranet actors conversations.",
+  "source": "@site/docs/paracord/ledger.md",
+  "sourceDirName": "paracord",
+  "slug": "/paracord/ledger",
+  "permalink": "/docs/paracord/ledger",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/otonoma/paranet/edit/main/docs/docs/paracord/ledger.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "ledger",
+    "title": "Ledger",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ORA",
+    "permalink": "/docs/paracord/ora"
+  },
+  "next": {
+    "title": "Inbox",
+    "permalink": "/docs/paracord/inbox"
+  }
+}
