@@ -6,7 +6,7 @@
 export default {
   "title": "The Paranet",
   "favicon": "img/paranet_favicon.ico",
-  "url": "https://docs.paranet.ai",
+  "url": "https://paranet.otonoma.com",
   "baseUrl": "/",
   "trailingSlash": false,
   "baseUrlIssueBanner": true,

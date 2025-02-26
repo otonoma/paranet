@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 import { useState, useEffect } from 'react';
 
 const clientId = 'YOUR_GITHUB_CLIENT_ID'; // Replace with your GitHub OAuth Client ID
-const redirectUri = 'https://docs.paranet.ai/auth/github/callback'; // Adjust for your domain
+const redirectUri = 'https://paranet.otonoma.com/auth/github/callback'; // Adjust for your domain
 
 export default function HomepageFeatures() {
   const [isModalOpen, setIsModalOpen] = useState(false);
