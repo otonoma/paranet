@@ -23,4 +23,3 @@ This repository is your starting point to begin developing with Paranet. It incl
 ## Getting Started
 
 Visit [docs.paranet.ai/getting_started](https://docs.paranet.ai/getting_started )
-
