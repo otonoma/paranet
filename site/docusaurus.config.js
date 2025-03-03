@@ -5,8 +5,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config = {
   title: 'The Paranet',
   favicon: 'img/paranet_favicon.ico',
-
-  url: 'https://paranet.otonoma.com/'
+  url: 'https://paranet.otonoma.com/',
   baseUrl: '/',
   trailingSlash: false,
 
