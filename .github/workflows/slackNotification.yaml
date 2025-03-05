@@ -1,6 +1,9 @@
 name: Slack Notification
 
 on:
+  push:
+    branches:
+      - feature/DEV-313
   workflow_run:
     workflows: ["Staging Release", "Production Release"]
     types:
@@ -31,7 +34,7 @@ jobs:
         run: |
           DATE_TAG=$(date +'%Y.%m.%d')
           if [[ "$RELEASE_TYPE" == "Staging" ]]; then
-            VERSION="Staging-${DATE_TAG}"
+            VERSION="staging-${DATE_TAG}"
           elif [[ "$RELEASE_TYPE" == "Production" ]]; then
             VERSION="prod-${DATE_TAG}"
           else
@@ -40,6 +43,16 @@ jobs:
           echo "DATE_TAG=$DATE_TAG" >> $GITHUB_ENV
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
+      - name: Get Release Versions
+        id: get_versions
+        run: |
+          PARANET_VERSION=$(curl -sL -H "Authorization: token ${{ secrets.GH_TOKEN }}" "https://api.github.com/repos/otonoma/paranet-broker/releases/latest" | jq -r .tag_name)
+          PARAFLOW_VERSION=$(curl -sL -H "Authorization: token ${{ secrets.GH_TOKEN }}" "https://api.github.com/repos/otonoma/paraflow/releases/latest" | jq -r .tag_name)
+          PARACORD_VERSION=$(curl -sL -H "Authorization: token ${{ secrets.GH_TOKEN }}" "https://api.github.com/repos/otonoma/paracord/releases/latest" | jq -r .tag_name)
+          echo "PARANET_VERSION=$PARANET_VERSION" >> $GITHUB_ENV
+          echo "PARAFLOW_VERSION=$PARAFLOW_VERSION" >> $GITHUB_ENV
+          echo "PARACORD_VERSION=$PARACORD_VERSION" >> $GITHUB_ENV
+
       - name: Send Slack Notification
         uses: slackapi/slack-github-action@v2.0.0
         with:
@@ -47,24 +60,41 @@ jobs:
           token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: |
             channel: ${{ secrets.SLACK_CHANNEL_ID }}
-            text: "New ${{ env.RELEASE_TYPE }} Release"
+            text: "🚀 New ${{ env.RELEASE_TYPE }} Release! 🚀"
             blocks:
               - type: "section"
                 text:
                   type: "mrkdwn"
                   text: |
-                    :rocket: *New ${{ env.RELEASE_TYPE }} Release!* :rocket:
+                    🚀 *New Release!* 🚀
 
-                    :calendar: *Date:* ${{ env.DATE_TAG }}
-                    :package: *Version:* ${{ env.VERSION }}
-                    :file_folder: *Published Artifacts:* 
+                    🏷️ *Environment:* ${{ env.RELEASE_TYPE == 'Production' && 'PROD' || env.RELEASE_TYPE == 'Staging' && 'STAGING' || 'FEATURE TEST' }}
+                    📅 *Date:* ${{ env.DATE_TAG }}
+                    📦 *Version:* ${{ env.VERSION }}
+                    
+                    *Paranet: ${{ env.PARANET_VERSION }}*
+                    *Published Artifacts:*
                     ```
-                    • ghcr.io/otonoma/paracord:${{ env.VERSION }}
                     • ghcr.io/otonoma/paranet-broker/paranet-broker:${{ env.VERSION }}
                     • ghcr.io/otonoma/paranet-broker/paranet-service:${{ env.VERSION }}
                     • ghcr.io/otonoma/paranet-broker/paranet-broker-sim:${{ env.VERSION }}
+                    ```
+                    *Release Details:*
+                    [https://github.com/otonoma/paranet-broker/releases/tag/${{ env.PARANET_VERSION }}](https://github.com/otonoma/paranet-broker/releases/tag/${{ env.PARANET_VERSION }})
+                    
+                    *Paraflow: ${{ env.PARAFLOW_VERSION }}*
+                    *Published Artifacts:*
+                    ```
                     • ghcr.io/otonoma/paraflow/paraflow:${{ env.VERSION }}
                     • ghcr.io/otonoma/paraflow/paraflow-sim:${{ env.VERSION }}
-                    • ghcr.io/otonoma/paraflow/debugger:${{ env.VERSION }}
                     ```
-                    :label: *Environment:* ${{ env.RELEASE_TYPE == 'Production' && 'PROD' || env.RELEASE_TYPE == 'Staging' && 'STG' || 'FEATURE TEST' }}
+                    *Release Details:*
+                    [https://github.com/otonoma/paraflow/releases/tag/${{ env.PARAFLOW_VERSION }}](https://github.com/otonoma/paraflow/releases/tag/${{ env.PARAFLOW_VERSION }})
+                    
+                    *Paracord: ${{ env.PARACORD_VERSION }}*
+                    *Published Artifacts:*
+                    ```
+                    • ghcr.io/otonoma/paracord:${{ env.VERSION }}
+                    ```
+                    *Release Details:*
+                    [https://github.com/otonoma/paracord/releases/tag/${{ env.PARACORD_VERSION }}](https://github.com/otonoma/paracord/releases/tag/${{ env.PARACORD_VERSION }})
