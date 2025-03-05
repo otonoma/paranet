@@ -73,28 +73,28 @@ jobs:
                     📦 *Version:* ${{ env.VERSION }}
                     
                     *Paranet: ${{ env.PARANET_VERSION }}*
-                    *Published Artifacts:*
+                    :file_folder: *Published Artifacts:*
                     ```
                     • ghcr.io/otonoma/paranet-broker/paranet-broker:${{ env.VERSION }}
                     • ghcr.io/otonoma/paranet-broker/paranet-service:${{ env.VERSION }}
                     • ghcr.io/otonoma/paranet-broker/paranet-broker-sim:${{ env.VERSION }}
                     ```
                     *Release Details:*
-                    [https://github.com/otonoma/paranet-broker/releases/tag/${{ env.PARANET_VERSION }}](https://github.com/otonoma/paranet-broker/releases/tag/${{ env.PARANET_VERSION }})
+                    • https://github.com/otonoma/paranet-broker/releases/tag/${{ env.PARANET_VERSION }}
                     
                     *Paraflow: ${{ env.PARAFLOW_VERSION }}*
-                    *Published Artifacts:*
+                    :file_folder: *Published Artifacts:*
                     ```
                     • ghcr.io/otonoma/paraflow/paraflow:${{ env.VERSION }}
                     • ghcr.io/otonoma/paraflow/paraflow-sim:${{ env.VERSION }}
                     ```
                     *Release Details:*
-                    [https://github.com/otonoma/paraflow/releases/tag/${{ env.PARAFLOW_VERSION }}](https://github.com/otonoma/paraflow/releases/tag/${{ env.PARAFLOW_VERSION }})
-                    
+                    • https://github.com/otonoma/paraflow/releases/tag/${{ env.PARAFLOW_VERSION }}
+
                     *Paracord: ${{ env.PARACORD_VERSION }}*
-                    *Published Artifacts:*
+                    :file_folder: *Published Artifacts:*
                     ```
                     • ghcr.io/otonoma/paracord:${{ env.VERSION }}
                     ```
                     *Release Details:*
-                    [https://github.com/otonoma/paracord/releases/tag/${{ env.PARACORD_VERSION }}](https://github.com/otonoma/paracord/releases/tag/${{ env.PARACORD_VERSION }})
+                    • https://github.com/otonoma/paracord/releases/tag/${{ env.PARACORD_VERSION }}
