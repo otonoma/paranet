@@ -1,9 +1,12 @@
 name: Slack Notification
 
 on:
-  push:
-    branches:
-      - feature/DEV-313
+  # Uncomment the following lines to trigger the workflow on push to a specific branch (for testing or feature-specific deployments)
+  # push:
+  #   branches:
+  #     - feature/DEV-313
+
+  # Trigger the workflow when the "Staging Release" or "Production Release" workflows complete
   workflow_run:
     workflows: ["Staging Release", "Production Release"]
     types:
