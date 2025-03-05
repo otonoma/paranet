@@ -10,6 +10,8 @@ sidebar_position: 1
 
 **Autonomation** is the process of enabling systems to achieve autonomy. It involves integrating technologies that allow systems to reason, collaborate, learn, and adapt in real-time.
 
+![Node architecture](/img/autonomy_abundance.png)
+
 The Paranet is an autonomation platform designed to support the following ten essential elements of autonomy:
 
 1. **Environmental Awareness**: Perceiving and interpreting the surrounding context, including organizational-level insights via transaction ledgers.

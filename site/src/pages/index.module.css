@@ -1,105 +1,198 @@
 .heroBanner {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  color: #ffffff;
-  padding: 6rem 0 8rem;
+  padding: 123px 0 0;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-.heroBanner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle, rgba(8, 93, 111, 0.1) 0%, transparent 70%);
-  opacity: 0.5;
+[data-theme='dark'] .heroBanner {
+  background: #1B2537;
+}
+
+[data-theme='light'] .heroBanner {
+  background: #FFFFFF;
 }
 
 .heroTitle {
-  font-size: 4rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 76px;
+  margin: 0 auto 38px;
+  /* max-width: 698px; */
+}
+
+[data-theme='dark'] .heroTitle {
+  color: #FFFFFF;
+}
+
+[data-theme='light'] .heroTitle {
+  color: #1B2537;
 }
 
 .heroSubtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: #e2e8f0;
-  margin-bottom: 2.5rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0 auto 50px;
+  max-width: 824px;
 }
 
-.buttons {
+[data-theme='dark'] .heroSubtitle {
+  color: #6EB5FF;
+}
+
+[data-theme='light'] .heroSubtitle {
+  color: #0480FF;
+}
+
+.contentWrapper {
   display: flex;
-  gap: 1.5rem;
   justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
+  align-items: stretch;
+  gap: 55px;
+  max-width: 1002px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.ctaButton {
-  background: #F26522;; /* Teal accent */
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distributes space, pushing button to bottom */
+  align-items: center;
+  width: 447px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+[data-theme='dark'] .step {
+  background: #0480FF;
+}
+
+[data-theme='light'] .step {
+  background: #000000;
+}
+
+.stepNumber {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+[data-theme='dark'] .stepNumber {
+  background: #FFFFFF;
+  color: #1B2537;
+}
+
+[data-theme='light'] .stepNumber {
+  background: #7DE868;
+  color: #1B2537;
+}
+
+.stepTitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  white-space: nowrap; /* Prevents title from wrapping */
+}
+
+.stepDescription {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  max-width: 333px;
+  margin: 0 auto 0; /* Remove bottom margin to control spacing via flex */
+  flex-grow: 1; /* Allows description to take available space */
+  display: flex;
+  align-items: center; /* Centers text vertically within its space */
+  text-align: center;
+}
+
+.stepButton {
+  padding: 11px 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+[data-theme='dark'] .primaryButton {
+  padding: 11px 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  background: #7FFFD4;
+  color: #000000;
   border: none;
-  padding: 1rem 2.5rem;
-  font-size: 1.25rem;
-  font-weight: 700;
-  border-radius: 50px;
-  box-shadow: 0 4px 15px rgba(8, 93, 111, 0.3);
-  transition: all 0.3s ease;
 }
 
-.ctaButton:hover {
-  background: #F26522; /* Slightly lighter teal */
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(8, 93, 111, 0.5);
-  color: #ffffff;
+[data-theme='light'] .primaryButton {
+  padding: 11px 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  background: #0480FF;
+  color: #FFFFFF;
+  border: none;
 }
 
-.secondaryButton {
-  border: 2px solid #0a7389; /* Orange accent */
-  color: #0a7389;
-  padding: 1rem 2.5rem;
-  font-size: 1.25rem;
+[data-theme='dark'] .outlineButton {
+  padding: 11px 50px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
   border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
   background: transparent;
-  transition: all 0.3s ease;
 }
 
-.secondaryButton:hover {
-  background: rgba(242, 101, 34, 0.1);
-  color: #e2e8f0;
-  box-shadow: 0 4px 15px rgba(242, 101, 34, 0.2);
+[data-theme='light'] .outlineButton {
+  padding: 11px 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #0480FF;
+  color: #FFFFFF;
+  background: transparent;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 4rem 1rem;
-  }
-
-  .heroTitle {
-    font-size: 2.5rem;
-  }
-
-  .heroSubtitle {
-    font-size: 1.25rem;
-  }
-
-  .ctaButton,
-  .secondaryButton {
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-  }
+.arrow {
+  font-size: 36px;
+  color: #FFFFFF;
+  align-self: center;
+  font-weight: bold;
 }

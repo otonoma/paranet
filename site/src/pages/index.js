@@ -2,7 +2,6 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '../components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
@@ -12,25 +11,43 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className={styles.heroTitle}>
-        Welcome to the Paranet
+          Welcome to the Paranet
         </Heading>
         <p className={styles.heroSubtitle}>
-        The Automation Platform for the Autonomous Internet. Install our dev kit and build the future of automation.
+          The autonomation platform for the autonomous internet.
         </p>
-
-        <div className={styles.buttons}>
-          <Link
-            className={clsx('button button--primary button--lg', styles.ctaButton)}
-            to="/docs/getting-started"
-          >
-            Get Started
-          </Link>
-          <Link
-            className={clsx('button button--outline button--lg', styles.secondaryButton)}
-            to="https://github.com/otonoma/paranet"
-          >
-            GitHub Community
-          </Link>
+        <div className={styles.contentWrapper}>
+          <div className={styles.step}>
+            <span className={styles.stepNumber}>1</span>
+            <Heading as="h2" className={styles.stepTitle}>
+              Install & Build
+            </Heading>
+            <p className={styles.stepDescription}>
+              Hit the ground running with our CLI and Getting Started guide.
+            </p>
+            <Link
+              to="/docs/getting-started"
+              className={clsx('button', styles.primaryButton, styles.stepButton)}
+            >
+              Get Started
+            </Link>
+          </div>
+          <div className={styles.arrow}>→</div>
+          <div className={styles.step}>
+            <span className={styles.stepNumber}>2</span>
+            <Heading as="h2" className={styles.stepTitle}>
+              Examples & Community
+            </Heading>
+            <p className={styles.stepDescription}>
+              Explore templates and join the conversation on GitHub.
+            </p>
+            <Link
+              to="https://github.com/otonoma/paranet"
+              className={styles.outlineButton}
+            >
+              Visit GitHub
+            </Link>
+          </div>
         </div>
       </div>
     </header>
@@ -40,13 +57,9 @@ function HomepageHeader() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      // title="The Paranet"
-    >
+    <Layout>
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <main></main>
     </Layout>
   );
 }

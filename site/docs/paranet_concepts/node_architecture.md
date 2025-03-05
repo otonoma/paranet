@@ -8,6 +8,8 @@ sidebar_position: 2
 
 A **Paranet node** (or Paranode) is the fundamental building block of the Paranet, hosting actors and facilitating their autonomous interactions. Each node consists of several key components that enable distributed intelligence and autonomy.
 
+![Node architecture](/img/node_arc.png)
+
 ## Components of a Paranet Node
 
 - **Paranet Broker**: Manages connections, brokers messages between actors, and handles skill matching.

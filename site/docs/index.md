@@ -12,6 +12,8 @@ Welcome to the Paranet documentation!
 
 The Paranet is a secure skills network for intelligent machine collaboration. It utilizes the existing IP infrastructure and, for all intents and purposes, it's another internet. There are many "internets" such as the Web, the Onion Router (Tor), and the Internet of Things (IoT). The Web supports social networking, e-commerce, entertainment, and so on. IoT is a network of connected devices, and Tor is for secure, anonymous communication. The Paranet is fundamentally designed for work productivity, and we consider it to be the Internet of Work (IoW). It optimizes human-to-machine and machine-to-machine collaboration.
 
+![Node architecture](/img/overlay_network.png)
+
 > "As machines become increasingly advanced, the most important question isn't how humans can maintain control but rather how the two can collaborate, with people defining the goals while machines help strategize efficient, creative ways those goals might be reached."
 >
 > — Garry Kasparov (world chess champion)

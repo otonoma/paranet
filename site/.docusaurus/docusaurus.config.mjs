@@ -5,7 +5,7 @@
  */
 export default {
   "title": "The Paranet",
-  "favicon": "img/paranet_favicon.ico",
+  "favicon": "img/favicon.ico",
   "url": "https://paranet.otonoma.com",
   "baseUrl": "/",
   "trailingSlash": false,
@@ -33,18 +33,20 @@ export default {
           "sidebarPath": "/Users/mike/code/grokit/paranet/site/sidebars.js",
           "editUrl": "https://github.com/otonoma/paranet/edit/main/docs"
         },
-        "blog": false
+        "blog": false,
+        "theme": {
+          "customCss": "/Users/mike/code/grokit/paranet/site/src/css/custom.css"
+        }
       }
     ]
   ],
-  "plugins": [],
   "themeConfig": {
-    "image": "img/paranet_logo.svg",
     "navbar": {
-      "title": "The Paranet",
+      "title": "Paranet",
       "logo": {
-        "alt": "My Site Logo",
-        "src": "img/paranet_logo.svg"
+        "alt": "Paranet Logo",
+        "src": "img/paranet_logo_light.svg",
+        "srcDark": "img/paranet_logo_dark.svg"
       },
       "items": [
         {
@@ -300,9 +302,6 @@ export default {
       "maintainCase": false
     }
   },
-  "stylesheets": [
-    "/css/custom.css"
-  ],
   "future": {
     "experimental_storage": {
       "type": "localStorage",
@@ -316,9 +315,11 @@ export default {
     "static"
   ],
   "customFields": {},
+  "plugins": [],
   "themes": [],
   "scripts": [],
   "headTags": [],
+  "stylesheets": [],
   "clientModules": [],
   "tagline": "",
   "titleDelimiter": "|",
